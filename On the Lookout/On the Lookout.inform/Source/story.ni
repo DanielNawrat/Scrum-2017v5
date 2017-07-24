@@ -1,6 +1,6 @@
 "On the Lookout" by Daniel, Tim, Franziska, Kevin, Tobias
 
-Release along with a website and an interpreter and cover art.
+[Release along with a website and an interpreter and cover art.]
 
 [Anchor rooms Testsection]
 

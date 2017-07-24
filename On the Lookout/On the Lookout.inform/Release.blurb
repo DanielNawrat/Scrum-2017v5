@@ -1,0 +1,73 @@
+! Blurb file created by Inform build 6M62
+
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform"
+release to "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "On the Lookout.gblorb"
+storyfile "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
+ifiction "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
+cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 3 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Sitis1.png"
+picture 4 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\gaisetto1.png"
+picture 5 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 6 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 7 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 8 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
+picture 9 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
+picture 10 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\mine_area.png"
+picture 11 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\puulau_cave.png"
+picture 12 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
+picture 13 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
+picture 14 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 15 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 16 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 17 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 18 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 19 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 20 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 21 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 22 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\paia_cave.png"
+picture 23 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\exit_geysiria.png"
+picture 24 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\frizza_background_new.png"
+picture 25 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 26 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 27 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 28 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 29 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 30 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 31 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 32 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 33 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 34 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 35 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 36 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+picture 37 "D:\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_kaldriss.png"
+
+! Placeholder variables
+
+placeholder [IFID] = "6FBBE230-0EF6-429B-A3C2-DBCE746D1D49"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2017"
+placeholder [TITLE] = "On the Lookout"
+placeholder [AUTHOR] = "Daniel, Tim, Franziska, Kevin, Tobias"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
