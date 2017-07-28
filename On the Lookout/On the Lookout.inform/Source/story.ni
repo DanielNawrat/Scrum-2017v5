@@ -57,8 +57,7 @@ push button - pushing a button[line break]
 insert (something) into (something)[line break]
 remove (something) from (something)[line break]
 shove (something) aside - some situations with blocked paths may require this[line break]
-put (something) on (e.g. clothing)[line break]
-follow (someone) - you are able to follow the movement of another character[line break][paragraph break]";	
+put (something) on (e.g. clothing)[line break]";	
 	remove Helper from play;
 	say "End of help section[line break]---"
 

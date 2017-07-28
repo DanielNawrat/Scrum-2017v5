@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-1">
+  <generator>Windows Inform 7 6M62</generator>
+  <activeNode nodeId="node-2"/>
+  <item nodeId="node-1">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Tim, Franziska, Kevin, Tobias&#x000A;Release 1 / Serial number 170728 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-2"/>
+    </children>
+  </item>
+  <item nodeId="node-2">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - examine what your are carrying&#x000A;&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A;&#x000A;&#x000A;Frizza&#x000A; ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed bold in the text beforehand&#x000A; answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed bold in the text beforehand&#x000A; wait - wait some time, some situations may require this&#x000A; wear (something) - put clothing on&#x000A; take off (something )- take off clothing&#x000A; approach (something)-  try to draw closer to an object, some situations may require this&#x000A; extract - extract a sample from the Flux Current&#x000A;&#x000A;&#x000A;Kaldr&#x00ED;ss&#x000A; open/close (something)&#x000A; unlock/lock (something)&#x000A; push button - pushing a button&#x000A; insert (something) into (something)&#x000A; remove (something) from (something)&#x000A; shove (something) aside - some situations with blocked paths may require this&#x000A; put (something) on (e.g. clothing)&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
