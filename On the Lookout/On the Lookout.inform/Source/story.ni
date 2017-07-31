@@ -53,10 +53,6 @@ extract -	extract a sample from the Flux Current[line break]
 Kaldríss[line break]
 open/close (something)[line break]
 unlock/lock (something)[line break]
-push button - pushing a button[line break]
-insert (something) into (something)[line break]
-remove (something) from (something)[line break]
-shove (something) aside - some situations with blocked paths may require this[line break]
 put (something) on (e.g. clothing)[line break]";	
 	remove Helper from play;
 	say "End of help section[line break]---"
@@ -2143,10 +2139,8 @@ After asking Trapist about "Spaceship":
 
 
 
-[
-[IN PROGRESS]
-- es wird keine Raumbeschreibung gedruckt, wenn man in die Spaceship Storage geht
-]
+
+
 
 Chapter 5 - Kaldríss
 
@@ -2161,13 +2155,13 @@ Include Simple Graphical Window by Emily Short.
 Include Location Images by Emily Short.
 
 
-Figure of Spaceship Bridge_Kaldríss is the file "KALDRISS.png".
+Figure of Spaceship Bridge_Kaldríss is the file "kaldriss_spaceship.png".
 The room-illustration of Spaceship Bridge_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 	
-Figure of Spaceship Storage_Kaldríss is the file "KALDRISS.png".
+Figure of Spaceship Storage_Kaldríss is the file "kaldriss_spaceship.png".
 The room-illustration of Spaceship Storage_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 
-Figure of Spaceship Exit_Kaldríss is the file "KALDRISS.png".
+Figure of Spaceship Exit_Kaldríss is the file "kaldriss_spaceship.png".
 The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 		
 Figure of Crash Zone_Kaldríss is the file "KALDRISS.png".
@@ -2187,6 +2181,8 @@ Axesto is a person. The Player is Axesto.
 [Global Error Message]
 [Items]
 Instead of taking command panel, say "Do you really wanna try to ruin your last chance of escaping this planet by ripping out the command panel?!".
+Instead of taking the green button, say "This button doesn't seem to be removable. You better leave it where it is.".
+Instead of taking the power reserve, say "Ripping out the power reserve wouldn't end well. You better leave it as is.".
 Instead of taking the locker, say "Not. gonna. happen.".
 Instead of taking the suit chamber, say "Better not try this since things could blow up due to the immense pressure inside the suit chamber.".
 Instead of taking the rocks, say "The Yetíss will probably notice if you steal those rocks. Better to leave them wherey they are.".
@@ -2194,7 +2190,7 @@ Instead of taking pillars, say "You might be green but by far not as strong as t
 
 [Directions]
 Instead of going nowhere from Spaceship Bridge_Kaldríss, say "You don't want to run into one of the walls of your spaceship, do you?".
-Instead of going nowhere from Spaceship Storage_Kaldríss, say "There's only two directions you can go. Either south to the back of the ship or north to the bridge.".
+Instead of going nowhere from Spaceship Storage_Kaldríss, say "There's only two directions you can go. Either [bold type]south[roman type] to the back of the ship or [bold type]north[roman type] to the bridge.".
 Instead of going nowhere from Spaceship Exit_Kaldríss, say "There's only one way. This is not the right one.".
 Instead of going nowhere from Crash Zone_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
 Instead of going nowhere from Hunting Grounds_Kaldríss, say "Seems like there is some kind of blizzard going on in this direction. It's absolutely not advised going there since you would probably die.".
@@ -2203,15 +2199,18 @@ Instead of going nowhere from Yarwol's Cave, say "It's way too dark and therefor
 Instead of going nowhere from Main Cave_Kaldríss, say "It's way too dark and therefore too dangerous to go alone.".
 Instead of going nowhere from Secret Cave_Kaldríss, say "The only way out of here would be through the door you came in.".
 Instead of going nowhere from Blakkríss Temple Entrance, say "This temple was built on a mountain which means the only way is straight through the temple.".
-Instead of going nowhere from Great Hall_Kaldríss, say "There are incredibly high walls on both sides. Your only option is to keep going west.".
-Instead of going nowhere from Spectral Bridge, say "Your only option is to cross this mystical bridge. Going in any oother direction would mean you falling off of it resulting in a painful death.".
+Instead of going nowhere from Great Hall_Kaldríss, say "There are incredibly high walls on both sides. Your only option is to keep going [bold type]west[roman type].".
+Instead of going nowhere from Spectral Bridge, say "Your only option is to cross this mystical bridge. Going in any other direction would mean you falling off of it resulting in a painful death.".
 
 
 [Spacesuit with energy capacitor]
 A spacesuit is a kind of thing. A spacesuit is always wearable. An energy capacitor is a kind of container. The energy capacitor is part of every spacesuit.
 The carrying capacity of an energy capacitor is always 1.
-The description of the spacesuit is "[bold type]Spacesuit Mk. XV[roman type][paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an energy capacitor built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.".
+The description of the spacesuit is "[bold type]Spacesuit Mk. XV[roman type][paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an [bold type]energy capacitor[roman type] built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.[paragraph break][italic type]Suit Thermal Protection Systems[roman type] [bold type]S.T.P.S.[roman type] Status: [bold type]OFFLINE //[roman type][paragraph break][italic type]Awaiting insertion of power source into energy capacitor ---[roman type][paragraph break]".
 
+After taking the spacesuit for the first time:
+	say "[paragraph break]Taken.[paragraph break][bold type]Spacesuit Mk. XV[roman type][paragraph break]Made for deep space travel due to its extraordinary thermodynamic capabilities.[paragraph break]This model also has an [bold type]energy capacitor[roman type] built in that needs some kind of energy in order to properly work. The more pure the energy the more effective the suits thermal protection will work.[paragraph break][italic type]Suit Thermal Protection Systems[roman type] [bold type]S.T.P.S.[roman type] Status: [bold type]OFFLINE //[roman type][paragraph break][italic type]Awaiting insertion of power source into energy capacitor ---[roman type][paragraph break]"
+	
 After examining the spacesuit for the first time:
 	say "After taking a closer look it seems like the energy capacitor of the spacesuit doesn't have any juice left so you would still freeze to death pretty quickly upon leaving the spaceship. Unless, of course, you find a fitting energy source you could [bold type]insert into the energy capacitor[roman type].".
 
@@ -2245,7 +2244,7 @@ A thing can be safe or electrified. A thing is usually safe.
 
 This is the electrocution-wisdom rule:
 	if the player wears the protector glove, make no decision;
-	if the action requires a touchable noun and the noun is electrified, say "You really shouldn't be touching [the noun] without something that protects you from its enormous amounts of energy. This flux essence consists of pure energy and would therefore immediately disintegrate your hand if you touched it without a [bold type]glove[roman type]." instead;
+	if the action requires a touchable noun and the noun is electrified, say "You really shouldn't be touching [the noun] without something that protects you from its enormous amounts of energy. This flux essence fragment consists of pure energy and would therefore immediately disintegrate your hand if you touched it without a [bold type]glove[roman type]." instead;
 
 The electrocution-wisdom rule is listed before the basic accessibility rule in the action-processing rules.
 
@@ -2272,7 +2271,7 @@ The Crash Site_Kaldríss is a region.The Spaceship Bridge_Kaldríss, the Spacesh
 [Items]	
 [Hidden Items/Riddles]
 [Command Panel]
-In the Spaceship Bridge_Kaldríss is a command panel. The description of the command panel is "Your trustworthy command panel.". It is fixed in place.  In the command panel is a fried communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
+In the Spaceship Bridge_Kaldríss is a command panel. The description of the command panel is "Your trustworthy command panel.". It is fixed in place.  In the command panel is a communicator, a protector glove and a power reserve. It is closed and openable. The power reserve is a container. The power reserve is fixed in place. It is closed, locked and openable. The description of the power reserve is "Of course! The power reserve basically contains a large portion of the spaceships energy reservoir. If you manage to open it and check if there is still energy left you might be able to use it to power something."
 
 After opening the command panel:
 	say "You manage to remove the protective layer of the command panel revealing the mainframe with all the important stuff.  Usually it's not advised to do this by yourself but tough times call for tough measures. Now you're also able to [bold type]examine[roman type] the command panel a little further and see what's inside.".
@@ -2280,23 +2279,19 @@ After opening the command panel:
 After closing the command panel:
 	say "You put everything back in place and pretend like it never happened. Nobody would ever notice.".
 
-The green button unlocks the power reserve. In the power reserve is a flux essence fragment. The flux essence fragment is an electrified thing. The description of flux essence fragment is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases - just like this one you are in.". The flux essence fragment can be taken.
+The green button unlocks the power reserve. In the power reserve is a flux essence fragment. The flux essence fragment is an electrified thing. The description of flux essence fragment is "Energy in its purest form. But at the same time just as dangerous and unstable. What you have here are just the remains of the once fully capable flux essence that you put into the spaceship's generator in order to escape from Frizza. Small portions of the main energy stream within the spaceship are stored in here for emergency cases. Like this one.". The flux essence fragment can be taken.
 
 
-Before taking the flux essence fragment:
+After taking the flux essence fragment:
 	say "This flux essence used to contain way more energy its remains might contain just enough energy to power your spacesuit."
 
 	
-The fried communicator is fixed in place.
+The communicator is fixed in place. The description of the communicator is "Yep, totally busted!"
+Before taking the communicator:
+	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.";
+	stop the action.
+
 The encryption key is in the command panel. The encryption key can be taken. The description of the encryption key is "This encryption key looks very mysterious. Also, you aren't entirely sure what its purpose is. Suddenly you notice a small label on the side of the device.[paragraph break][italic type]Secret key for my locker in the spaceship storage[paragraph break]Note to self: remove this label after hiding key in command panel[roman type]"
-
-
-After examining fried communicator:
-	now the description is "Yep, totally busted!"
-
-Before taking the fried communicator:
-	say "You don't have the tools to disassemble the communicator. Since it doesn't seem to work you would be wasting your time anyway.". 
-
 
 [Button]
 The green button is a device. It is in the command panel. It is switched off. Instead of pushing the green button: if the green button is switched off, try switching on the green button; otherwise try switching off the green button. The green button is fixed in place.
@@ -2314,8 +2309,9 @@ After switching off the green button:
 [Emergency Torch in the Locker]
 In the Spaceship Storage_Kaldríss is a locker. It is fixed in place. The locker is an openable lockable container in the Spaceship Storage_Kaldríss. It is closed, locked and openable. The encryption key unlocks the locker. The description of the locker is "You remember putting something important in here but you can't recall what exactly it was. Should probably open it up to know for sure.".
 In the locker is an emergency torch. The emergency torch can be taken. The description of the emergency torch is "[bold type]Plasma Torch Mk. IV[roman type][paragraph break]Survival Issue - built to function in any kind of climate.".
-Before taking the emergency torch:
-	say "This baby will light up no matter how harsh the conditions are since it uses a special fuel for the ignition process."
+
+After taking the emergency torch:
+	say "This baby will light up no matter how harsh the conditions are since it uses a special fuel for the ignition process. However, I doubt that this will be enough to let me wander around on the surface of Kaldríss."
 
 After unlocking locker with encryption key:
 	say "This key seems to fit.  [italic type]Lock mechanism status: [roman type][bold type]DEACTIVATED //[roman type] You may proceed to open the locker.";
@@ -2324,18 +2320,21 @@ After unlocking locker with encryption key:
 In the Spaceship Storage_Kaldríss is a suit chamber. It is fixed in place. It is closed and openable. In the suit chamber is a spacesuit. The description of the suit chamber is "A hermetically sealed chamber that contains your spacesuit. Whenever required a cleaning process can be initiated in order to kill off every last bit of unwanted organic substance on a molecular level. [paragraph break]Looks like there is currently no cleaning sequence in progress so it should be safe to take the spacesuit out.".
 
 After opening the suit chamber:
-	say "[italic type]Seal Status: [roman type][bold type]DEACTIVATED //[roman type][paragraph break][italic type]Contamination Level Check: 0,00 %[paragraph break]Opening chamber.[roman type]".
+	say "[italic type]Seal Status: [roman type][bold type]DEACTIVATED //[roman type][paragraph break][italic type]Contamination Level Check: 0,00 %[paragraph break]Opening chamber.[paragraph break]Spacesuit can now be taken out safely.[paragraph break][roman type]".
 	
 After closing the suit chamber:
 	say "[italic type]Seal Status: [bold type]ACTIVATED //[roman type][paragraph break][italic type]Closing chamber.[paragraph break]Checking contamination status --- [roman type][bold type]BOOTING[roman type][paragraph break][roman type]".
 
 [Rooms]
-The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment, including the communication systems, must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
+The Spaceship Bridge_Kaldríss is a room.  "The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment, including the communication systems, must have been fried and doesn't seem to work anymore.[paragraph break]There's only a single flickering light inside the [bold type]command panel[roman type].[paragraph break][italic type]What could this mean? I should probably open the command panel and take a look. I could also go [bold type]south[roman type] and check the storage of the spaceship first[roman type]." The printed name of the Spaceship Bridge_Kaldríss is "Spaceship Bridge".
 	
-The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the south doesn't seem to function anymore so perhaps you should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
-The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. I could leave the spaceship right now by going east but I if I don't have something to protect me from the cold I will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
-The Crash Zone_Kaldríss is a room. "The surface of Kaldríss consists of spiky ice formations as far as the eye can see . No wonder nobody in his right mind would try to land here willingly. There doesn't seem to be anything of interest wherever you look. After taking a closer look you suddenly notice some sort of structure north of your position. If you hurry up you should be able to make it there before you freeze." The printed name of the Crash Zone_Kaldríss is "Crash Zone".
+The Spaceship Storage_Kaldríss is a room. "Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels but also your [bold type]locker[roman type] which possibly contains things you could really use in this kind of situation. Oh, and the [bold type]suit chamber[roman type] of course. It also looks like the airlock in the [bold type]south[roman type] doesn't seem to function anymore so perhaps you should go check that out as well?" The printed name of the  Spaceship Storage_Kaldríss is "Spaceship Storage".
+The Spaceship Exit_Kaldríss is a room. "The airlock also seems to be affected by the crash and the temperatures inside the spaceship are nearing dangerous levels. You could leave the spaceship right now by going [bold type]east[roman type] but I if you don't have something to protect yourself from the cold you will probably die." The printed name of the  Spaceship Exit_Kaldríss is "Spaceship Exit".
+The Crash Zone_Kaldríss is a room. "The surface of Kaldríss consists of spiky ice formations as far as the eye can see . No wonder nobody in his right mind would try to land here willingly. There doesn't seem to be anything of interest wherever you look. After taking a closer look you suddenly notice some sort of structure [bold type]north[roman type] of your position. If you hurry up you should be able to make it there before you freeze." The printed name of the Crash Zone_Kaldríss is "Crash Zone".
 The Hunting Grounds_Kaldríss is a room. "Turns out this used to be an explorer camp and you instantly feel a little less lonely and also more safe. Seems like a good place to stay for a while and try not to freeze to death. But where did those explorers go and why did they leave pretty much everything behind? Further investigations of this place also reveal something resembling a huge hole in the ground.[paragraph break]You make your way to said hole and realize it could be a cave entrance. The only problem is that there is a massive stone plate blocking the entrance." The printed name of the Hunting Grounds_Kaldríss is "Hunting Grounds".
+
+Before going to Hunting Grounds_Kaldríss:
+	say "You walk towards that structure you saw earlier. You're getting closer and closer.[paragraph break]Then you realize what exactly it is you are walking towards. Suddenly you have this tiny glimmer of hope inside you."
 
 [Remove stone plate to enter cave]
 [Beschreibung von Yundar's Cave ohne stone plate!]
@@ -2360,7 +2359,7 @@ Before going to Yundar's Cave from Hunting Grounds_Kaldríss:
 		continue the action.
 
 [shove aside Befehl]
-Understand "shove aside [something] " as opening.
+Understand "shove [something] aside" as opening.
 	Understand "put [something] back in place" as closing.
 
 After closing stone plate:
@@ -2379,7 +2378,7 @@ The Hunting Grounds_Kaldríss is north of the Crash Zone_Kaldríss.
 	
 [Before leaving the spaceship]
 Before going to the Crash Zone_Kaldríss:
-	unless the player has the emergency torch or EnergyCapacitorReady is true:
+	unless the player has the emergency torch and EnergyCapacitorReady is true:
 		move the player to the Spaceship Exit_Kaldríss, without printing a room description;
 		say "You can't leave the spaceship just yet. You need to find something to keep you warm before you venture off!";
 		stop the action.
@@ -2408,13 +2407,13 @@ Section 2 - Yetíss Cave System
 Yetíss Caves System is a region.  Main Cave_Kaldríss, Yundar's Cave, Yarwol's Cave and Secret Cave_Kaldríss is in Yetíss Caves System.
 
 [Images]
-Figure of Yarwol's Cave is the file "background_kaldriss.png".
+Figure of Yarwol's Cave is the file "KALDRISS.png".
 The room-illustration of Yarwol's Cave is the Figure of Spaceship Bridge_Kaldríss.
 		
-Figure of Main Cave_Kaldríss is the file "background_kaldriss.png".
+Figure of Main Cave_Kaldríss is the file "KALDRISS.png".
 The room-illustration of Main Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 	
-Figure of Secret Cave_Kaldríss is the file "background_kaldriss.png".
+Figure of Secret Cave_Kaldríss is the file "KALDRISS.png".
 The room-illustration of Secret Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 
 [Rooms]
@@ -2422,7 +2421,7 @@ The room-illustration of Secret Cave_Kaldríss is the Figure of Spaceship Bridge
 Yundar's Cave is a room.  The description of Yundar's Cave is "Since there is only a tiny amount of light in this cave it's hard to make out it's size and where to go.  Judging from the acoustics  though it seems as this is only one of many caves that are all part of some kind of underground cave system. You can also hear footsteps from time to time but they sound way heavier than the ones of regular human beings.  If you don't know where to go you could just try to follow the footsteps in the same direction. However, you should still be really careful when doing so since it's probably for the best if you stay undetected for now." The printed name of Yundar's Cave is "Cave Entrance".
 
 After going to Yundar's Cave for the first  time:	
-	say "Upon trying to make your way into the small cave entrance you slipped and went all the way down. Apart from a few scratches here and there you seem to be okay even though your head hurts quite a lot. You can barely see from where you are but you see light a little further ahead and decide to go there. It's getting easier to see with every step you take and suddenly you hear noises. It sounds like someone is .. talking? You can't really understand what they are saying since it seems to be some ancient language but you heard the words [italic type]Yundar[roman type] and [italic type]Yarwol[roman type] being thrown around a couple of times so maybe those are names? Perhaps it's even humans who live down here. Maybe it's one of the explorers from the camp above you. The last thing you hear are footsteps heading east.[paragraph break]";
+	say "Upon trying to make your way into the small cave entrance you slipped and went all the way down. Apart from a few scratches here and there you seem to be okay even though your head hurts quite a lot. You can barely see from where you are but you see light a little further ahead and decide to go there. It's getting easier to see with every step you take and suddenly you hear noises. It sounds like someone is .. talking? You can't really understand what they are saying since it seems to be some ancient language but you heard the words [italic type]Yundar[roman type] and [italic type]Yarwol[roman type] being thrown around a couple of times so maybe those are names? Perhaps it's even humans who live down here. Maybe it's one of the explorers from the camp above you. The last thing you hear are footsteps heading [bold type]east[roman type].[paragraph break]";
 	produce a room description with going spacing conventions.
 	
 
@@ -2438,7 +2437,7 @@ After going to Yarwol's Cave for the first time:
 The Main Cave_Kaldríss is a room. "Alright, this is the biggest one yet. It seems to be a junction of some sort. It's not only the biggest cave you've encountered so far but there are also numerous tunnels leading away from it. It would probably interesting to find out where all those tunnels lead but it wouldn't be a smart decision to make in your current situation. You should better search for the nearest exit if there is any." The printed name of the Main Cave_Kaldríss is "Cave Junction".
 
 After going to the Main Cave_Kaldríss for the first time:
-	say "Looks like this is the cave that connects them all which also explains why it's that much bigger than the ones before.  You can also notice a tiny [bold type]gap in the east wall[roman type]. Directly next to it is a small hole in the wall that seems to have a very specific shape. It could be some kind of keyhole. If this assumption is true and this turns out to be a door of some kind then this might also be the way out of this cave system.";
+	say "Looks like this is the cave that connects them all which also explains why it's that much bigger than the ones before.  You can also notice a tiny gap in the [bold type]east[roman type] wall. Directly next to it is a small hole in the wall that seems to have a very specific shape. It could be some kind of keyhole. If this assumption is true and this turns out to be a door of some kind then you should probably go there and see for yourself.";
 	produce a room description with going spacing conventions.
 
 [Secret Cave]
@@ -2490,16 +2489,16 @@ end if.
 
 [Movement Restrictions Yetíss]
 Instead of Yundar trying going to Secret Cave_Kaldríss:
-if Yarwol is visible, say "Grrhrhhrhrhrhrhrrrrhhhrghr"
+if Yarwol is visible, say "[italic type]Grrhrhhrhrhrhrhrrrrhhhrghr[roman type]"
 
 Instead of Yundar trying going to Secret Cave_Kaldríss:
-if Yarwol is visible, say "Hnnnghhgngnnhgghhhhn"
+if Yarwol is visible, say "[italic type]Hnnnghhgngnnhgghhhhn[roman type]"
 
 Instead of Yarwol trying going to Secret Cave_Kaldríss:
-if Yarwol is visible, say "Grmmmppfpprrpprrrffffr"
+if Yarwol is visible, say "[italic type]Grmmmppfpprrpprrrffffr[roman type]"
 
 Instead of Yarwol trying going to Secret Cave_Kaldríss:
-if Yarwol is visible, say "Arggghhhhrrhrrhrhrhrrh"
+if Yarwol is visible, say "[italic type]Arggghhhhrrhrrhrhrhrrh[roman type]"
 
 [Movement Restrictions]
 Instead of going to the Hunting Grounds_Kaldríss from Yundar's Cave:
@@ -2547,84 +2546,88 @@ After entering Secret Cave_Kaldríss:
 Section 4 - Blakkríss Temple
 
 [Region -  Blakkríss Temple]
-The Blakkríss Temple is a region. The Blakkríss Temple Entrance, the Great Hall_Kaldríss, the Spectral Bridge and the Bifröst Portal Chamber is in the Blakkríss Temple.
+The Blakkríss Temple is a region. The Blakkríss Temple Entrance, the Great Hall_Kaldríss, the Spectral Bridge, the Bifröst Portal Chamber and the Portal is in the Blakkríss Temple.
 
 [Images]
-Figure of Blakkríss Temple Entrance is the file "background_kaldriss.png".
+Figure of Blakkríss Temple Entrance is the file "KALDRISS.png".
 The room-illustration of Blakkríss Temple Entrance is the Figure of Spaceship Bridge_Kaldríss.
 	
-Figure of Great Hall_Kaldríss is the file "background_kaldriss.png".
+Figure of Great Hall_Kaldríss is the file "KALDRISS.png".
 The room-illustration of Great Hall_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 	
-Figure of Spectral Bridge is the file "background_kaldriss.png".
+Figure of Spectral Bridge is the file "KALDRISS.png".
 The room-illustration of Spectral Bridge is the Figure of Spaceship Bridge_Kaldríss.
 
-Figure of Portal Chamber is the file "background_kaldriss.png".
+Figure of Portal Chamber is the file "KALDRISS.png".
 The room-illustration of Portal Chamber is the Figure of Spaceship Bridge_Kaldríss.
 
 [Rooms]
-The Blakkríss Temple Entrance is a room. "This seems to be the entrance of a temple of some sort. It is really huge. Like really really huge. There are also ancient rune inscriptions on every single one of the pillars that make up this majestic entrance."
+The Blakkríss Temple Entrance is a room. "This seems to be the entrance of a temple. It is really huge. Like really really huge. There are also ancient rune inscriptions on every single one of the pillars that make up this majestic entrance."
 
 After going to Blakkríss Temple Entrance for the first time:
-	say "[italic type]What the hell was that?[paragraph break]Everything turned white, I completely lost track of time and suddenly I stand in front of something that looks like a huge temple of some sort.[paragraph break]This must be it. This has to be the place which will be able to bring me and my spaceship back into the orbit.[paragraph break]I should get going before I waste any more precious time! [paragraph break]I think I should be good for now if I just keep going west.[roman type][paragraph break]";
+	say "[italic type]What the hell was that?[paragraph break]Everything turned white, I completely lost track of time and suddenly I stand in front of something that looks like a huge temple of some sort.[paragraph break]This must be it. This has to be the place which will be able to bring me and my spaceship back into the orbit.[paragraph break]I should get going before I waste any more precious time! [paragraph break]I think I should be good for now if I just keep going [bold type]west[roman type].[roman type][paragraph break]";
 	produce a room description with going spacing conventions.
 
-The Great Hall_Kaldríss is a room. "This seems to be the focal point of the temple. Even more rune inscriptions on the walls. Well, you should probably just keep going west since you can see some weird light that is coming from a little further inside the temple." The printed name of Great Hall_Kaldríss is "Great Hall".
+The Great Hall_Kaldríss is a room. "This seems to be the focal point of the temple. Even more rune inscriptions on the walls. Well, you should probably just keep going [bold type]west[roman type] since you can see some weird light that is coming from a little further inside the temple." The printed name of Great Hall_Kaldríss is "Great Hall".
 
 After going to Great Hall_Kaldríss for the first time:
 	say "You keep going straight forward making your way through this huge temple. At the same time you also begin thinking about who might have built this temple since the planet seemed pretty dead so far. With the exception of the Yetíss but it's highly unlikely this is their doing.";
 	produce a room description with going spacing conventions.
 
-The Spectral Bridge is a room. "A bridge that seems to purely consist of light that is emitted in all its different spectral colors.[paragraph break][italic type]How does this even make sense? Only one way to find out. All I can do is keep following this path leading west since I can't go anywhere else anyway[roman type]."
+The Spectral Bridge is a room. "A bridge that seems to purely consist of light that is emitted in all its different spectral colors.[paragraph break][italic type]How does this even make sense? Only one way to find out.[roman type]."
 
 After going to Spectral Bridge:
-	say "You seem to have finally made your way through the temple complex. Suddenly you stand in front of a bridge but it's translucent and doesn't look like anyone could ever cross it. It's hard to describe really since it seems to be made out of light if that makes any sense? You're not sure yet whether to attempt crossing it or just stay here for now.";
+	say "You seem to have finally made your way through the temple complex. Suddenly you stand in front of a bridge but it's translucent and doesn't look like anyone could ever cross it. It's hard to describe really since it seems to be made out of light if that makes any sense? You're not sure yet whether to attempt crossing it or just stay here for now.[paragraph break]Suddenly you see a figure moving towards you. Doesn't seem like going over that bridge is an option now anyways.[paragraph break][italic type]Maybe I just ask him if he will let me pass? On the other hand he might also try to kill me.[roman type][paragraph break]";
 	produce a room description with going spacing conventions.
 
-The Bifröst Portal Chamber is a room. "A mysterious room filled to the brim with ancient technology. The most important of those technologies being the portal in the middle of the chamber."
+The Bifröst Portal Chamber is a room. "A mysterious room filled to the brim with ancient technology. The most important of those technologies being the portal in the middle of the chamber.[paragraph break][italic type]This must be the portal chamber! Finally! Time to [bold type]calibrate[roman type] the [bold type]portal[roman type] so I can get into the orbit ASAP![roman type]"
 
-After going to the Bifröst Portal Chamber for the first time:
-	say "[italic type]This must be the portal chamber! Finally! Time to calibrate the portal so I can get into the orbit ASAP![roman type]";
-	produce a room description with going spacing conventions.
 [Lore]
 The pillars is a thing inside the Blakkríss Temple Entrance. The description of Pillars is "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.[paragraph break][italic type]Why do I get the feeling that I've already read that somewhere?[roman type]". Pillars is fixed in place.
 
+[Portal]
+Understand "calibrate portal" as east.
 
 [Directions]
 The Blakkríss Temple Entrance is above the Secret Cave_Kaldríss.
 The Blakkríss Temple Entrance is east of the Great Hall_Kaldríss.
 The Great Hall_Kaldríss is east of the Spectral Bridge.
+The Portal is east of the Bifröst Portal Chamber.
 
 [NPCs]
-Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "My name is Heimdallr and I am the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries I have been guarding this [bold type]temple[roman type] and never did I let anyone past my sword. There is only one possible way this could end well. You have to solve my [bold type]riddle[roman type]."
+Heimdallr is a person in the Spectral Bridge. The description of Heimdallr is "This is Heimdallr and he is the oathsworn protector of the [bold type]portal chamber[roman type]. For centuries he has been guarding this [bold type]temple[roman type] and never did he let anyone past his sword. There is only one possible way this could end well. You have to find the right answer to his [bold type]question[roman type]."
 
 [Final Dialogue]
 After asking Heimdallr about "portal chamber":
-	say "[italic type]It's rare to see a mortal being up here. The last time I encountered one of you lesser beings must have been thousands of years ago.[paragraph break]It didn't end well for that poor creature.[roman type][paragraph break]"
+	say "[italic type]'It's rare to see a mortal being up here. The last time I encountered one of you lesser beings must have been thousands of years ago.'[paragraph break]'It didn't end well for that poor creature.'[roman type][paragraph break]"
 
 After asking Heimdallr about "temple":
-	say "[italic type]This temple was built right after the creation of this planet. It's only purpose is to protect this powerful portal that lies ahead.[paragraph break]It's unknown how powerful it exactly is but the more reason I guard it with my life.[roman type][paragraph break]"
+	say "[italic type]'This temple was built right after the creation of this planet. It's only purpose is to protect this powerful portal that lies ahead.'[paragraph break]'It's unknown how powerful it exactly is but the more reason I guard it with my life.'[roman type][paragraph break]"
 
-After asking Heimdallr about "riddle":
-	say "[italic type]All I want from you is the answer to life, the universe and everything. Can you figure it out?[roman type][paragraph break]"
+After asking Heimdallr about "question":
+	say "[italic type]'All I want from you is the answer to life, the universe and everything. Can you figure it out?'[roman type][paragraph break]"
 	
-After asking Heimdallr about "riddle" for the second time:
-	say "[italic type]The answer is really simple. Perhaps you just have [roman type][bold type]2 [roman type][italic type]think[roman type][bold type] 4 [roman type][italic type] a little longer?[roman type][paragraph break]"
+After asking Heimdallr about "question" for the second time:
+	say "[italic type]'The answer is really simple. Perhaps you just have [roman type][bold type]2 [roman type][italic type]think[roman type][bold type] 4 [roman type][italic type] a little longer?'[roman type][paragraph break]"
 
-After asking Heimdallr about "2":
-	say "You are getting closer."
+After answering Heimdallr that "2":
+	say "[italic type]'You are getting closer.'[roman type]"
 	
-After asking Heimdallr about "4":
-	say "Halfway there."
+After answering Heimdallr that "4":
+	say "[italic type]'Halfway there.'[roman type]"
 	
-After asking Heimdallr about "24":
-	say "Sometimes you have to twist something around in order to see the answer."
+After answering Heimdallr that "24":
+	say "[italic type]'Sometimes you have to twist something around in order to see the answer.'[roman type]"
 	
-After asking heimdallr about "42":
-	say "[italic type]Clever! Really clever indeed. Nobody has ever figured out how to get past me. You seem to be one of a kind.[paragraph break] You shall pass![roman type][paragraph break]";
-	move player to the Bifröst Portal Chamber.
+After answering Heimdallr  that "42":
+	say "[italic type]'Clever! Really clever indeed. Nobody has ever figured out how to get past me. You seem to be one of a kind.[paragraph break] You shall pass!'[roman type][paragraph break]";
+	move player to the Bifröst Portal Chamber;
+	say "You are still not sure whether Heimdallr is being serious about letting you pass or not but you just go with it and quickly make your way into the chamber.[paragraph break]After all this seems to be your last shot at leaving this planet and therefore making it home in one piece again."
 
 [The End]
 
-After going to the Bifröst Portal Chamber for the first time:
-	end the story finally saying "You wake up lying in your bed on board of your spaceship. For a moment you thought that you were just having a bad dream but then you realize that only moments ago you've been on Kaldríss, one of the coldest planets in this solar system. You almost freezed to death, got lost in a cave that apparently is inhabited by Yetíss and then you talked to Heimdallr, some kind of ancient warden, that magically teleported you into a portal chamber. After that just blanks. You simply can't remember how you actually managed to get off this planet.[paragraph break][italic type]Was all of this really just a bad dream? Perhaps a result of all the bad things that recently happened to me on all the other planets I've visited, well, not willingly though.[paragraph break]But it felt so real? Maybe this is just the consequence of trying to calibrate ancient portal devices which I don't really know anything about.[paragraph break]On the other hand I should just be grateful that I'm still alive and that I have my spaceship back.[paragraph break]After all the stuff that has happened I should probably just leave this galaxy and head home. It might not be perfect but I should appreciate it for what it is.[paragraph break]It's still better than anything out here.".
+After going to the Portal for the first time:
+	end the story saying "You wake up lying in your bed on board of your spaceship. For a moment you thought that you were just having a bad dream but then you realize that only moments ago you've been on Kaldríss, one of the coldest planets in this solar system. You almost freezed to death, got lost in a cave that apparently is inhabited by Yetíss and then you talked to Heimdallr, some kind of ancient warden, that magically teleported you into a portal chamber. After that just blanks. You simply can't remember how you actually managed to get off this planet.[paragraph break][italic type]Was all of this really just a bad dream? Perhaps a result of all the bad things that recently happened to me on all the other planets I've visited, well, not willingly though.[paragraph break]But it felt so real? Maybe this is just the consequence of trying to calibrate ancient portal devices which I don't really know anything about.[paragraph break]On the other hand I should just be grateful that I'm still alive and that I have my spaceship back.[paragraph break]After all the stuff that has happened I should probably just leave this galaxy and head home. It might not be perfect but I should appreciate it for what it is.[paragraph break]It's still better than anything out here.[paragraph break]---[paragraph break]THE END"
+	
+			
+			
