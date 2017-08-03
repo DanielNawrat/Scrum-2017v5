@@ -1392,27 +1392,29 @@ Instead of going nowhere from the Bloo City_Frizza, say "Daunting planes and dar
 
 [Surface]
 	
-The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there." 
+The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there. You also remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux." 
 
-After going from the Landing Zone_Frizza:
+Instead of going to the Landing Zone_Frizza:
 	if ConcealedDunia is true:
-		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there.";
+		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there. You also remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux.";
+		continue the action;
 		produce a room description with going spacing conventions;
 	else:
 		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. ";
-		produce a room description with going spacing conventions.
+		produce a room description with going spacing conventions;
+		continue the action.
 
 
 [Flux]
-The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux before the Gate".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. A huge [bold type]rock[roman type] loosely stands at the current's shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
+The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux before the Gate".  The description of Surface Flux_Frizza is "A viscous and turbulent current of blue fluid cuts through the plane. You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux presence in your body, as if your atoms were spinning three times their normal pace. A huge [bold type]rock[roman type] loosely stands at the current's shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
 	After going from the Surface Flux_Frizza:
-		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop.";
+		now the description of the Surface Flux_Frizza is "The main Flux current of the region, wild and agitated at this point. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop.";
 		produce a room description with going spacing conventions.
 		
 			
-The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
+The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "A smooth current of the Flux, it flows like a gentle river. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 	After going from the Surface Flux 2_Frizza:
-		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
+		now the description of the Surface Flux 2_Frizza is "A branch of the Flux, it emerges from under the Flux Gate to the south, appearing soothed and even.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 		produce a room description with going spacing conventions.
 
 [Mountain]
@@ -1447,9 +1449,9 @@ After going from the Upper Gate_Frizza:
 	Instead of going to the Lower Gate_Frizza from the Upper Gate_Frizza, say "They won't let you pass."
 	
 [Bloo City]
-The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], to the Flux behind the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland."
+The Verge_Frizza is north of the Upper Desert_Frizza. The printed name of the Verge_Frizza is "Verge of the Bloo City". The description of the Verge_Frizza is "An averagely sized city extends in front of you. Its cityscape is dominated by an enormous building in the rear part, not resembling any architecture that you have ever seen. Halfway to it there seems to be some sort of city center. The city is surrounded by a foreign sort of fencing, with a gate not far form you.[paragraph break]You can go [bold type]west[roman type], to the Flux beyond the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland."
 After going from the Verge_Frizza:
-		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], to the Flux behind the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland.";
+		now the description of the Verge_Frizza is "The pathway into the alien city. [paragraph break]You can go [bold type]west[roman type], to the Flux beyond the Gate, [bold type]north[roman type], into the city, and [bold type]south[roman type], to the Wasteland.";
 		produce a room description with going spacing conventions.
 	Instead of going to the Central Plaza_Frizza from the Verge_Frizza, say "You can't even say for sure if they will speak to you before killing you. It would be unwise to approach."
 	
@@ -1642,7 +1644,7 @@ Instead of taking the gun for the second time:
 	if the player has the Pure Flux Essence:
 		say "There's no need for weaponry anymore.";
 	else:
-		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity.";
+		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity. Your only chance seem to be the Techies now. You remember having seen industrial shapes in the [bold type]south[roman type].";
 		now BlooSympathy is false;
 		now the player is in the Landing Zone_Frizza;
 		now the Flux Extractor is in the Lower Gate_Frizza;
@@ -1662,16 +1664,25 @@ Instead of taking the gun for the second time:
 The console is unexamined.
 
 Before examining the console for the first time:
-	now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further. Of course, you could also [bold type]wait [roman type] a little longer."
+	if Dunia is in the Lower Gate_Frizza:
+		now the description of the console is "A huge oval table, full of ... nothing, actually. All you see is a reflective surface, into which the operators dunk their hands, emitting small waves. Where they touch the surface, you believe to see tiny, interlinked pulses of blue light, like a neural system, but you can't be sure. [paragraph break]As you study the console, the two operators become aware of you, freezing in their motion and watching you suspiciously.[paragraph break]Anyhow, you could [bold type]examine[roman type] the console further. Of course, you could also [bold type]wait [roman type]a little longer.";
+	else:
+		now the description of the console is "A long oval console. Two Duju stand in front of it, dunking their hands into its liquid surface.";
 
 Before examining the console for the second time:
-	now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further. Of course, you could also [bold type]wait [roman type] a little longer."
+	if Dunia is in the Lower Gate_Frizza:
+		now the description of the console is "After taking a closer look, you make out that the energy of the Operators seems to be induced into the console. You start to see a pattern in the waves and currents of the reflective surface ... it reminds you of the great Flux currents ... [paragraph break]As you continue to glance at the console, one of the operators pulls his hands out of it and stands up from his chair. Obviously you don't make a good impression by standing there, maybe it would be wise to say something or disengage from the console. Still, you could [bold type]examine[roman type] it further. Of course, you could also [bold type]wait [roman type] a little longer.";
+	else:
+		now the description of the console is "A long oval console. Two Duju stand in front of it, dunking their hands into its liquid surface."
 
 Before examining the console for the third time:
-	if the console is unexamined:
-		now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you should [bold type]wait[roman type] Dunia and Du'un to set you free.";
+	if Dunia is in the Lower Gate_Frizza:
+		if the console is unexamined:
+			now the description of the console is "Before you can investigate further, the Operators suddenly burst out, chattering bright metallic sounds all over the hall. Instantly there are guards surrounding you, one of which quickly forces you to your knees and irresistibly renders you immobile with some sort of cuffs. You are carried to one corner of the hall like a very miserable sack of grain. Lying down, relaxing perforce, you should [bold type]wait[roman type] for Dunia and Du'un to set you free.";
+		else:
+			now the description of the console is "You can't make out anything new, the Operators are ridiculously shy.";
 	else:
-		now the description of the console is "You can't make out anything new, the Operators are ridiculously shy."
+		now the description of the console is "A long oval console. Two Duju stand in front of it, dunking their hands into its liquid surface."
 	
 After examining the console for the third time:
 	now the console is examined;
@@ -1720,11 +1731,13 @@ After waiting in the Upper Gate_Frizza for the first time:
 		say "You stand still where you were left. Time passes. However, that seems to be the only thing to change. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
 		say "You lie, waiting, contemplating your choices. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."
+		
 After waiting in the Upper Gate_Frizza for the second time:
 	if Helplesness is false:
 		say "You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return.";
 	else:
 		say "Still you lie, your eyes fixed in position due to the fact that your head is fixed as well.  As if that wasn't enough, your punishers turned you to a rather unexciting corner of the room. You ought to [bold type]wait [roman type]a little longer before Dunia and Du'un return."		
+		
 After waiting in the Upper Gate_Frizza for the third time:
 	if the console is unexamined:
 		now Dunia is in the Upper Gate_Frizza;
@@ -1740,7 +1753,10 @@ After waiting in the Upper Gate_Frizza for the third time:
 	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the [bold type]Extraction[roman type], or about [bold type]help[italic type] in general for that matter.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose. Alright, if you need anything or want to ask me anything: I stay here at the [bold type]Flux Gate[italic type]. Come back to me whenever you want.[paragraph break]";
 	now the player carries the Flux Extractor;
 	now Du'un is in the Lower Gate_Frizza;
-	now BlooSympathy is true.
+	now BlooSympathy is true;
+	now the description of the console is "A long oval console. Two Duju stand in front of it, dunking their hands into its liquid surface."
+	
+
 
 After asking Dunia about a topic listed in the Table of Dunia Responses 1:
 		say "[response entry]".
@@ -1805,6 +1821,8 @@ After asking Dunia about "Gun":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
 			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else if the player has the Iron Bar:
+			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
 		else:
 			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
@@ -1815,6 +1833,8 @@ After asking Dunia about "Rock":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
 			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else if the player has the Iron Bar:
+			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
 		else:
 			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
@@ -1826,6 +1846,8 @@ After asking Dunia about "Pushing":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
 			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+		else if the player has the Iron Bar:
+			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
 		else:
 			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
@@ -1890,7 +1912,7 @@ After extracting:
 				now FluxProximity is false;
 				now the Regulated Flux Essence is in the Flux Extractor;
 			else:
-				say "You thrust your arm over the ledge, despairingly clasping the Flux Extractor, not knowing whether your arm will dematerialize in an instant. The Extractor extends automatically and dips its head into the glowing liquid. You think to hear a beeping sound. It blurs, as your mind dives into the Flux, becomes energy. You perceive magnetic fields, penetrated by some foreign control. You feel the stream, the Flux arranging itself, its symbioses with the planet. You feel the life essence of the Duju, feeding from the Flux. And you feel its core, more powerful than any other source you ever knew, burried deep down in the caverns. Still you have a slim link to your body, but it trembles and shakes heavily. Finally, your hear a tedious, enduring beeping sound. The Flux Extractor is finished, it now carries a sample of the Flux. You force yourself to crawl down the pedestal, your hands feeling like they would disintegrate any moment, their contours growing hazy. With each step you take away from the Flux, your mind and body recover their focus. You drag yourself up the shore and up the cliffs, before collapsing on the rocky soil.[paragraph break]You wake up.[paragraph break]You receive a [bold type]Regulated Flux Essence[roman type].";
+				say "You thrust your arm over the ledge, despairingly clasping the Flux Extractor, not knowing whether your arm will dematerialize in an instant. The Extractor extends automatically and dips its head into the glowing liquid. You think to hear a beeping sound. It blurs, as your mind dives into the Flux, becomes energy. You perceive magnetic fields, penetrated by some foreign control. You feel the stream, the Flux arranging itself, its symbioses with the planet. You feel the life essence of the Duju, feeding from the Flux. And you feel its core, more powerful than any other source you ever knew, burried deep down in the caverns. Still you have a slim link to your body, but it trembles and shakes heavily. Finally, your hear a tedious, enduring beeping sound. The Flux Extractor is finished, it now carries a sample of the Flux. You force yourself to crawl down the pedestal, your hands feeling like they would disintegrate any moment, their contours growing hazy. With each step you take away from the Flux, your mind and body recover their focus. You drag yourself up the shore and up the cliffs, before collapsing on the rocky soil.[paragraph break]You wake up.[paragraph break]You receive a [bold type]Regulated Flux Essence[roman type]. You should now look for the [bold type]Flux before the Gate[roman type], were you will need to extract another sample.";
 				now FluxExperience is true;
 				now FluxProximity is false;
 				now the Regulated Flux Essence is in the Flux Extractor;
@@ -1942,6 +1964,13 @@ Instead of pushing the Monolithic Rock:
 		now the description of the Monolithic Rock is "A huge, slender rock. It now serves as a descent into the Flux. You may [bold type]approach[roman type] it now.";
 		now ToppledRock is true;
 		stop the action;
+	else if the player has the Iron Bar:
+		say "You thrust the bar into the soil under the rock and start levering. Even with the amplified force you need your whole body to move the rock. Finally, it staggers, and with a last effort you make it topple over. The rock slowly tilts and then continues, with a mighty rumble, to drop into the flux, sending huge waves to both sides. You now have a descent into the Flux, you can try to [bold type]approach[roman type] it. However, your Lever now is little more than a bent piece of metal, you leave it on the ground.";
+		remove the Iron Bar from play;
+		now the printed name of the Monolithic Rock is "Toppled Rock";
+		now the description of the Monolithic Rock is "A huge, slender rock. It now serves as a descent into the Flux. You may [bold type]approach[roman type] it now.";
+		now ToppledRock is true;
+		stop the action;
 	else:
 		say "Even if it stands loose, you can't shove it with only your muscles.";
 		stop the action.
@@ -1957,7 +1986,7 @@ After approaching the Unregulated Flux Current:
 					now the Unregulated Flux Essence is in the Flux Extractor;
 					now UnregulatedEssence is true;
 				else:
-					say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type].";
+					say "With little effort you climb down your newfound ramp. As you come closer to the Flux, you feel your body resonating, feeling as if it would prefer to dissolve. Quickly, you extend the Extractor into the Flux and try to keep your fluttering mind together, while hearing the beeping sound. Shorty, you have visions of a brute Duju, clad in plates of thick metal, thorns protruding from the shoulders. Then a lean figure, wrapped in a long black robe, operating some sort of complex device in front of what seems to you like an altar. A penetrating beeping draws you out of your sight. The Extractor is finished. You scramble up to the shore and quickly bring some distance between you and the Flux, your mind and body slowly regaining their place. [paragraph break]You receive an[bold type] Unregulated Flux Essence[roman type]. You should now look for the [bold type]Flux beyond the Gate[roman type], were you will need to extract another sample.";
 					now the Unregulated Flux Essence is in the Flux Extractor;
 					now UnregulatedEssence is true;
 			else:
@@ -2146,6 +2175,23 @@ After asking Trapist about anything:
 		say "[italic type]Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?";
 	if Trapist is asked:
 		continue the action.
+		
+In the Control Tower_Frizza is an Iron Bar. The description of the Iron Bar is "Nothing fancy, but for moving rocks and pushing things it will serve just fine."
+
+Instead of dropping the Iron Bar:
+	say "You may need this.";
+	stop the action.
+		
+After asking Trapist about "Rock":
+	if the player has the Miserable Lever:
+		say "[italic type]Mate it looks like you already have sump'n to help ya, wherever ya got that from. Ya won't need my help for that anymore.";
+	else:
+		say "[italic type]What the heck you want with that rock? Ah, I see, you trying to mine Flux, half Techie is what you are by now. Right, let me help ya.[paragraph break][roman type]He fetches a nearby iron bar and continues to throw it in your direction. You barely catch it.[paragraph break][italic type]Y'all know physics? If ya do, ya'll make this baby work. Good luck.[paragraph break]You receaive an [bold type]Iron Bar[roman type].";
+		now the player has the Iron Bar.
+		
+		
+After asking Trapist about "help":
+	say "[italic type]Ya'll need to get a bit more specific than that."
 		
 After asking Trapist about a topic listed in the Table of Trapist responses:
 	if Trapist is unasked:
