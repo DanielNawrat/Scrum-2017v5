@@ -1,21 +1,874 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-2"/>
+  <activeNode nodeId="node-81"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Tim, Franziska, Kevin, Tobias&#x000A;Release 1 / Serial number 170728 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Tim, Franziska, Kevin, Tobias&#x000A;Release 1 / Serial number 170803 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
       <child nodeId="node-2"/>
+      <child nodeId="node-3"/>
+      <child nodeId="node-5"/>
+      <child nodeId="node-29"/>
+      <child nodeId="node-56"/>
     </children>
   </item>
   <item nodeId="node-2">
     <command xml:space="preserve">helper</command>
-    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - examine what your are carrying&#x000A;&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A;&#x000A;&#x000A;Frizza&#x000A; ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed bold in the text beforehand&#x000A; answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed bold in the text beforehand&#x000A; wait - wait some time, some situations may require this&#x000A; wear (something) - put clothing on&#x000A; take off (something )- take off clothing&#x000A; approach (something)-  try to draw closer to an object, some situations may require this&#x000A; extract - extract a sample from the Flux Current&#x000A;&#x000A;&#x000A;Kaldr&#x00ED;ss&#x000A; open/close (something)&#x000A; unlock/lock (something)&#x000A; push button - pushing a button&#x000A; insert (something) into (something)&#x000A; remove (something) from (something)&#x000A; shove (something) aside - some situations with blocked paths may require this&#x000A; put (something) on (e.g. clothing)&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <result xml:space="preserve">---&#x000A;This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;Basic Commands&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what you are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Sitis&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-24"/>
+      <child nodeId="node-33"/>
+      <child nodeId="node-54"/>
+    </children>
+  </item>
+  <item nodeId="node-24">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">The Wide Desert&#x000A;You've reached the Desert of Sitis. It gives you two things: First, an impression of what whole Sitis looks like - sandy, dry, with some deep stone canyons and huge rocks afar. But although this planet does not seem to be a place to life, the Desert also gives you the chance to discern that you are not alone. There IS life! When you look north, directly in front of you is a long corrugated iron bridge, guiding over one of those ravines. You can not access the bridge, it is blocked with a barbed wire fence, but straight ahead, at the end you see a majestic sandstone palace. In the bridge's middel, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look east from the point you are standing at right now, you see the kind of a rock mine. In the south you recognise a lot of small white houses surrounded by a rampart. It seems like people are living here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-25"/>
+    </children>
+  </item>
+  <item nodeId="node-25">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Your arrival point. The Flat Rock&#x000A;You can see your spaceship here.&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-26"/>
+    </children>
+  </item>
+  <item nodeId="node-26">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-27"/>
+    </children>
+  </item>
+  <item nodeId="node-27">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Your arrival point. The Flat Rock - room&#x000A;    yourself - person&#x000A;        backpack (worn) - player's holdall&#x000A;    Teleportation Stone - Sitis&#x000A;    Teleportation Stone - Gaisetto&#x000A;    Teleportation Stone - Geysiria&#x000A;    Teleportation Stone - Frizza&#x000A;    Teleportation Stone - Kaldr&#x00ED;ss&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-28"/>
+    </children>
+  </item>
+  <item nodeId="node-28">
+    <command xml:space="preserve">showme counter</command>
+    <result xml:space="preserve">There seems to be no such object anywhere in the model world.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-33">
+    <command xml:space="preserve">take gaisetto</command>
+    <result xml:space="preserve">Landingzone&#x000A;You are standing an a clearing. South of you is your spaceship right in front of a cliff. All the other directions you are surrounded by the deep green of the jungle.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-34"/>
+    </children>
+  </item>
+  <item nodeId="node-34">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-35"/>
+    </children>
+  </item>
+  <item nodeId="node-35">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Gaisetto&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-36"/>
+    </children>
+  </item>
+  <item nodeId="node-36">
+    <command xml:space="preserve">take geysiria</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-37"/>
+    </children>
+  </item>
+  <item nodeId="node-37">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Landingzone&#x000A;You are standing an a clearing. South of you is your spaceship right in front of a cliff. All the other directions you are surrounded by the deep green of the jungle.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto and Teleportation Stone - Sitis here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-38"/>
+    </children>
+  </item>
+  <item nodeId="node-38">
+    <command xml:space="preserve">take geysiria</command>
+    <result xml:space="preserve">Spaceship Bridge&#x000A;Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key  Examine this key in order to see if it's the right combination . In order to leave the spaceship, you have to head south.&#x000A;&#x000A;You can see an encryptionkey here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-39"/>
+    </children>
+  </item>
+  <item nodeId="node-39">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Gaisetto&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-40"/>
+    </children>
+  </item>
+  <item nodeId="node-40">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-41"/>
+    </children>
+  </item>
+  <item nodeId="node-41">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Geysiria&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-42"/>
+    </children>
+  </item>
+  <item nodeId="node-42">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Spaceship Bridge&#x000A;Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key  Examine this key in order to see if it's the right combination . In order to leave the spaceship, you have to head south.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and an encryptionkey here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-43"/>
+    </children>
+  </item>
+  <item nodeId="node-43">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-44"/>
+    </children>
+  </item>
+  <item nodeId="node-44">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Spaceship Exit&#x000A;Bye Spaceship. Let's go and have a look around. There's more to this planet than ash clouds, lava and rocky landscape if you use your knowledge and cleverness. On the western side you see massives waves detonating on the shores. You turn around and you see a vastland of volcanoes, mountains and dry land. This must be the vast landscape of Geysiria. First I try to explain the map a little - sorry, I don't know everything, but I think I can give you some hints I know from King Kamehameha. Here are your options, respectively the options I know: On the horizon, in the east, there is your landing zone, where you normally land. You landed a little more west on a steep cliff but you were lucky, the spaceship is still in one piece. Here you can either head north on the Kamehameha Route to the North Shore to hopefully reach the big area where all the infamous geysirs are. Your second option is heading towards the little village which is in the eastern part of the planet. You can explore the region of all the volcanoes here. To this point I don't know much more. Keep me updated and I will try and connect the dots at the next stops.&#x000A;&#x000A;Head east to leave the spaceship.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-45"/>
+    </children>
+  </item>
+  <item nodeId="node-45">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-46"/>
+    </children>
+  </item>
+  <item nodeId="node-46">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Spaceship Bridge&#x000A;Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key  Examine this key in order to see if it's the right combination . In order to leave the spaceship, you have to head south.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and an encryptionkey here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-47"/>
+    </children>
+  </item>
+  <item nodeId="node-47">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-54">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-55"/>
+    </children>
+  </item>
+  <item nodeId="node-55">
+    <command xml:space="preserve">end</command>
+    <result xml:space="preserve">Are you sure you want to quit?</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-3">
+    <command xml:space="preserve">take kaldr&#x00ED;ss</command>
+    <result xml:space="preserve">Spaceship Bridge&#x000A;The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment, including the communication systems, must have been fried and doesn't seem to work anymore.&#x000A;&#x000A;There's only a single flickering light inside the command panel.&#x000A;&#x000A;What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.&#x000A;&#x000A;You can see a command panel (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-4"/>
+    </children>
+  </item>
+  <item nodeId="node-4">
+    <command xml:space="preserve">take frizza</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-5">
+    <command xml:space="preserve">take frizza</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-6"/>
+      <child nodeId="node-9"/>
+    </children>
+  </item>
+  <item nodeId="node-6">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux before the Gate&#x000A;A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux" presence in your body, as if your atoms were spinning three times their normal pace. A huge rock loosely stands at the current's shores.&#x000A;&#x000A;You can go east, back to the Landing Zone, and south, to the Scoop.&#x000A;&#x000A;You can see an Unregulated Flux Current and a Monolithic Rock here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-7"/>
+    </children>
+  </item>
+  <item nodeId="node-7">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Landing Zone&#x000A;Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-8"/>
+    </children>
+  </item>
+  <item nodeId="node-8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Flux before the Gate&#x000A;The main Flux current of the region. A huge rock loosely stands at its shores.&#x000A;&#x000A;You can go east, back to the Landing Zone, and south, to the Scoop.&#x000A;&#x000A;You can see an Unregulated Flux Current and a Monolithic Rock here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-9">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up, at the beginning of which are small pillars - one marked with an insignia.. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can also go west, back to the Landing Zone&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-10"/>
+    </children>
+  </item>
+  <item nodeId="node-10">
+    <command xml:space="preserve">looking around</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-11"/>
+    </children>
+  </item>
+  <item nodeId="node-11">
+    <command xml:space="preserve">look around</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up, at the beginning of which are small pillars - one marked with an insignia.. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can also go west, back to the Landing Zone&#x000A;&#x000A;You can see an Insignia here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-12"/>
+    </children>
+  </item>
+  <item nodeId="node-12">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around. Maybe looking around would reveal whoever is hiding.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-13"/>
+    </children>
+  </item>
+  <item nodeId="node-13">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up, at the beginning of which are small pillars - one marked with an insignia.. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can also go west, back to the Landing Zone&#x000A;&#x000A;You can see Dunia here.&#x000A;&#x000A;You can see an Insignia here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-14"/>
+    </children>
+  </item>
+  <item nodeId="node-14">
+    <command xml:space="preserve">x Dunia</command>
+    <result xml:space="preserve">A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind. You could ask her about everything surrounding you: the Flux, the Duju, the City ...&#x000A;&#x000A;You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your name.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-15"/>
+    </children>
+  </item>
+  <item nodeId="node-15">
+    <command xml:space="preserve">answer Axesto</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the Duju or of the Techies?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-16"/>
+    </children>
+  </item>
+  <item nodeId="node-16">
+    <command xml:space="preserve">answer Duju</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.&#x000A;&#x000A; With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.&#x000A; Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux.&#x000A;&#x000A;Flux Gate&#x000A;&#x000A;As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred meters in front of the entrance your companion turns to you.Try not to look too provoking.&#x000A;&#x000A;You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.&#x000A;Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.&#x000A;&#x000A;Dunia! Who is this? Explain yourself!&#x000A;&#x000A;A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.&#x000A;&#x000A;Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.&#x000A;&#x000A;Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.&#x000A;&#x000A;They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could look around. Of course you could also do as you were told and wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-17"/>
+    </children>
+  </item>
+  <item nodeId="node-17">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Flux Gate&#x000A;A gate of some sort, guarded.&#x000A;&#x000A;You can go east, back to the Wasteland.&#x000A;&#x000A;You can see a Descent, a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-18"/>
+    </children>
+  </item>
+  <item nodeId="node-18">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">They won't let you go until your two companions have returned.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-19"/>
+    </children>
+  </item>
+  <item nodeId="node-19">
+    <command xml:space="preserve">x descent</command>
+    <result xml:space="preserve">A staircase, leading god knows where. Dunia and Du'un disappeared into there.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-20"/>
+    </children>
+  </item>
+  <item nodeId="node-20">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Flux Gate&#x000A;A gate of some sort, guarded.&#x000A;&#x000A;You can go east, back to the Wasteland.&#x000A;&#x000A;You can see a Descent, a console, a weapon's rack (on which is a gun), Duju Operator 1 and Duju Operator 2 here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-21"/>
+    </children>
+  </item>
+  <item nodeId="node-21">
+    <command xml:space="preserve">x gun</command>
+    <result xml:space="preserve">An unfamiliar chunk of metal with a glowing core, you can barely identify it, except for the muzzle. Honestly, you wouldn't even know how to fire it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-22"/>
+    </children>
+  </item>
+  <item nodeId="node-22">
+    <command xml:space="preserve">x weapon</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-23"/>
+    </children>
+  </item>
+  <item nodeId="node-23">
+    <command xml:space="preserve">x rack</command>
+    <result xml:space="preserve">An ugly but pracitcal piece of furniture, made to store weaponry.&#x000A;&#x000A;On the weapon's rack is a gun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-29">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">The Wide Desert&#x000A;You've reached the Desert of Sitis. It gives you two things: First, an impression of what whole Sitis looks like - sandy, dry, with some deep stone canyons and huge rocks afar. But although this planet does not seem to be a place to life, the Desert also gives you the chance to discern that you are not alone. There IS life! When you look north, directly in front of you is a long corrugated iron bridge, guiding over one of those ravines. You can not access the bridge, it is blocked with a barbed wire fence, but straight ahead, at the end you see a majestic sandstone palace. In the bridge's middel, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look east from the point you are standing at right now, you see the kind of a rock mine. In the south you recognise a lot of small white houses surrounded by a rampart. It seems like people are living here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-30"/>
+      <child nodeId="node-32"/>
+    </children>
+  </item>
+  <item nodeId="node-30">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Your arrival point. The Flat Rock&#x000A;You can see your spaceship here.&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-31"/>
+    </children>
+  </item>
+  <item nodeId="node-31">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-32">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Sitis&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-48"/>
+    </children>
+  </item>
+  <item nodeId="node-48">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Your arrival point. The Flat Rock&#x000A;You can see your spaceship here.&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-49"/>
+    </children>
+  </item>
+  <item nodeId="node-49">
+    <command xml:space="preserve">take frizza</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-50"/>
+    </children>
+  </item>
+  <item nodeId="node-50">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Sitis&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-51"/>
+    </children>
+  </item>
+  <item nodeId="node-51">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up, at the beginning of which are small pillars - one marked with an insignia.. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can also go west, back to the Landing Zone&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-52"/>
+    </children>
+  </item>
+  <item nodeId="node-52">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-53"/>
+    </children>
+  </item>
+  <item nodeId="node-53">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A; This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what your are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Frizza&#x000A; ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed bold in the text beforehand&#x000A; answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed bold in the text beforehand&#x000A; wait - wait some time, some situations may require this&#x000A; wear (something) - put clothing on&#x000A; take off (something )- take off clothing&#x000A; approach (something)-  try to draw closer to an object, some situations may require this&#x000A; extract - extract a sample from the Flux Current&#x000A; push (something) - try to push something, if you have a tool it will be used automatically&#x000A;&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-56">
+    <command xml:space="preserve">say thanks</command>
+    <result xml:space="preserve">It is duly appreciated.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-57"/>
+    </children>
+  </item>
+  <item nodeId="node-57">
+    <command xml:space="preserve">take frizza</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-58"/>
+    </children>
+  </item>
+  <item nodeId="node-58">
+    <command xml:space="preserve">x spaceship</command>
+    <result xml:space="preserve">Your spaceship, broken down due to power loss. The clouds in the atmosphere may have sped up the discharge.&#x000A;&#x000A;In the Discharged Spaceship is a Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-59"/>
+    </children>
+  </item>
+  <item nodeId="node-59">
+    <command xml:space="preserve">x power </command>
+    <result xml:space="preserve">Your main generator of the ship. It will need an ample power source to take up work. If you have a power source, you can try to insert it into the power unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-60"/>
+    </children>
+  </item>
+  <item nodeId="node-60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Ascent&#x000A;The mountains are composed of stone in various shades of red and reach far to the sky. In between the cliffs and sheers you see a narrow path winding up, at the beginning of which are small pillars - one marked with an insignia.. There is no clue on where it might lead, but you could find out.&#x000A;&#x000A;You can also go west, back to the Landing Zone&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-61"/>
+    </children>
+  </item>
+  <item nodeId="node-61">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (empty)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-62"/>
+    </children>
+  </item>
+  <item nodeId="node-62">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A;This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;Basic Commands&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what you are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Frizza&#x000A;&#x000A;ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed bold in the text beforehand&#x000A; answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed bold in the text beforehand&#x000A; wait - wait some time, some situations may require this&#x000A; wear (something) - put clothing on&#x000A; take off (something )- take off clothing&#x000A; approach (something)-  try to draw closer to an object, some situations may require this&#x000A; extract - extract a sample from the Flux Current&#x000A; push (something) - try to push something, if you have a tool it will be used automatically&#x000A; insert (something) into (something) or put (something) into (somehting) - insert whatever generates enough power into the power unit&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-63"/>
+    </children>
+  </item>
+  <item nodeId="node-63">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a backpack (being worn)&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-64"/>
+    </children>
+  </item>
+  <item nodeId="node-64">
+    <command xml:space="preserve">put backpack into unit</command>
+    <result xml:space="preserve">(first taking it off)&#x000A;You put the backpack into the Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-65"/>
+    </children>
+  </item>
+  <item nodeId="node-65">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Landing Zone&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-66"/>
+    </children>
+  </item>
+  <item nodeId="node-66">
+    <command xml:space="preserve">insert backpack into unit</command>
+    <result xml:space="preserve">(first taking it off)&#x000A;You put the backpack into the Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-67"/>
+    </children>
+  </item>
+  <item nodeId="node-67">
+    <command xml:space="preserve">helper</command>
+    <result xml:space="preserve">---&#x000A;This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;Basic Commands&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what you are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Frizza&#x000A;&#x000A;ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed bold in the text beforehand&#x000A; answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed bold in the text beforehand&#x000A; wait - wait some time, some situations may require this&#x000A; wear (something) - put clothing on&#x000A; take off (something )- take off clothing&#x000A; approach (something)-  try to draw closer to an object, some situations may require this&#x000A; extract - extract a sample from the Flux Current&#x000A; push (something) - try to push something, if you have a tool it will be used automatically&#x000A; insert (something) into (something) or put (something) into (somehting) - insert whatever generates enough power into the power unit&#x000A;&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-68"/>
+    </children>
+  </item>
+  <item nodeId="node-68">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Ascent&#x000A;The foot of the mountain. &#x000A;&#x000A;A narrow path leads upwards. At the beginning of the steps are small pillars - one marked with an insignia. You can also go west, back to the Landing Zone.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-69"/>
+    </children>
+  </item>
+  <item nodeId="node-69">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">You have the feeling of being watched. You wouldn't want to climb the cliffs if someone is around. Maybe looking around would reveal whoever is hiding.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-70"/>
+    </children>
+  </item>
+  <item nodeId="node-70">
+    <command xml:space="preserve">x dunia</command>
+    <result xml:space="preserve">A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind. You could ask her about everything surrounding you: the Flux, the Duju, the City ...&#x000A;&#x000A;You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your name.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-71"/>
+    </children>
+  </item>
+  <item nodeId="node-71">
+    <command xml:space="preserve">answer Axesto</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the Duju or of the Techies?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-72"/>
+    </children>
+  </item>
+  <item nodeId="node-72">
+    <command xml:space="preserve">answer Duju</command>
+    <result xml:space="preserve">(to Dunia)&#x000A;Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.&#x000A;&#x000A; With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.&#x000A; Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux.&#x000A;&#x000A;Flux Gate&#x000A;&#x000A;As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred meters in front of the entrance your companion turns to you.Try not to look too provoking.&#x000A;&#x000A;You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.&#x000A;Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.&#x000A;&#x000A;Dunia! Who is this? Explain yourself!&#x000A;&#x000A;A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.&#x000A;&#x000A;Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.&#x000A;&#x000A;Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.&#x000A;&#x000A;They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could look around. Of course you could also do as you were told and wait.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-73"/>
+    </children>
+  </item>
+  <item nodeId="node-73">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You stand still where you were left. Time passes. However, that seems to be the only thing to change. You ought to wait a little longer before Dunia and Du'un return.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-74"/>
+    </children>
+  </item>
+  <item nodeId="node-74">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">You pass the time looking closer at your surroundings, but you can't interpret all too much from the metallic alien structures. The architecture somewhat reminds you of the spiritual buildings on your home planet, as for the arching walls and the high ceiling. The only thing you hear is the distant, lamish flow of the Flux and the dull sounds of the two operators at the console. You ought to wait a little longer before Dunia and Du'un return.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-75"/>
+    </children>
+  </item>
+  <item nodeId="node-75">
+    <command xml:space="preserve">ait</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-76"/>
+    </children>
+  </item>
+  <item nodeId="node-76">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Finally you see the two Duju returning from the opening. As they approach, the big one actually looks amazed by your decent behaviour.&#x000A;&#x000A;It seems like you did as you were told. Maybe you don't have no ill intent after all. Indeed - that is exactly what we're going to find out, if you're willing. But you see, we don't want to force anything on you, you are free to leave. But if you are interested in helping us, we would be glad.&#x000A;&#x000A;He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. &#x000A;&#x000A;That is a Flux Extractor, the Techies call them "Scoops". It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and extract two samples of the Flux: one from the current before it passes through this gate, from the Flux before the Gate, and one after it has done so, from the Flux beyond the Gate. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the Extraction, or about help in general for that matter.&#x000A;&#x000A;You receive a Flux Extractor.&#x000A;&#x000A;With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.&#x000A;&#x000A;To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose. Alright, if you need anything or want to ask me anything: I stay here at the Flux Gate. Come back to me whenever you want.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-77"/>
+    </children>
+  </item>
+  <item nodeId="node-77">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Wasteland&#x000A;A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger.&#x000A;&#x000A;You can go west, to the Flux Gate, north, to the edge of the city, and south, back to the Landing Zone.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-78"/>
+    </children>
+  </item>
+  <item nodeId="node-78">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Landing Zone&#x000A;You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the south and to the north. To the east  there is a huge mountain, to the west there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the east, there might be people there.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and a Discharged Spaceship (in which is a Power Unit (in which is a backpack (empty))) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-79"/>
+    </children>
+  </item>
+  <item nodeId="node-79">
+    <command xml:space="preserve">insert extractor into unit</command>
+    <result xml:space="preserve">You put the Flux Extractor into the Power Unit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-80"/>
+    </children>
+  </item>
+  <item nodeId="node-80">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Landing Zone&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-81"/>
+    </children>
+  </item>
+  <item nodeId="node-81">
+    <command xml:space="preserve">insert extractor into spaceship</command>
+    <result xml:space="preserve">That wouldn't be of much use. The only thing that sincerely needs maintenance is the Power Unit.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

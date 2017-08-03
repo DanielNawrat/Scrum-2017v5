@@ -19,43 +19,93 @@ Instead of going to the Anchors, say "There is no way to advance in this directi
 
 [Helper]
 
+A Counter is a number that varies. The Counter is 0.
+
+After going from the Flat Rock_Sitis:
+	now the Counter is 1;
+	produce a room description with going spacing conventions.
+	
+After going from the landingzone_gaisetto:
+	now the Counter is 2;
+	produce a room description with going spacing conventions.
+	
+After entering the spaceship:
+	now the Counter is 2.
+	
+After going from the Spaceship Bridge_Geysiria:
+	now the Counter is 3;
+	produce a room description with going spacing conventions.
+	
+After taking food:
+	now the Counter is 3.
+	
+After going from the Landing Zone_Frizza:
+	now the Counter is 4;
+	produce a room description with going spacing conventions.
+	
+After opening the water dagger hole:
+	now the Counter is 4.
+	
+After going from the Spaceship Bridge_Kaldríss:
+	now the Counter is 5;
+	produce a room description with going spacing conventions.
+	
+After inserting the Power Cell into the Power Unit:
+	now the Counter is 5.
+	
+After inserting the Pure Flux Essence into the Power Unit:
+	now the Counter is 5. 
+
 Helper is nowhere. Helper is scenery.
 
 Understand "Helper" as asking Helper about anything.
 Asking Helper about anything is an action applying to nothing. 
 Carry out asking Helper about anything:
 	now Helper is in the location of the player;
-	say "---[line break][bold type]
-This is the help section, you will get a list of essential commands that you can use in the game.[paragraph break][roman type]
+	say "---[line break][bold type]This is the help section, you will get a list of essential commands that you can use in the game.[roman type]
+
+[bold type]Basic Commands[roman type]
 
 look - shows you the room you are currently in[line break]
 e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room[line break]
 take (something) - take and carry something[line break]
-(i)nventory - examine what your are carrying[line break]
+(i)nventory - show what you are carrying
 
 (e)ast - go east[line break]
 (w)est - go west[line break]
 (s)outh - go south[line break]
-(n)orth - go north[line break]
+(n)orth - go north
 
 save - produce a local save file on your computer[line break]
 restore - load a local save file[line break]
+quit - quit the game[line break][line break]";
+	if the Counter is 0:
+		say "[bold type]Sitis";
+	if the Counter is 1:
+		say "[bold type]Sitis";
+	if the Counter is 2:
+		say "[bold type]Gaisetto";
+	if the Counter is 3:
+		say "[bold type]Geysiria";
+	if the Counter is 4:
+		say "[bold type]Frizza
 
-Frizza[line break]
-ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
-answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
-wait - wait some time, some situations may require this[line break]
-wear (something) -	put clothing on[line break]
-take off (something )-	take off clothing[line break]
-approach (something)- 	try to draw closer to an object, some situations may require this[line break]
-extract -	extract a sample from the Flux Current[line break]
-
-Kaldríss[line break]
-open/close (something)[line break]
-unlock/lock (something)[line break]
-put (something) on (e.g. clothing)[line break]";	
+		[roman type]ask (someone) about (something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
+		answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+		wait - wait some time, some situations may require this[line break]
+		wear (something) -	put clothing on[line break]
+		take off (something )-	take off clothing[line break]
+		approach (something)- 	try to draw closer to an object, some situations may require this[line break]
+		extract -	extract a sample from the Flux Current[line break]
+		push (something) - try to push something, if you have a tool it will be used automatically[line break]
+		insert (something) into (something) or put (something) into (somehting) - insert whatever generates enough power into the power unit[line break]";
+	if the Counter is 5:
+		say "[bold type]Kaldríss[line break]
+		[roman type]open/close (something)[line break]
+		unlock/lock (something)[line break]
+		put (something) on (e.g. clothing)[line break]";	
 	remove Helper from play;
-	say "End of help section[line break]---"
+	say "[line break]End of help section[line break]---"
 
 [End of Helper Section]
 
@@ -1273,7 +1323,8 @@ After opening the water dagger hole:
 	
 	[Bold type]CHAPTER 4 - FRIZZA[Roman type]
 	[paragraph break]Frizza looks like a monstrous black rock, nothing more. Is this really the planet you are supposed to land on? Yes, you have to land on Frizza because your little fusion reactor is working slower than before. It's an old one you got on Fidartis. This planet is not known to produce the best technology. So you better try to land safely on Frizza. This turns out to be an extreme adventure as you end up in a massive thunderstorm. But that's not a problemm for you - you are the most experienced spaceship commander in the whole galaxy. Without any noise you land smoothly on Frizza. Your first impression from many kilometers away are confirmed: it looks very unfriendly and actually uninhabited too. Maybe you should talk to your on-board computer first, there may be a few hints that will help you to explore Frizza. I heard it's supposed to be a planet with a lot of potential. Have fun.";
-	say "Your ship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. [line break]Black planes and sharp cliffs of a dark red shape the landscape. In the [bold type]east [roman type]you perceive a massive rock formation, in the [bold type]west [roman type]you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the [bold type]south [roman type]there seem to be some sort of industrial constructions, far in the [bold type]north [roman type]you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. [line break]Your ship's on the ground, and you are too, barely. Welcome to Frizza."
+	say "Your spaceship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. [line break]Black planes and sharp cliffs of a dark red shape the landscape. In the [bold type]east [roman type]you perceive a massive rock formation, in the [bold type]west [roman type]you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the [bold type]south [roman type]there seem to be some sort of industrial constructions, far in the [bold type]north [roman type]you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. [line break]Your ship's on the ground, and you are too, barely. Welcome to Frizza.";
+	now the player is in the Landing Zone_Frizza.
 
 Figure of Underwater_CaveHeart is the file "exit_geysiria.png".
 	The room-illustration of Underwater_CaveHeart is the Figure of Underwater_CaveHeart.
@@ -1324,11 +1375,9 @@ The Mountains_Frizza is a region. The Ascent_Frizza, Plateau_Frizza and Sanctuar
 The Surface Flux Channel_Frizza is a region. The Surface Flux_Frizza, Surface Flux 2_Frizza, Upper Gate_Frizza and Scoop_Frizza are in the Surface Flux Channel_Frizza.
 The Base_Frizza is a region. The Control Tower_Frizza is in the Base_Frizza.
 The Bloo City_Frizza is a region. The Verge_Frizza, Central Plaza_Frizza and Citadel_Frizza are in the Bloo City_Frizza.
-The Space_Frizza is a region. The Orbit_Frizza is in the Space_Frizza.
+
 
 [Underground Regions]
-The Underground Flux Channel_Frizza is a region. The Lower Gate_Frizza, Underground Flux_Frizza and Underground Works_Frizza are in the Underground Flux Channel_Frizza. 
-The Tunnel System_Frizza is a region. The Tunnels_Frizza and Lower Tunnels_Frizza are in the Tunnel System_Frizza.
 The Flux Core Chamber_Frizza is a region. The Flux Core_Frizza is in the Flux Core Chamber_Frizza.
 
 [--]
@@ -1342,8 +1391,6 @@ Instead of going nowhere from the Bloo City_Frizza, say "Daunting planes and dar
 
 
 [Surface]
-The Orbit_Frizza is above the Landing Zone_Frizza. The printed name of Orbit_Frizza is "Orbit".
-	Instead of going to the Orbit_Frizza, do nothing.
 	
 The Landing Zone_Frizza is a room. The printed name of the Landing Zone_Frizza is "Landing Zone".  The description of Landing Zone_Frizza is "You step out of your ship onto a small square in the middle of nowhere. Your ship's dead and so is the computer. It seems like you ought to explore the environment. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. You think you have seen something, or someone, moving on the mountain to the [bold type]east[roman type], there might be people there." 
 
@@ -1354,14 +1401,14 @@ After going from the Landing Zone_Frizza:
 	else:
 		now the description of the Landing Zone_Frizza is "Your crash site. You can go in all directions. You remeber having seen civilization-like shapes to the [bold type]south [roman type]and to the [bold type]north[roman type]. To the [bold type]east [roman type] there is a huge mountain, to the [bold type]west [roman type]there seems to be a Flux. ";
 		produce a room description with going spacing conventions.
-	Instead of going to the Tunnels_Frizza from the Landing Zone_Frizza, say "After looking around a bit you disover a fairly well hidden hatch. It seems to be open at the moment."
+
 
 [Flux]
 The Surface Flux_Frizza is a room. The Surface Flux_Frizza is west of the Landing Zone_Frizza. The printed name of the Surface Flux_Frizza is "Flux before the Gate".  The description of Surface Flux_Frizza is "A viscous current of blue fluid cuts through the plane.  You need to screen your eyes from the radiating light to not become blinded. Even at this distance you feel the Flux' presence in your body, as if your atoms were spinning three times their normal pace. A huge [bold type]rock[roman type] loosely stands at the current's shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop."
 	After going from the Surface Flux_Frizza:
 		now the description of the Surface Flux_Frizza is "The main Flux current of the region. A huge [bold type]rock[roman type] loosely stands at its shores.[paragraph break]You can go [bold type]east[roman type], back to the Landing Zone, and [bold type]south[roman type], to the Scoop.";
 		produce a room description with going spacing conventions.
-			Instead of going to the Underground Flux_Frizza from the Surface Flux_Frizza, do nothing.
+		
 			
 The Surface Flux 2_Frizza is west of the Verge_Frizza. The printed name of the Surface Flux 2_Frizza is "Flux beyond the Gate".  The description of Surface Flux 2_Frizza is "Another current of the Flux. Even from the distance you feel the pure energy flooding your body. It appears to have a slightly different viscosity than the other Fluxes, maybe it has something to do with the Flux Gate arking above the Flux in the south.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland."
 	After going from the Surface Flux 2_Frizza:
@@ -1413,7 +1460,7 @@ The Citadel_Frizza is north of the Central Plaza_Frizza. The printed name of the
 
 [Lower Region]
 The Lower Desert_Frizza is a room. The Lower Desert_Frizza is south of the Landing Zone_Frizza. The printed name of the Lower Desert_Frizza is "Wasteland". 
-	Instead of going to the Lower Tunnels_Frizza from the Lower Desert_Frizza, do nothing. 
+
 The description of the Lower Desert_Frizza is "A pitiful piece of land. Black sand, red rocks and some sickish looking plants. If you are not looking for something particular there is no need to linger. [paragraph break]You can go [bold type]west[roman type], to the Scoop, and [bold type]north[roman type], back to the Landing Zone."
 	After going from the Lower Desert_Frizza:
 		now the description of the Lower Desert_Frizza is "One of the dreary planes in the region.[paragraph break]You can go [bold type]west[roman type], to the Scoop, and [bold type]north[roman type], back to the Landing Zone.";
@@ -1425,44 +1472,36 @@ After going from the Scoop_Frizza:
 	now the description of the Scoop_Frizza is "The main Flux working of the region.[paragraph break]You can go [bold type]west [roman type], to the Control Tower, [bold type]north[roman type], to the Flux before the Gate, and [bold type]east[roman type], to the Wasteland.";
 	produce a room description with going spacing conventions.
 Instead of going to the Control Tower_Frizza from the Scoop_Frizza, say "There's no way you will get across the scaffold bridge unnoticed, better introduce yourself first."
-Instead of going to the Underground Works_Frizza from the Scoop_Frizza, do nothing.
+
 
 The Control Tower_Frizza is west of the Scoop_Frizza. The printed name of the Control Tower_Frizza is "Control Tower (Settler's Base)".
 
-[Underground]
-[Tunnels]
-The Landing Zone_Frizza is above the Tunnels_Frizza. The printed name of the Tunnels_Frizza is "Tunnels".
 
-The Lower Desert_Frizza is above the Lower Tunnels_Frizza. The Lower Tunnels_Frizza is south of the Tunnels_Frizza. The printed name of the Lower Tunnels_Frizza is "Tunnels".
-
-[Underground Flux]
-The Surface Flux_Frizza is above the Underground Flux_Frizza. The Underground Flux_Frizza is west of the Tunnels_Frizza. The printed name of the Underground Flux_Frizza is "Underground Flux". 
-	Instead of going to the Flux Core_Frizza from the Underground Flux_Frizza, do nothing.
 	
-The Upper Gate_Frizza is above the Lower Gate_Frizza. The Lower Gate_Frizza is north of the Underground Flux_Frizza. The printed name of the Lower Gate_Frizza is "Underground Flux Gate".
+The Upper Gate_Frizza is above the Lower Gate_Frizza. The printed name of the Lower Gate_Frizza is "Underground Flux Gate".
 
-The Scoop_Frizza is above the Underground Works_Frizza. The Underground Works_Frizza is south of the Underground Flux_Frizza and west of the Lower Tunnels_Frizza. The printed name of the Underground Works_Frizza is "Underground Works (Settler's Base)".
+
 
 [Core]
-Above the Flux Core_Frizza is the Underground Flux_Frizza. The printed name of the Flux Core_Frizza is "Flux Core."
+Above the Flux Core_Frizza is the Lower Gate_Frizza. The printed name of the Flux Core_Frizza is "Flux Core."
 
 [---]
 
 [Characters]
-Dunia is a person in the Plateau_Frizza. The printed name of Dunia is "Dunia". The description of Dunia is "A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind."
+Dunia is a person in the Plateau_Frizza. The printed name of Dunia is "Dunia". The description of Dunia is "A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind. You could ask her about everything surrounding you: the Flux, the Duju, the City ..."
 Dunia wears a Sinkan Cloak. The Sinkan Cloak is wearable.
 
 Nox is a person in the Sanctuary_Frizza. The printed name of Nox_Frizza is "Nox".
 
 Kollock is a person in the Citadel_Frizza. The printed name of Kollock_Frizza is "Elder Kollock".
 
-Du'un is a person in the Lower Gate_Frizza. The printed name of Du'un is "Keeper Du'un". The description of Du'un is "A massive build draped with heavy robes. In his left hand he carries an oblong staff, with a glowing ord at the end, that appears to be somewhere between shamanic fetish and technical apparatus. The blue eyes are attentive, especially about you."
+Du'un is a person in the Lower Gate_Frizza. The printed name of Du'un is "Keeper Du'un". The description of Du'un is "A massive build draped with heavy robes. In his left hand he carries an oblong staff, with a glowing ord at the end, that appears to be somewhere between shamanic fetish and technical apparatus. The blue eyes are attentive, especially about you. You could ask him about anything: the Flux, the Core, your Spaceship ... "
 
 Trapist is a person in the Control Tower_Frizza. The printed name of Trapist_Frizza is "Foreman Trapist".
 
 BOT is a person in the Control Tower_Frizza. The printed name of BOT_Frizza is "Central Cybernetic Unit B.O.T.".
 
-Hisbald is a person in the Tunnels_Frizza. The printed name of Hisbald_Frizza is "Hermit Hisbald".
+[Hisbald is a person in the Tunnels_Frizza. The printed name of Hisbald_Frizza is "Hermit Hisbald".]
 
 [---]
 
@@ -1489,17 +1528,18 @@ Include Location Images by Emily Short.
 
 
 	Figure of Frizza is the file "frizza_background_new.png".
+	Figure of Flux is the file "Flux.png".
 	
 	The room-illustration of Landing Zone_Frizza is the Figure of Frizza.
 	The room-illustration of Upper Desert_Frizza is the Figure of Frizza.
 	The room-illustration of Lower Desert_Frizza is the Figure of Frizza.
 	The room-illustration of Scoop_Frizza is the Figure of Frizza.
-	The room-illustration of Surface Flux_Frizza is the Figure of Frizza.
-	The room-illustration of Upper Gate_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux_Frizza is the Figure of Flux.
+	The room-illustration of Upper Gate_Frizza is the Figure of Flux.
 	The room-illustration of Verge_Frizza is the Figure of Frizza.
-	The room-illustration of Surface Flux 2_Frizza is the Figure of Frizza.
+	The room-illustration of Surface Flux 2_Frizza is the Figure of Flux.
 	The room-illustration of Ascent_Frizza is the Figure of Frizza.
-	The room-illustration of Flux Core_Frizza is the Figure of Frizza.
+	The room-illustration of Flux Core_Frizza is the Figure of Flux.
 	
 	
 [--]
@@ -1555,12 +1595,14 @@ After answering Dunia that "Axesto":
 [Duju]
 After answering Dunia that "Duju" for the first time:
 	if Dunia is in the Ascent_Frizza and BlooSympathy is true:
-		say "[italic type]Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.[line break][line break][roman type] With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.[line break] Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux. As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred metes in front of the entrance your companion turns to you. [line break][line break][italic type]Try not to look too provoking.[line break][line break][roman type]You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.";
-		move the player to the Upper Gate_Frizza;
+		say "[italic type]Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.[line break][line break][roman type] With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.[line break] Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux.";
+		now the description of the Upper Gate_Frizza is "";
+		now the player is in the Upper Gate_Frizza;
+		say "[line break]As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred meters in front of the entrance your companion turns to you.[italic type]Try not to look too provoking.[line break][line break][roman type]You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.";
 		now Dunia is in the Upper Gate_Frizza;
 		now Du'un is in the Upper Gate_Frizza;
 		now the printed name of Dunia is "Dunia";
-		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type] They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
+		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type]They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
 		now Dunia is in the Lower Gate_Frizza;
 		now Du'un is in the Lower Gate_Frizza;
 		now Duju Operator 2 is in the Upper Gate_Frizza;
@@ -1570,8 +1612,12 @@ After answering Dunia that "Duju" for the first time:
 		now the gun is on the weapon's rack;
 		now the console is in the Upper Gate_Frizza;
 		now BlooSympathy is false;
+		now a Descent is in the Upper Gate_Frizza;
+		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 	else:
 		say "[italic type]Begone with you! I don't want anything to do with that!"
+
+The description of the Descent is "A staircase, leading god knows where. Dunia and Du'un disappeared into there."
 		
 Instead of going east from the Upper Gate_Frizza:
 	if Dunia is in the Lower Gate_Frizza:
@@ -1582,8 +1628,8 @@ Instead of going east from the Upper Gate_Frizza:
 		
 A console and a weapon's rack are nowhere.
 
-The description of the weapon's rack is "An ugly but pracitcal piece of furniture, made to store weaponry."
-A gun is on the weapon's rack. The description of the gun is "An unfamiliar chunk of metal with a glowing core, you can barely identify it, except for the muzzle. Honestly, you wouldn't even know how to fire it."
+The description of the weapon's rack is "An ugly but practical piece of furniture, made to store weaponry."
+A gun is on the weapon's rack. The description of the gun is "An unfamiliar chunk of metal with a glowing core, you can barely identify it, except for the muzzle. It looks like it has a lot of power to it, but honestly, you wouldn't even know how to fire it. Of course, you could try to ask [bold type]Dunia[roman type] about it."
 Duju Operator 1 and Duju Operator 2 are persons in the Lower Gate_Frizza. The description of Duju Operator 1 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet." The description of Duju Operator 2 is "They seem very focussed. Their bodies pulse with light - something you haven't seen with the other types yet."
 Instead of taking the console, say "It's huge. Besides, you don't even dare touch it."
 Instead of taking the weapon's rack, say "That would be rather unpractical to carry."
@@ -1691,7 +1737,7 @@ After waiting in the Upper Gate_Frizza for the third time:
 		now Du'un is in the Upper Gate_Frizza;
 		say "Finally you hear steps approaching and a booming laughter.[paragraph break][italic type]A little snoopy, are we? Well, not the worst of traits. Hold still.[paragraph break][roman type]You hear clattering and feel your mobility returning. Stiffly you get up and see the two Duju standing before you. You think you recognize a bit of amusement in the eyes of the bigger one.[paragraph break][italic type]Don't worry, our guards are very cautious, and our Operators even more so, I am certain you meant no harm, if you would have, you wouldn't be here any more.[paragraph break]";
 		now Helplesness is false;
-	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the [bold type]Extraction[roman type], or about [bold type]help[italic type] in general for that matter.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose.[paragraph break]";
+	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the [bold type]Extraction[roman type], or about [bold type]help[italic type] in general for that matter.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose. Alright, if you need anything or want to ask me anything: I stay here at the [bold type]Flux Gate[italic type]. Come back to me whenever you want.[paragraph break]";
 	now the player carries the Flux Extractor;
 	now Du'un is in the Lower Gate_Frizza;
 	now BlooSympathy is true.
@@ -1711,6 +1757,10 @@ Topic	Response
 "Orb"	"[if Dunia is in the Flux Core_Frizza][italic type]Pulsing, pumping, central in a sheltered place - does that remind you of something? Yes, it is exactly that.[paragraph break]"
 "Cavern"	"[if Dunia is in the Flux Core_Frizza][italic type]Honestly, I don't know where it came from or who built it. Our belief says we originated in this lake down there, could be absurd enough to be true, if you ask me.  All that I really know is to not let someone down here we don't trust ... or can't control.[paragraph break]"
 "Sinkan Cloak"	"[italic type]You wouldn't want to know where this is from. The beasts that work up such a skin are other people's nightmares."
+"City"	"[italic type]Our only settlement in this area. We have everything there - housing, armory, government ... it is an illustrious city, but no place for beings other than Duju I'm afraid."
+"Discharged Spaceship" 	"[italic type]I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours."
+"Spaceship"	"[italic type]I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours."
+
 
 
 After asking Dunia about "Flux Extractor":
@@ -1749,7 +1799,7 @@ After asking Dunia about "Help":
 After putting on the Sinkan Cloak:
 	now CloakWearing is true.
 	
-A Miserable Lever is in the Underground Flux_Frizza. The description of it is "Really not that glamourous, but it will serve."
+A Miserable Lever is in the Lower Gate_Frizza. The description of it is "Really not that glamourous, but it will serve."
 
 After asking Dunia about "Gun":
 	if the Monolithic Rock is examined:
@@ -1804,9 +1854,19 @@ Before examining the Flux Current:
 Approaching is an action applying to one visible thing.
 Understand "approach [something]" as approaching.
 
+Saying thanks is an action applying to nothing.
+Understand "say thanks" as saying thanks.
+
+After saying thanks:
+	say "It is duly appreciated."
+
+Understand "look around" as looking.
+Understand "end" as quitting the game.
+
 Extracting is an action applying to one visible thing.
 Understand "extract sample from [Regulated Flux Current]" as extracting. 
 Understand "extract sample from [Unregulated Flux Current]" as extracting. 
+
 
 After approaching the Flux Current:
 	if the player wears the Sinkan Cloak:
@@ -1962,10 +2022,10 @@ After asking Dunia about "the Flux Essences":
 Instead of going up from the Flux Core_Frizza:
 	say "You wouldn't want to go up without the Duju, who knows what awaits you."
 	
-The description of the Flux Core_Frizza is "A huge cavern with a Flux lake at its bottom and a spectacular orb flowing midair, emitting Flux waves. You can't see the tunnel from which you came from. In the middle of the plateau is a small lake, sparkling with a pure sheen. " 
+The description of the Flux Core_Frizza is "A huge cavern with a Flux lake at its bottom and a spectacular orb flowing midair, emitting Flux waves. You can't see the tunnel from which you came from. In the middle of the plateau is a small pool, sparkling with a pure sheen. " 
 
 [Energy Orb is an object in the Flux Core_Frizza.]
-The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is fixed in place. The description of it is "A small bluish lake, its surface entirely still, sparkling with a pure sheen. You can [bold type]put [roman type]the Essences into it."
+The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is fixed in place. The description of it is "A small bluish pool, its surface entirely still, sparkling with a pure sheen. You can [bold type]put [roman type]the Essences into it."
 
 The Pure Flux Essence is in the Sanctuary_Frizza.
 
@@ -1982,6 +2042,10 @@ Topic	Response
 "Duju"	"[italic type]My people, and the most important thing on this planet - speaking as the Keeper. The Flux is us, you know that, thus I guard the Flux like I guard my very own flesh and blood.[paragraph break]"
 "Orb"	"[italic type]Can you imagine the power of a sun? It is fathomless, it is the purest energy. This Orb above - it is like that. And like every sun enlivens the planets around it, so does the Orb on a smaller scale. Frizza - as it is commonly called - is an organism, and the Orbs are its hearts.[paragraph break]"
 "Cavern"	"[italic type]It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.[paragraph break]"
+"Core"	"[italic type]It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.[paragraph break]"
+"City"	"[italic type]Our beloved settlement. We established it long time ago and it has flourished since. Everything that relates to us happens there, and part our task here is that things in the City still keep working.[paragraph break]"
+"Discharged Spaceship"	"[italic type]No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon."
+"Spaceship"	"[italic type]No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon."
 
 After asking Dunia about "Essence Pool":
 	say "[italic type]Now that is something quite particular. However, Du'un is far more suited to tell you about it."
@@ -2028,7 +2092,7 @@ The Discharged Spaceship is inside the Landing Zone_Frizza. The description of t
 Instead of inserting anything into the Discharged Spaceship:
 	say "That wouldn't be of much use. The only thing that sincerely needs maintenance is the [bold type]Power Unit[roman type]."
 
-The Power Unit is a container inside the Discharged Spaceship. The Discharged Spaceship is fixed in place.
+The Power Unit is a container inside the Discharged Spaceship. The Discharged Spaceship is fixed in place. The description of the Power Unit is "Your main generator of the ship. It will need an ample power source to take up work. If you have a power source, you can try to [bold type]insert it into the power unit[roman type]."
 Instead of taking the Power Unit:
 	say "You would have to disassemble it, but you don't know how that would help you."
 
@@ -2038,19 +2102,20 @@ Instead of inserting a thing into the Power Unit:
 	if the thing is the Power Cell:
 		continue the action;
 	else:
-		say "That wouldn't generate much energy. You need a real power source."
+		say "That wouldn't generate much energy. You need a real power source.";
+		stop the action.
 
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Pure Flux Essence from play.
-	[now the player is in the Spaceship Bridge_Kaldríss.]
+	now the player is in the Spaceship Bridge_Kaldríss.
 	
 
 After inserting the Power Cell into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	[remove the Power Cell from play;
-	now the player is in the Spaceship Bridge_Kaldríss.]
+	remove the Power Cell from play;
+	now the player is in the Spaceship Bridge_Kaldríss.
 	
 [Techie]
 
@@ -2059,7 +2124,7 @@ After answering Dunia that "Techies" for the first time:
 		say "[italic type]Then begone with you! I don't want anything to do with that!";
 		now BlooSympathy is false.
 	
-The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux. He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him."
+The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux. He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, the Scoop ..."
 
 A person can be friendly or neutral. Trapist is neutral. A person can be unasked or asked. Trapist is unasked.
 A Power Cell is in the Control Tower_Frizza. The description of the Power Cell is "Two solid columns of dark metal, welded together and supplied with little blue lines that indicate their power level. They're beastly heavy. On their backside you see the words [italic type]Fluxus Corp[roman type] impressed into the metal."
@@ -2072,7 +2137,7 @@ After approaching the Cabin:
 	now the description of the Cabin is "A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette."
 	
 After answering Trapist that "Axesto" for the first time:
-	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.[paragraph break][roman type]He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him.";
+	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.[paragraph break][roman type]He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, the Scoop ...";
 	now Trapist is asked;
 	now Trapist is friendly.
 
@@ -2098,6 +2163,8 @@ Topic	Response
 "Scoop"	"[italic type]That's our main source of the Flux right here. We established it a couple decades ago - Duju folk were okay with it back then. Things have changed though.[paragraph break]"
 "Cabin"	"[italic type]Oh my, you must have quite a bore if you want about that miserable hut. I'm here for the bureaucracy shenanigans, so that's what's all the paperwork about. I'll fall asleep though if you ask about it further.[paragraph break]"
 "Du'un"	"[italic type]That's that spiritual leader of theirs, right? Never had much to do with him, 'though he seems like the type ya can talk to."
+"City"	"[italic type]Seems like ya saw the Bloo settlement right up north. That's what ya could call their 'capitol' in these lands, that Kollock guy sits there I guess. They won't let you in though, except in chains."
+"Bridge"	"[italic type]That one leads to the Control Tower. Lots of high types and big brains in there, part of which never saw a Flux. Anyway, biggest piece of work is done by the A.I. - that's who controls our little mining friends. Wouldn't advise ya to go over there, all ya need ya'll get from me."
 
 After asking Trapist about "Discharged Spaceship":
 	if Trapist is friendly:
@@ -2175,8 +2242,6 @@ The room-illustration of Yundar's Cave is the Figure of Spaceship Bridge_Kaldrí
 		
 
 [Finding a way off the space ship]
-
-Axesto is a person. The Player is Axesto.
 
 [Global Error Message]
 [Items]
