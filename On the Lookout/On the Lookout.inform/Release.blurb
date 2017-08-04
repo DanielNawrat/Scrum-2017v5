@@ -10,7 +10,7 @@ release to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the L
 
 ! Blorb instructions
 
-storyfile leafname "On the Lookout.gblorb"
+storyfile leafname "Axesto's Journey.gblorb"
 storyfile "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
 ifiction "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
 cover "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
@@ -57,22 +57,22 @@ picture 38 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the L
 placeholder [IFID] = "6FBBE230-0EF6-429B-A3C2-DBCE746D1D49"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2017"
-placeholder [TITLE] = "On the Lookout"
-placeholder [AUTHOR] = "Daniel, Tim, Franziska, Kevin, Tobias"
-placeholder [BLURB] = "A work of interactive fiction."
+placeholder [TITLE] = "Axesto's Journey"
+placeholder [AUTHOR] = "Daniel Nawrat, Tim Schmude, Franziska Kirchner, Kevin Koch, Tobias Gaschler"
+placeholder [BLURB] = "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process."
 
 ! Other material to release
 
 
 ! Website instructions
 
-placeholder [ENCODEDSTORYFILE] = "On the Lookout.gblorb.js"
+placeholder [ENCODEDSTORYFILE] = "Axesto's Journey.gblorb.js"
 template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
 template path "C:\Users\Tim\Documents\Inform\Templates"
 template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
 placeholder [INTERPRETERSCRIPTS] = " "
 interpreter "Quixe" "g"
-base64 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
+base64 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\Axesto's Journey.gblorb.js"
 
 ! Website instructions
 
@@ -81,7 +81,7 @@ template path "C:\Users\Tim\Documents\Inform\Templates"
 template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
 css
 website "Standard"
-status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line1"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||

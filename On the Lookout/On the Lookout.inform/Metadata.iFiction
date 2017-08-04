@@ -6,18 +6,19 @@
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>On the Lookout</title>
-            <author>Daniel, Tim, Franziska, Kevin, Tobias</author>
-            <headline>An Interactive Fiction</headline>
-            <genre>Fiction</genre>
+            <title>Axesto's Journey</title>
+            <author>Daniel Nawrat, Tim Schmude, Franziska Kirchner, Kevin Koch, Tobias Gaschler</author>
+            <headline>A Space Quest</headline>
+            <genre>Science Fiction</genre>
             <firstpublished>2017</firstpublished>
+            <description>Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
         <cover>
             <format>png</format>
-            <height>248</height>
-            <width>385</width>
+            <height>242</height>
+            <width>212</width>
             <description>The cover art.</description>
         </cover>
         <releases>

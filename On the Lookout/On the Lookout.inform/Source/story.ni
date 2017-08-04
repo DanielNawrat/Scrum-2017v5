@@ -1,6 +1,12 @@
-"On the Lookout" by Daniel, Tim, Franziska, Kevin, Tobias
-
 Release along with a website and an interpreter and cover art.
+
+The story title is "Axesto's Journey".
+The story headline is "A Space Quest".
+The story author is "Daniel, Tim, Franziska, Kevin, Tobias".
+The story genre is "Science Fiction".
+The release number is 1.
+The story description is "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process."
+The story creation year is 2017. 
 
 [Anchor rooms Testsection]
 
