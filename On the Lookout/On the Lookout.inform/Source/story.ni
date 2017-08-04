@@ -29,32 +29,32 @@ After going from the landingzone_gaisetto:
 	now the Counter is 2;
 	produce a room description with going spacing conventions.
 	
-After entering the spaceship:
-	now the Counter is 2.
+[After entering the spaceship:
+	now the Counter is 2.]
 	
 After going from the Spaceship Bridge_Geysiria:
 	now the Counter is 3;
 	produce a room description with going spacing conventions.
 	
-After taking food:
-	now the Counter is 3.
+[After taking food:
+	now the Counter is 3.]
 	
 After going from the Landing Zone_Frizza:
 	now the Counter is 4;
 	produce a room description with going spacing conventions.
 	
-After opening the water dagger hole:
-	now the Counter is 4.
+[After opening the water dagger hole:
+	now the Counter is 4.]
 	
 After going from the Spaceship Bridge_Kaldríss:
 	now the Counter is 5;
 	produce a room description with going spacing conventions.
 	
-After inserting the Power Cell into the Power Unit:
+[After inserting the Power Cell into the Power Unit:
 	now the Counter is 5.
 	
 After inserting the Pure Flux Essence into the Power Unit:
-	now the Counter is 5. 
+	now the Counter is 5. ]
 
 Helper is nowhere. Helper is scenery.
 
@@ -447,7 +447,8 @@ Understand "enter spaceship" as entering spaceship.
 After entering spaceship:
 	say "You enter your spaceship. The engine starts. This journey goes on.[paragraph break]";
 	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But speaking of survival: you will need food to survive, and that's depleting quite fast. You will need to approach the nearest planet: a green ball, seeming like it could contain food. You start the landing but soon have problems with the engine. After some jolts and blows, you land. Hell that was harsh. Thanks God you landed safely on this clearing right next to the cliff. Only some meters besides and your Spaceship would have been shuttered into a thousand pieces. Hopeful all this effort isn’t for nothing at all and I will find some food here. You look around. South of you is the spaceship in front of the cliff. All the other directions you see a jungle.";
-	now the player is in the landingzone_gaisetto.
+	now the player is in the landingzone_gaisetto;
+	now the Counter is 2.
 	
 	
 [Story endet hier, zumindest auf Sitis]
@@ -843,8 +844,9 @@ After push the chungusimba :
 
 After taking food:
 	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky. The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
-	move player to landingzone_gaisetto;
-	remove battlestaff from play.
+	move player to Spaceship Bridge_Geysiria;
+	remove battlestaff from play;
+	now the Counter is 3.
 
 
 
@@ -1324,7 +1326,8 @@ After opening the water dagger hole:
 	[Bold type]CHAPTER 4 - FRIZZA[Roman type]
 	[paragraph break]Frizza looks like a monstrous black rock, nothing more. Is this really the planet you are supposed to land on? Yes, you have to land on Frizza because your little fusion reactor is working slower than before. It's an old one you got on Fidartis. This planet is not known to produce the best technology. So you better try to land safely on Frizza. This turns out to be an extreme adventure as you end up in a massive thunderstorm. But that's not a problemm for you - you are the most experienced spaceship commander in the whole galaxy. Without any noise you land smoothly on Frizza. Your first impression from many kilometers away are confirmed: it looks very unfriendly and actually uninhabited too. Maybe you should talk to your on-board computer first, there may be a few hints that will help you to explore Frizza. I heard it's supposed to be a planet with a lot of potential. Have fun.";
 	say "Your spaceship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. [line break]Black planes and sharp cliffs of a dark red shape the landscape. In the [bold type]east [roman type]you perceive a massive rock formation, in the [bold type]west [roman type]you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the [bold type]south [roman type]there seem to be some sort of industrial constructions, far in the [bold type]north [roman type]you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. [line break]Your ship's on the ground, and you are too, barely. Welcome to Frizza.";
-	now the player is in the Landing Zone_Frizza.
+	now the player is in the Landing Zone_Frizza;
+	now the Counter is 4.
 
 Figure of Underwater_CaveHeart is the file "exit_geysiria.png".
 	The room-illustration of Underwater_CaveHeart is the Figure of Underwater_CaveHeart.
@@ -1490,20 +1493,20 @@ Above the Flux Core_Frizza is the Lower Gate_Frizza. The printed name of the Flu
 [---]
 
 [Characters]
-Dunia is a person in the Plateau_Frizza. The printed name of Dunia is "Dunia". The description of Dunia is "A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind. You could ask her about everything surrounding you: the Flux, the Duju, the City ..."
+Dunia is a person in the Plateau_Frizza. The printed name of Dunia is "Dunia". The description of Dunia is "A lean but athletic figure, wrapped by several layers of what looks like tough leather. In a small gap of her hood you can see glinting eyes that reveal a sharp mind. You could ask her about everything surrounding you: the Flux, the Duju, the City ... for a list of all topics, 'ask Dunia about topics'."
 Dunia wears a Sinkan Cloak. The Sinkan Cloak is wearable.
 
-Nox is a person in the Sanctuary_Frizza. The printed name of Nox_Frizza is "Nox".
+[Nox is a person in the Sanctuary_Frizza. The printed name of Nox_Frizza is "Nox".
 
-Kollock is a person in the Citadel_Frizza. The printed name of Kollock_Frizza is "Elder Kollock".
+Kollock is a person in the Citadel_Frizza. The printed name of Kollock_Frizza is "Elder Kollock".]
 
-Du'un is a person in the Lower Gate_Frizza. The printed name of Du'un is "Keeper Du'un". The description of Du'un is "A massive build draped with heavy robes. In his left hand he carries an oblong staff, with a glowing ord at the end, that appears to be somewhere between shamanic fetish and technical apparatus. The blue eyes are attentive, especially about you. You could ask him about anything: the Flux, the Core, your Spaceship ... "
+Du'un is a person in the Lower Gate_Frizza. The printed name of Du'un is "Keeper Du'un". The description of Du'un is "A massive build draped with heavy robes. In his left hand he carries an oblong staff, with a glowing ord at the end, that appears to be somewhere between shamanic fetish and technical apparatus. The blue eyes are attentive, especially about you. You could ask him about anything: Frizza, the Core, your Spaceship ... for a list of all topics, 'ask Du'un about topics'."
 
 Trapist is a person in the Control Tower_Frizza. The printed name of Trapist_Frizza is "Foreman Trapist".
 
-BOT is a person in the Control Tower_Frizza. The printed name of BOT_Frizza is "Central Cybernetic Unit B.O.T.".
+[BOT is a person in the Control Tower_Frizza. The printed name of BOT_Frizza is "Central Cybernetic Unit B.O.T.".
 
-[Hisbald is a person in the Tunnels_Frizza. The printed name of Hisbald_Frizza is "Hermit Hisbald".]
+Hisbald is a person in the Tunnels_Frizza. The printed name of Hisbald_Frizza is "Hermit Hisbald".]
 
 [---]
 
@@ -1569,10 +1572,10 @@ Instead of looking:
 After asking Dunia about anything:
 	if Dunia is in the Ascent_Frizza:
 		if BlooSympathy is true:
-			say "[if we have not examined Dunia][italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].[else if NameAnswerD is false][italic type]Answer my question first. What is your [bold type]name[italic type]?[else if NameAnswerD is true][italic type]There's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?[end if]";
+			say "[if we have not examined Dunia][italic type]'You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type]'.[else if NameAnswerD is false][italic type]'Answer my question first. What is your [bold type]name[italic type]?'[else if NameAnswerD is true][italic type]'There's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?'[end if]";
 			now ConcealedDunia is false;
 		if BlooSympathy is false:
-			say "[italic type]Begone with you! I don't want anything to do with that!";
+			say "[italic type]'Begone with you! I don't want anything to do with that!'";
 	else:
 		continue the action.
 		
@@ -1580,7 +1583,7 @@ After asking Dunia about anything:
 After examining Dunia for the first time:
 	if Dunia is in the Ascent_Frizza:
 		if ConcealedDunia is true:
-			say "[italic type]You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].";
+			say "[italic type]'You are painfully near to trespass holy ground, stranger. I would advise against it. Who are you, anyway? You don't look like a Techie. Tell me your [bold type]name[roman type].'";
 			now ConcealedDunia is false.
 		
 NameAnswerD is a truth state that varies. NameAnswerD is false. 	
@@ -1588,23 +1591,23 @@ NameAnswerD is a truth state that varies. NameAnswerD is false.
 After answering Dunia that "Axesto":
 	 if Dunia is in the Ascent_Frizza:
 		if BlooSympathy is true:
-			say "[italic type]What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?";
+			say "[italic type]'What a strange name. It doesn't matter anyway - there's only one thing I need to know: are you on the side of the [bold type]Duju [roman type]or of the[bold type] Techies[roman type]?'";
 			now NameAnswerD is true;
 		else:
-			say "[italic type]Begone with you! I don't want anything to do with that!"
+			say "[italic type]'Begone with you! I don't want anything to do with that!'"
 			
 
 [Duju]
 After answering Dunia that "Duju" for the first time:
 	if Dunia is in the Ascent_Frizza and BlooSympathy is true:
-		say "[italic type]Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.[line break][line break][roman type] With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.[line break] Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux.";
+		say "[italic type]'Well then, that's not a bad way to start. Thinking about it - an outsider might be what we need. I'll introduce you to someone, and that is not an invitation.'[line break][line break][roman type] With seemingly little effort she climbs down the cliffs to your level, before insistently inviting you to come with her.[line break] Both of you walk through the scraggy landscape, her leading the way with distinct commands. Slowly you approach an archlike structure, close to one branch of the Flux.";
 		now the description of the Upper Gate_Frizza is "";
 		now the player is in the Upper Gate_Frizza;
-		say "[line break]As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred meters in front of the entrance your companion turns to you.[italic type]Try not to look too provoking.[line break][line break][roman type]You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.";
+		say "[line break]As you get nearer you perceive a couple of bulky shapes, guarding the entrance to the structure. Some hundred meters in front of the entrance your companion turns to you.[italic type]'Try not to look too provoking.'[line break][line break][roman type]You know why while passing the guards: each and every one of them gazes at you. In consideration of the thick armour plates, the rather oversized guns and their radiating blue glow you refrain from making any quick motions.";
 		now Dunia is in the Upper Gate_Frizza;
 		now Du'un is in the Upper Gate_Frizza;
 		now the printed name of Dunia is "Dunia";
-		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.[line break][line break][italic type]Dunia! Who is this? Explain yourself![line break][line break]A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.[line break][line break][roman type]Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.[line break][line break][italic type]Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.[line break][line break][roman type]They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
+		say "Inside you find yourself in the midst of a small-sized hall, that doesn't appear to justify any of the expenditure you just encountered. In the back you spot an opening and a staircase, leading downwards. To the left there is a full board of controls and two figures unhastily operating them. You can't look around any more, as you are approached quickly by an impressively sized Duju, already bellowing words in your direction with a booming voice.[line break][line break][italic type]'Dunia! Who is this? Explain yourself!'[line break][line break]'A guest of sorts. He stumbled about the Ascent when I found him. I don't think he's a Techie, at least he has slightly better manners and he keeps his voice down to a sensible level when talking. Besides, I thought about his use in regard to certain issues, due to his undujulike appearance.'[line break][line break][roman type]Both eyeball you thoroughly for what seems like hours. Eventually, the massive Duju makes a quick motion towards Dunia, indicating her to follow him. He shoots a last glance at you, accompanied by a warning.[line break][line break][italic type]'Don't let yourself be found sniffing around somewhere, it would not contribute to your wellbeing.'[line break][line break][roman type]They march off, disappearing into the opening at the end of the hall. You are not guarded, it seems like you could [bold type]look [roman type]around. Of course you could also do as you were told and [bold type]wait[roman type].";
 		now Dunia is in the Lower Gate_Frizza;
 		now Du'un is in the Lower Gate_Frizza;
 		now Duju Operator 2 is in the Upper Gate_Frizza;
@@ -1617,7 +1620,7 @@ After answering Dunia that "Duju" for the first time:
 		now a Descent is in the Upper Gate_Frizza;
 		now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 	else:
-		say "[italic type]Begone with you! I don't want anything to do with that!"
+		say "[italic type]'Begone with you! I don't want anything to do with that!'"
 
 The description of the Descent is "A staircase, leading god knows where. Dunia and Du'un disappeared into there."
 		
@@ -1644,7 +1647,7 @@ Instead of taking the gun for the second time:
 	if the player has the Pure Flux Essence:
 		say "There's no need for weaponry anymore.";
 	else:
-		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break] For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity. Your only chance seem to be the Techies now. You remember having seen industrial shapes in the [bold type]south[roman type].";
+		say "Instantly you hear shouts and calls behind you. Before even having the chance to turn, you are brutally knocked over and knocked unconscious by a heavy blow. [line break][line break]For a long time you seem to float through thick dark space, sometimes you feel an edge of something metal painfully thrust into your side. As you awake you find yourself in a small chamber with a sterile atmosphere. Three walls are of blank metal with blue veins in them, the fourth is vitreous and reveals a spectacular view: a vast plaza with mingling crowds of glowing shapes, surrounded by exotic buildings made out of crystal and white metal, transportation vehicles of no known origin and static guards, as heavily armed as the ones you saw before - and all radiating a constant bluish sheen like in a dream. However, as much as you see, as little you hear. The chamber seems to be soundproof. The impressions are overwhelming, you feel the exhaustion coming back and fall asleep where you lie.[paragraph break]The next that you awake, you find yourself in the dust. Beside you sits your spaceship, discharged as ever. It seems that they brought you back to the Landing Zone and left you here, both the Extractor and the cloak are gone. Pity. Your only chance seem to be the Techies now. You remember having seen their industrial shapes in the [bold type]south[roman type].";
 		now BlooSympathy is false;
 		now the player is in the Landing Zone_Frizza;
 		now the Flux Extractor is in the Lower Gate_Frizza;
@@ -1744,13 +1747,13 @@ After waiting in the Upper Gate_Frizza for the third time:
 		now Du'un is in the Upper Gate_Frizza;
 		now the console is examined;
 		now Du'un carries the Flux Extractor;
-		say "Finally you see the two Duju returning from the opening. As they approach, the big one actually looks amazed by your decent behaviour.[line break][line break][italic type]It seems like you did as you were told. Maybe you don't have no ill intent after all. Indeed - that is exactly what we're going to find out, if you're willing. But you see, we don't want to force anything on you, you are free to leave. But if you are interested in helping [italic type]us, we would be glad.[paragraph break]";
+		say "Finally you see the two Duju returning from the opening. As they approach, the big one actually looks amazed by your decent behaviour.[line break][line break][italic type]'It seems like you did as you were told. Maybe you don't have no ill intent after all. Indeed - that is exactly what we're going to find out, if you're willing. But you see, we don't want to force anything on you, you are free to leave. But if you are interested in helping [italic type]us, we would be glad.[paragraph break]'";
 	else:
 		now Dunia is in the Upper Gate_Frizza;
 		now Du'un is in the Upper Gate_Frizza;
-		say "Finally you hear steps approaching and a booming laughter.[paragraph break][italic type]A little snoopy, are we? Well, not the worst of traits. Hold still.[paragraph break][roman type]You hear clattering and feel your mobility returning. Stiffly you get up and see the two Duju standing before you. You think you recognize a bit of amusement in the eyes of the bigger one.[paragraph break][italic type]Don't worry, our guards are very cautious, and our Operators even more so, I am certain you meant no harm, if you would have, you wouldn't be here any more.[paragraph break]";
+		say "Finally you hear steps approaching and a booming laughter.[paragraph break][italic type]'A little snoopy, are we? Well, not the worst of traits. Hold still.'[paragraph break][roman type]You hear clattering and feel your mobility returning. Stiffly you get up and see the two Duju standing before you. You think you recognize a bit of amusement in the eyes of the bigger one.[paragraph break][italic type]'Don't worry, our guards are very cautious, and our Operators even more so, I am certain you meant no harm, if you would have, you wouldn't be here any more.'[paragraph break]";
 		now Helplesness is false;
-	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance. You can always ask her about the [bold type]Extraction[roman type], or about [bold type]help[italic type] in general for that matter.[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose. Alright, if you need anything or want to ask me anything: I stay here at the [bold type]Flux Gate[italic type]. Come back to me whenever you want.[paragraph break]";
+	say "[roman type]He hands you something that distantly reminds you of a fishing net, only is this one almost ridiculously overengineered. You must have a rather puzzled look to your face, as Du'un starts to explain soon after. [paragraph break][italic type]'That is a Flux Extractor, the Techies call them 'Scoops'. It is used to extract small portions of the Flux and isolate it for examination. If you want to help us out, showing us that you have no evil intent in the process, go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, from the [bold type]Flux before the Gate[roman type], and one after it has done so, from the [bold type]Flux beyond the Gate[italic type]. I am sure you will find the proper locations for this purpose yourself. When you are done or have any questions, return here to the Flux Gate, Dunia will be to your assistance, she will stay here at the Flux Gate. You can always ask her about the [bold type]Extraction[italic type], or about [bold type]help[italic type] in general for that matter.'[paragraph break][roman type]You receive a [bold type]Flux Extractor[roman type].[paragraph break][roman type]With that, Du'un goes off, quickly descending the stairs at the back of the hall. You are left with a vague task and Dunia, who doesn't look very pleased.[paragraph break][italic type]'To your assitance, eh? Well, better than climbing that awful piece of a mountain, I suppose. Alright, if you need anything or want to ask me anything: you will find me here, at the [bold type]Flux Gate[italic type]. Come back to me whenever you want.'[paragraph break]";
 	now the player carries the Flux Extractor;
 	now Du'un is in the Lower Gate_Frizza;
 	now BlooSympathy is true;
@@ -1763,51 +1766,55 @@ After asking Dunia about a topic listed in the Table of Dunia Responses 1:
 		
 Table of Dunia Responses 1
 Topic	Response
-"Extraction"	"[italic type]You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type]."
-"Samples"	"[italic type]You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type]."
-"Flux" 	"[if Dunia is in the Upper Gate_Frizza][italic type]Yeah, our essence and all that shit. Don't mention it.[paragraph break][otherwise if Dunia is in the Flux Core_frizza][italic type]Yes, I might have been a bit negative. It is quite something, huh? At least it makes for a show.[paragraph break]"	
-"Techies"	"[if Dunia is in the Upper Gate_Frizza][italic type]They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. We are not at good terms at the moment, our 'Leader' Kollock even is bitterly hostile towards them, as he sees them as heretics.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. It has been a long time since any of them saw what is going on below the surface - we won't let them, anymore, and the Flux won't either.[paragraph break]"
-"Kollock"	"[if Dunia is in the Upper Gate_Frizza][italic type]Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'.[paragraph break][roman type]Her tone seems to you tinged with a trace of sarcasm. She looks around, as if to see if nobody is within earshot.[paragraph break][italic type]Though some appreciate their freedom more than others.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'. He is a bollocks if you ask me. Look around you. Nobody has the power to control the force of nature.[paragraph break]"
-"Du'un"	"[if Dunia is in the Upper Gate_Frizza][italic type]My father and the Keeper of the Flux, if you didn't notice. He taught me to keep an open mind for things, even if his own mental flexibility starts to crumble at the moment.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]My father and the Keeper of the Flux, if you didn't notice. He is responisble for all this down here. If someone has some sort of handle over this, it is him.[paragraph break]"
-"Duju"	"[if Dunia is in the Upper Gate_Frizza][italic type]Our people. We have lived on this surface as long as we remember, and that indeed is a long time. We never were the star-seeking sort, due to our connection to the Fluxes. You may have noticed the bluish glow and the glowing bodyparts, they pretty much tell on that fact.[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]Our people. We have lived on this surface as long as we remember, and that indeed is a long time. The Flux fuels us, it is part of us. Thus you are practically standing next to our aorta, you might not have known that.[paragraph break]"
-"Orb"	"[if Dunia is in the Flux Core_Frizza][italic type]Pulsing, pumping, central in a sheltered place - does that remind you of something? Yes, it is exactly that.[paragraph break]"
-"Cavern"	"[if Dunia is in the Flux Core_Frizza][italic type]Honestly, I don't know where it came from or who built it. Our belief says we originated in this lake down there, could be absurd enough to be true, if you ask me.  All that I really know is to not let someone down here we don't trust ... or can't control.[paragraph break]"
-"Sinkan Cloak"	"[italic type]You wouldn't want to know where this is from. The beasts that work up such a skin are other people's nightmares."
-"City"	"[italic type]Our only settlement in this area. We have everything there - housing, armory, government ... it is an illustrious city, but no place for beings other than Duju I'm afraid."
-"Discharged Spaceship" 	"[italic type]I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours."
-"Spaceship"	"[italic type]I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours."
+"Extraction"	"[italic type]'You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type].'"
+"Samples"	"[italic type]'You heard the old man. Go and [bold type]extract [italic type]two samples of the Flux: one from the current before it passes through this gate, at the [bold type]Flux before the Gate[italic type], and one after it has done so, at the [bold type]Flux beyond the Gate[italic type]. You will need to [bold type]approach [italic type] the Currents before being able to extract something. Return to me if you have the two samples and ask me about the [bold type]Flux Essences[italic type].'"
+"Flux" 	"[if Dunia is in the Upper Gate_Frizza][italic type]'Yeah, our essence and all that shit. Don't mention it.'[paragraph break][otherwise if Dunia is in the Flux Core_frizza][italic type]'Yes, I might have been a bit negative. It is quite something, huh? At least it makes for a show.'[paragraph break]"	
+"Techies"	"[if Dunia is in the Upper Gate_Frizza][italic type]'They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. We are not at good terms at the moment, our 'Leader' Kollock even is bitterly hostile towards them, as he sees them as heretics.'[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]'They were settler's, originally. Sadly they chose to defile the Flux with their robots and devices, hence their nickname. It has been a long time since any of them saw what is going on below the surface - we won't let them, anymore, and the Flux won't either.'[paragraph break]"
+"Kollock"	"[if Dunia is in the Upper Gate_Frizza][italic type]'Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'.'[paragraph break][roman type]Her tone seems to you tinged with a trace of sarcasm. She looks around, as if to see if nobody is within earshot.[paragraph break][italic type]'Though some appreciate their freedom more than others.'[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]'Our spiritual leader. Celebrated as god-king. 'He is master, he is Flux'. He is bollocks if you ask me. Look around you. Nobody has the power to control the force of nature.'[paragraph break]"
+"Du'un"	"[if Dunia is in the Upper Gate_Frizza][italic type]'My father and the Keeper of the Flux, if you didn't notice. He taught me to keep an open mind for things, even if his own mental flexibility starts to crumble at the moment.'[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]'My father and the Keeper of the Flux, if you didn't notice. He is responisble for all this down here. If someone has some sort of handle over this, it is him.'[paragraph break]"
+"Duju"	"[if Dunia is in the Upper Gate_Frizza][italic type]'Our people. We have lived on this surface as long as we remember, and that indeed is a long time. We never were the star-seeking sort, due to our connection to the Fluxes. You may have noticed the bluish glow and the glowing bodyparts, they pretty much tell on that fact.'[paragraph break][otherwise if Dunia is in the Flux Core_Frizza][italic type]'Our people. We have lived on this surface as long as we remember, and that indeed is a long time. The Flux fuels us, it is part of us. Thus you are practically standing next to our aorta, you might not have known that.'[paragraph break]"
+"Orb"	"[if Dunia is in the Flux Core_Frizza][italic type]'Pulsing, pumping, central in a sheltered place - does that remind you of something? Yes, it is exactly that.'[paragraph break]"
+"Cavern"	"[if Dunia is in the Flux Core_Frizza][italic type]'Honestly, I don't know where it came from or who built it. Our belief says we originated in this lake down there, could be absurd enough to be true, if you ask me.  All that I really know is to not let someone down here we don't trust ... or can't control.'[paragraph break]"
+"Sinkan Cloak"	"[italic type]'You wouldn't want to know where this is from. The beasts that work up such a skin are other people's nightmares.'[paragraph break]"
+"City"	"[italic type]'Our only settlement in this area. We have everything there - housing, armory, government ... it is an illustrious city, but no place for beings other than Duju I'm afraid.'[paragraph break]"
+"Discharged Spaceship" 	"[italic type]'I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours.'[paragraph break]"
+"Spaceship"	"[italic type]'I see .... well, it's not like we wouldn't want to help you. But since you are in our territory, on our planet ... let's say we will see what we can do about that spaceship, but first after you did us some favours.'[paragraph break]"
+"Frizza"	"[italic type]'Our home planet, and all we have right now. That is why we may seem sensitive to any 'mining' ventures coming here, scooping the Flux. Paradoxical, isn't it? Basically, we are pure energy, but we can't travel to the stars as we are bound to the Flux. In that, it might be we are unique. However, sometimes I think I would give quite a whole lot to get off of this planet just once.'[paragraph break]"
+"Flux Extractor"	"[italic type]'That one will help you to snag a drop of the Flux without losing your hand, your arm, your head and all you ever knew. You might want to use it.'[paragraph break]"
+"Topics"	"You can ask Dunia about Flux, Duju, Techies, Du'un, Kollock, City, Frizza and a couple of other things that you must first discover."
+
 
 
 
 After asking Dunia about "Flux Extractor":
 	if Dunia has the Sinkan Cloak:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.'[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]'Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.'[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]'And stop staring.'[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
 		now the player carries the Sinkan Cloak;
 		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back.";
 	else:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin."
+		say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.'[paragraph break][roman type]She shows a devilish grin."
 		
 After asking Dunia about "Approaching":
 	if Dunia has the Sinkan Cloak:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it..[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. Oh, but there's something I can help you with.'[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]'Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.'[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]'And stop staring.'[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
 		now the player carries the Sinkan Cloak;
 		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back.";
 	else:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin."
+		say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.'[paragraph break][roman type]She shows a devilish grin."
 		
 
 After asking Dunia about "Help":
 	if the player has the Sinkan Cloak:
 		if the Monolithic Rock is examined:
 			if the player has the Miserable Lever:
-				say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+				say "[italic type]'The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.'";
 			else:
-				say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+				say "[italic type]'Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.'[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]'Congratulations, you are now the owner of a convenient lifting tool.'[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 				now the player has the Miserable Lever;
 		else:
-			say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.[paragraph break][roman type]She shows a devilish grin.";
+			say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in - and try to [bold type]wear[italic type] the Cloak while doing it.'[paragraph break][roman type]She shows a devilish grin.";
 	else:
-		say "[roman type]She giggles a bit.[paragraph break][italic type]It is simple, you will see when you get to the Flux. Just dip it in.[paragraph break][roman type]She shows a devilish grin. [paragraph break][italic type]Oh, but there's something I can help you with.[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]And stop staring.[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
+		say "[roman type]She giggles a bit.[paragraph break][italic type]'It is simple, you will see when you get to the Flux. Just dip it in.'[paragraph break][roman type]She shows a devilish grin. [paragraph break][italic type]'Oh, but there's something I can help you with.'[paragraph break][roman type]Suddenly Dunia grasps a corner of her leathery clothing and, with one swoosh, unwraps it from her body. Underneath, a sinewy, bluish body comes to appearance.[paragraph break][italic type]'Here, take this, it will prevent the Flux from disintegrating you all too fast, when you [bold type]wear[italic type] it.'[paragraph break][roman type]The devilish grin emerges again.[paragraph break][italic type]'And stop staring.'[paragraph break][roman type]You receive a [bold type]Sinkan Cloak[roman type].";
 		now the player carries the Sinkan Cloak;
 		now the description of the Sinkan Cloak is "The leather is completely unfamiliar to you. With its wide span you would have expected it to weigh heavy, but it lies lightly in your arms, as if you were carrying only a blanket. There is a little Duju insignia on the back."
 		
@@ -1820,39 +1827,39 @@ A Miserable Lever is in the Lower Gate_Frizza. The description of it is "Really 
 After asking Dunia about "Gun":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
-			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+			say "[italic type]'The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.'";
 		else if the player has the Iron Bar:
-			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
+			say "[italic type]'Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?'";
 		else:
-			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+			say "[italic type]'Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.'[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]'Congratulations, you are now the owner of a convenient lifting tool.'[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
 	else:
-		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+		say "[italic type]'A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place.'"
 		
 After asking Dunia about "Rock":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
-			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+			say "[italic type]'The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.'";
 		else if the player has the Iron Bar:
-			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
+			say "[italic type]'Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?'";
 		else:
-			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+			say "[italic type]'Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.'[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]'Congratulations, you are now the owner of a convenient lifting tool.'[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
 	else:
-		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+		say "[italic type]'A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place.'"
 		
 
 After asking Dunia about "Pushing":
 	if the Monolithic Rock is examined:
 		if the player has the Miserable Lever:
-			say "[italic type]The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.";
+			say "[italic type]'The Lever should fit your purpose perfectly. Try to [bold type]push[italic type] the rock with it. It will tilt like a Techie in the Flux.'";
 		else if the player has the Iron Bar:
-			say "[italic type]Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?";
+			say "[italic type]'Isn't that a bar you are carrying with you? Well, that should fit the purpose quite good, don't you think?'";
 		else:
-			say "[italic type]Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]Congratulations, you are now the owner of a convenient lifting tool.[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
+			say "[italic type]'Ah, I see, you look for a way to get down to the current. Well, the gun is not what will help you, even if I gave it to you, which I won't, you still needed to fire it, which you can't. So erase that thought. However ... what might help you ... wait a moment.'[roman type][paragraph break] Dunia turns to the rack, which the gun lies on, and resolutely approaches it. With a few precise movements she breaks loose one of the bars framing the rack, accompanied by a bright clang. Even the guards take a short glance, before respectfully turning to the entrance again. Triumphantly, Dunia returns to you and hands you the bar with a smirk. [paragraph break][italic type]'Congratulations, you are now the owner of a convenient lifting tool.'[paragraph break][roman type]You receive a [bold type]Miserable Lever[roman type].";
 		now the player has the Miserable Lever;
 	else:
-		say "[italic type]A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place."
+		say "[italic type]'A bit of weaponry, typical for our fabrication. It wouldn't be of much use to you, unless you know how to operate a Duju gun. Assuming we would let you take it in the first place.'"
 
 [--]
 
@@ -1899,7 +1906,7 @@ After approaching the Flux Current:
 			else:
 				say "You already got what you wanted, no need to take risks.";
 	else:
-		say "[if the player has the Sinkan Cloak]You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [line break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you.[otherwise] You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [line  break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you. Maybe you should ask Dunia for [bold type]help[roman type]."
+		say "[if the player has the Sinkan Cloak]You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [paragraph break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you.[otherwise] You try to approach the Flux, but after a few steps you feel your mind drifting apart, for a second you believe to see holes in your hands and arms, your vision is blackening, you swoon. [line  break]You awake soon after. You shortly check your proportions - everything seems to be still in place. You have learned one lesson though: never approach a Flux with only your bare skin protecting you. Maybe you should ask Dunia for [bold type]help[roman type]."
 
 
 		
@@ -2018,8 +2025,8 @@ After asking Dunia about "Flux Essences":
 	if Dunia is in the Upper Gate_Frizza:
 		if the Regulated Flux Essence is in the Flux Extractor:
 			if the Unregulated Flux Essence is in the Flux Extractor:
-				say "[italic type]I see you have the two samples. Impressive ... Wait here for a moment.[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]Indeed, he returned. What a cheerful message.[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]One might.[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.[paragraph break][roman type]That warning could have come earlier.[paragraph break]You further decend, approaching the big blue pool, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
-				say "Du'un comments your arrival.[paragraph break][italic type]That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.";
+				say "[italic type]'I see you have the two samples. Impressive ... Wait here for a moment.'[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]'Indeed, he returned. What a cheerful message.'[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]'Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.'[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]'No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.'[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]'One might.'[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]'Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.'[paragraph break][roman type]You decend further, approaching the big blue pool, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
+				say "Du'un explains shortly.[paragraph break][italic type]'That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.'";
 				now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 				move the player to Flux Core_Frizza;
 				now Dunia is in the Flux Core_Frizza;
@@ -2035,18 +2042,18 @@ After asking Dunia about "the Flux Essences":
 	if Dunia is in the Upper Gate_Frizza:
 		if the Regulated Flux Essence is in the Flux Extractor:
 			if the Unregulated Flux Essence is in the Flux Extractor:
-				say "[italic type]I see you have the two samples. Impressive ... Wait here for a moment.[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]Indeed, he returned. What a cheerful message.[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]One might.[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.[paragraph break][roman type]That warning could have come earlier.[paragraph break]You further decend, approaching the big blue lake, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
-				say "Du'un comments your arrival.[paragraph break][italic type]That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.";
+				say "[italic type]'I see you have the two samples. Impressive ... Wait here for a moment.'[paragraph break][roman type]She disappears and soon returns with the massive Keeper Du'un. Again you hear the booming of his voice.[paragraph break][italic type]'Indeed, he returned. What a cheerful message.'[paragraph break][roman type]He seems to be smiling, but even this gesture becomes a little intimidating, considering his imposing build.[paragraph break][italic type]'Well then, I think you earned an adequate amount of what you could call trust. Let me show you something.'[paragraph break][roman type]He gently but insistingly points you the way - down the stairs which you have so often seen disappear him in. The opening leads to a rather broad tunnel, lined with blue torches on either side. Curiously but not quite voluntarily you enter the tunnel and proceed to step down the stairs into the darkness, the two Duju right behin you. You descend in silence for a long time . At some point, Dunia briefly raises her voice.[paragraph break][italic type]'No one other than our people have seen what you will see. I guess one seeks the aspiring relief of someone not involved on either part after such a long time of disappointment.'[paragraph break][roman type]Her voice subsides. You hear a soft rumbling from Du'un.[paragraph break][italic type]'One might.'[paragraph break][roman type]The echos of the exchange are the last vocal sounds you hear for quite some time. You continue to pass fairly large holes in the tunnel, revealing peeks into great caves, deep ravines and cascades of Flux. Later - you really couldn't tell how long you walked - the tunnel broadens and finally leads to an opening. The view takes your breath as you step into a vast cavern. You are surrounded by a natural basin, filled to a considerable level with bluish liquid. In the middle of the cave you see a physically impossible spectacle: There, in mid air, a large blue orb is flying, constantly producing waves of fluid, which then drop down into the basin, keeping the lake's surface in motion. You realize that the air is shimmering, despite the cold atmosphere. You gaze at the grand orb, when your vision suddenly becomes grainy and parts of it fold, spawning shadows and bright specks where there should be none. You close your eyes and look to the ground, as you open them again your vision returned to normal. The Keeper raises his voice. [paragraph break][italic type]'Don't let your gaze be caught, or the Flux will consume it. But don't worry, that would have taken a bit longer.'[paragraph break][roman type]You decend further, approaching the big blue pool, when you become aware of a small stone plateau with the stairwell winding around it. Carefully you follow the two Duju down the last steps to the plateau, in the middle of which a small pond of Flux has gathered. Welcome to the core.";
+				say "Du'un explains shortly.[paragraph break][italic type]'That is the core of our Flux. It is the quintessence. Our very being. Do you see that pool in the middle of plateau? Put the Essences in there. Start with the unregulated one.'";
 				now the description of the Upper Gate_Frizza is "A gate of some sort, guarded.[paragraph break]You can go [bold type]east[roman type], back to the Wasteland.";
 				move the player to Flux Core_Frizza;
 				now Dunia is in the Flux Core_Frizza;
 				now Du'un is in the Flux Core_Frizza;
 			else:
-				say "[italic type]You're missing the regulated one.";
+				say "[italic type]'You're missing the regulated one. You should look for the [bold type]Flux beyond the Gate[roman type].'";
 		else:
-			say "[italic type]You're missing the unregulated one.";
+			say "[italic type]'You're missing the unregulated one. You should look for the [bold type]Flux before the Gate[roman type].'";
 	else:
-		say "[italic type]You will need to put them in the pool. You should better ask Du'un about the [bold type]Essence Pool[italic type]."
+		say "[italic type]'You will need to put them in the pool. You should better ask Du'un about the [bold type]Essence Pool[italic type].'"
 
 Instead of going up from the Flux Core_Frizza:
 	say "You wouldn't want to go up without the Duju, who knows what awaits you."
@@ -2054,7 +2061,7 @@ Instead of going up from the Flux Core_Frizza:
 The description of the Flux Core_Frizza is "A huge cavern with a Flux lake at its bottom and a spectacular orb flowing midair, emitting Flux waves. You can't see the tunnel from which you came from. In the middle of the plateau is a small pool, sparkling with a pure sheen. " 
 
 [Energy Orb is an object in the Flux Core_Frizza.]
-The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is fixed in place. The description of it is "A small bluish pool, its surface entirely still, sparkling with a pure sheen. You can [bold type]put [roman type]the Essences into it."
+The Essence Pool is a container in the Flux Core_Frizza. The Essence Pool is fixed in place. The description of it is "A small bluish pool, its surface entirely still, sparkling with a pure sheen. You can [bold type]put [roman type]the Essences into it. You may also ask Du'un about the Essence Pool."
 
 The Pure Flux Essence is in the Sanctuary_Frizza.
 
@@ -2064,36 +2071,41 @@ After asking Du'un about a topic listed in the Table of Du'un responses:
 		
 Table of Du'un Responses 
 Topic	Response
-"Flux" 	"[italic type]The mighty soul of this planet. Unfortunately, not everybode recognizes its holy nature.[paragraph break]"	
-"Techies"	"[italic type]Formerly they were interested people, open to our culture and mind. That changed when the corporations came, and with them the money. They don't look left or right now, which makes them ignorant to the Flux, and dangerous for us. You might understand our prepossession towards them.[paragraph break]"
-"Kollock"	"[italic type]Let him be blessed. Father of Duju. Father of Flux.[paragraph break][roman type]You hear nothing of serious approval in his voice, it sounds mechanical. His eyes are ice cold while saying the words.[paragraph break]"
-"Dunia"	"[italic type]An ambitious child of a disrupted time. I would not call that bad, though. The most powerful beings emerge in times of conflict.[paragraph break]"
-"Duju"	"[italic type]My people, and the most important thing on this planet - speaking as the Keeper. The Flux is us, you know that, thus I guard the Flux like I guard my very own flesh and blood.[paragraph break]"
-"Orb"	"[italic type]Can you imagine the power of a sun? It is fathomless, it is the purest energy. This Orb above - it is like that. And like every sun enlivens the planets around it, so does the Orb on a smaller scale. Frizza - as it is commonly called - is an organism, and the Orbs are its hearts.[paragraph break]"
-"Cavern"	"[italic type]It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.[paragraph break]"
-"Core"	"[italic type]It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.[paragraph break]"
-"City"	"[italic type]Our beloved settlement. We established it long time ago and it has flourished since. Everything that relates to us happens there, and part our task here is that things in the City still keep working.[paragraph break]"
-"Discharged Spaceship"	"[italic type]No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon."
-"Spaceship"	"[italic type]No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon."
+"Flux" 	"'[italic type]The mighty soul of this planet. Unfortunately, not everybode recognizes its holy nature.[paragraph break]'"	
+"Techies"	"'[italic type]Formerly they were interested people, open to our culture and mind. That changed when the corporations came, and with them the money. They don't look left or right now, which makes them ignorant to the Flux, and dangerous for us. You might understand our prepossession towards them.[paragraph break]'"
+"Kollock"	"[italic type]'Let him be blessed. Father of Duju. Father of Flux.'[paragraph break][roman type]You hear nothing of serious approval in his voice, it sounds mechanical. His eyes are ice cold while saying the words.[paragraph break]"
+"Dunia"	"[italic type]'An ambitious child of a disrupted time. I would not call that bad, though. The most powerful beings emerge in times of conflict.'[paragraph break]"
+"Duju"	"[italic type]'My people, and the most important thing on this planet - speaking as the Keeper. The Flux is us, you know that, thus I guard the Flux like I guard my very own flesh and blood.'[paragraph break]"
+"Orb"	"[italic type]'Can you imagine the power of a sun? It is fathomless, it is the purest energy. This Orb above - it is like that. And like every sun enlivens the planets around it, so does the Orb on a smaller scale. Frizza - as it is commonly called - is an organism, and the Orbs are its hearts.'[paragraph break]"
+"Cavern"	"[italic type]'It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.'[paragraph break]"
+"Core"	"[italic type]'It is ancient, and it harbors something even more ancient. You see, if what you see here is the motor, we are merely the droplets, falling of in times of superfluousness.'[paragraph break]"
+"City"	"[italic type]'Our beloved settlement. We established it long time ago and it has flourished since. Everything that relates to us happens there, and part our task here is that things in the City still keep working.'[paragraph break]"
+"Discharged Spaceship"	"[italic type]'No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon.'[paragraph break]"
+"Spaceship"	"[italic type]'No situation to be envied, that much is certain. However, you need not worry. If you keep doing what we propose, you will never have a lack of energy again quite soon.'[paragraph break]"
+"Pool"	"[italic type]'That is what is given to us by the core. The exuberance of its production. It is enough to fuel our whole civilization, when harvested twice a year. We also use it to control the Flux ... and to convert certain samples. You may [bold type]put[italic type] yours into the pool now.'[paragraph break]"
+"Frizza"	"[italic type]'A most singular environment, don't you think? The Flux not only produces life, it also attracts it - by now, sadly in the form of profit-oriented Technocrats, with hardly any sense for the metaphysical. Frizza is more than just rocks and death, as it might be seen by most - Frizza is a core, a pulsing light, caked with mud. No one can fathom the true power of the inner workings in this planet, but at some point in time, people will see it with their own eyes.'[paragraph break]"
+"Flux Extractor"	"[italic type]'An apparatus made to grab small portions of the Flux Currents. It has helped us quite a lot indeed."
+"Topics"	"You can ask Du'un about Flux, Techies, Duju, Kollock, Dunia, Discharged Spaceship, Flux Extractor, Frizza and a couple of other things that you must first discover."
+
 
 After asking Dunia about "Essence Pool":
-	say "[italic type]Now that is something quite particular. However, Du'un is far more suited to tell you about it."
+	say "[italic type]'Now that is something quite particular. However, Du'un is far more suited to tell you about it.'"
 	
 After asking Du'un about "Essence Pool" for the first time:
-	say "[italic type]You see that Orb there, above? This pool is what it is made of, a special kind of Flux, we call it the Fountain. We will attempt something now. Put both of the Essences in the pool. Start with the Unregulated one." 
+	say "[italic type]'You see that Orb there, above? This pool is what it is made of, a special kind of Flux, we call it the Fountain. We will attempt something now. Put both of the Essences in the pool. Start with the Unregulated one.'" 
 After asking Du'un about "Essence Pool" for the second time:
-	say "[italic type]Put both of the Essences in the pool first, then we will see."
+	say "[italic type]'Put both of the Essences in the pool first, then we will see.'"
 
 Instead of inserting the Sinkan Cloak into the Essence Pool:
-		say "[roman type]Before you can dip it into the pool you hear a rumbling beside you.[paragraph break][italic type]You shouldn't try that.";
+		say "[roman type]Before you can dip it into the pool you hear a rumbling beside you.[paragraph break][italic type]'You shouldn't try that.'";
 		stop the action.
 
 Instead of inserting the Flux Extractor into the Essence Pool:
-		say "[roman type]Before you can dip it into the pool you hear a rumbling beside you.[paragraph break][italic type]You shouldn't try that.";
+		say "[roman type]Before you can dip it into the pool you hear a rumbling beside you.[paragraph break][italic type]'You shouldn't try that.'";
 		stop the action.
 		
 After inserting the Unregulated Flux Essence into the Essence Pool:
-		say "You carefully extend the Extractor to drop the sample that you've got from the Flux before the gate into the pool. You hear a muffled[italic type] splash[roman type]. Afterwards, the pool starts swirling, forming thick threads of seemingly solid mass. It encloses the sample in its center and continues to arrange itself in patterns. Finally, with a last compression, it looses the tension and returns to a still state, leaving no sign of the Unregulated Essence. Dunia briefly gives off a comment.[paragraph break][italic type]Now, that was spectacular.";
+		say "You carefully extend the Extractor to drop the sample that you've got from the Flux before the gate into the pool. You hear a muffled splash[roman type]. Afterwards, the pool starts swirling, forming thick threads of seemingly solid mass. It encloses the sample in its center and continues to arrange itself in patterns. Finally, with a last compression, it looses the tension and returns to a still state, leaving no sign of the Unregulated Essence. Dunia briefly gives off a comment.[paragraph break][italic type]'Now, that was spectacular.'";
 		remove Unregulated Flux Essence from play.
 		
 Instead of inserting the Regulated Flux Essence into the Essence Pool:
@@ -2101,18 +2113,23 @@ Instead of inserting the Regulated Flux Essence into the Essence Pool:
 		say "Start with the Unregulated Essence.";
 		stop the action;
 	else:
-		say "As you drop the Regulated Flux Essence from beyond the gate into the Pool, you hear an impressive silence - the sample actually makes no sound at all as it meets the surface. Excited, you stare at the pool. It shows a rash shiver, a quick swirld, before regaining its calm state. Du'un turns to you, his eyes smiling.[paragraph break][italic type]You might want to know - that is a quite good outcome.";
+		say "As you drop the Regulated Flux Essence from beyond the gate into the Pool, you hear an impressive silence - the sample actually makes no sound at all as it meets the surface. Excited, you stare at the pool. It shows a rash shiver, a quick swirld, before regaining its calm state. Du'un turns to you, his eyes smiling.[paragraph break][italic type]'You might want to know - that is a quite good outcome.'";
 		remove Regulated Flux Essence from play;
-		say "[paragraph break][roman type]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]That, now, is something special.[paragraph break][roman type]Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps the direct contact to the Core was too much for it.[paragraph break]You receive a [bold type]Pure Flux Essence.";
+		say "[paragraph break][roman type]As soon as Du'un finished, the pool again starts to move, first swirling, then seething heavily. The bubbles coming from it become solid in mid-air and drop down again, ghostly arcs of blue smoke emerge from the pool, deep rifts start to form. Unvoluntarily, you take a step back. Just when it seems that the pool would sputter out of its basin the tensions abate, the rifts close and the convulsive motions subside. On turning, you see Du'un holding his staff fixed towards the pool. The last movement goes through the pool, then it falls silent. Suddenly, a small object comes to the surface - a transparent orb with a balanced source of energy inside it: a Pure Flux Orb. [line break]Du'un points his staff in the direction of the orb and lifts it out of the pool, without touching it, right into a glass container that Dunia stands ready with. As soon as the orb is in the container, Dunia seals it, holding it triumphantly. Du'un turns to you.[paragraph break][italic type]'That, now, is something special.'[paragraph break][roman type]Suddenly you realize that Dunia's cloak isn't in one piece anymore, rather, its matter looks like it melted and solidified again, whole parts of it are missing. Perhaps the direct contact to the Core was too much for it.[paragraph break]You receive a [bold type]Pure Flux Essence.";
 		remove the Sinkan Cloak from play;
 		now the player has the Pure Flux Essence;
-		say "[line break][italic type]Oh, and we will need that back.[paragraph break][roman type]Dunia takes the Flux Extractor from you, smiling cheekily.";
+		say "[line break][italic type]'Oh, and we will need that back.'[paragraph break][roman type]Dunia takes the Flux Extractor from you, smiling cheekily.";
 		remove Flux Extractor from play;
-		say "[line break]You start the long ascend, Du'un and Dunia following close behind you. Amazed, you hold the Pure Essence in your hands, aware of its worth.[paragraph break]As you finally reach the Flux Gate you see that the operator and staff guards have changed, you must have been down there quite a while. One last time, Du'un adresses you.[paragraph break][italic type]If you [bold type]insert[roman type] that into your ship, you should have enough energy for a few thousand years of space travel. Use it wisely. And farewell.[paragraph break][roman type]And with that he leaves the Gate, this time heading straight to the north, towards the city.[paragraph break][italic type]I couldn't have said it better. Farewell, and be free to look around, should there be a next time, perhaps I will be there.[paragraph break][roman type]Now Dunia too sets out - her in the direction of the ghastly mountains. You stand there, with more energy in your hands than you could ever fathom. It might be time to leave that place.";
+		say "[line break]You start the long ascend, Du'un and Dunia following close behind you. Amazed, you hold the Pure Essence in your hands, aware of its worth.[paragraph break]As you finally reach the Flux Gate you see that the operator and staff guards have changed, you must have been down there quite a while. One last time, Du'un adresses you.[paragraph break][italic type]'If you [bold type]insert[roman type] that into your ship, you should have enough energy for a few thousand years of space travel. Use it wisely. And farewell.'[paragraph break][roman type]And with that he leaves the Gate, this time heading straight to the north, towards the city.[paragraph break][italic type]'I couldn't have said it better. Farewell, and be free to look around, should there be a next time, perhaps I will be there.'[paragraph break][roman type]Now Dunia too sets out - her in the direction of the ghastly mountains. You stand there, with more energy in your hands than you could ever fathom. It might be time to leave that place, you might want to go back to the [bold type]Landing Zone[roman type].";
 		now the player is in the Upper Gate_Frizza.
 
 The description of the Pure Flux Essence is "A transparent orb inside a glass container, its core is an even sphere of pure blue energy. It is more than fit to start you ship back up. You should try to [bold type]put[roman type] it into the empty [bold type]Power Unit[roman type]."
 
+After going to the Landing Zone_Frizza:
+	if the player has the Pure Flux Essence:
+		say "You can [bold type]insert[roman type] your newfound power source into the Power Unit now.";
+	else if the player has the Power Cell:
+		say "You can [bold type]insert[roman type] your newfound power source into the Power Unit now."
 
 [End]
 
@@ -2125,25 +2142,27 @@ The Power Unit is a container inside the Discharged Spaceship. The Discharged Sp
 Instead of taking the Power Unit:
 	say "You would have to disassemble it, but you don't know how that would help you."
 
-Instead of inserting a thing into the Power Unit:
+[Instead of inserting a thing into the Power Unit:
 	if the thing is the Pure Flux Essence:
 		continue the action;
 	if the thing is the Power Cell:
 		continue the action;
 	else:
 		say "That wouldn't generate much energy. You need a real power source.";
-		stop the action.
+		stop the action.]
 
 
 After inserting the Pure Flux Essence into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
-	remove the Pure Flux Essence from play.
+	remove the Pure Flux Essence from play;
+	now the Counter is 5;
 	now the player is in the Spaceship Bridge_Kaldríss.
 	
 
 After inserting the Power Cell into the Power Unit:
 	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Power Cell from play;
+	now the Counter is 5;
 	now the player is in the Spaceship Bridge_Kaldríss.
 	
 [Techie]
@@ -2153,26 +2172,26 @@ After answering Dunia that "Techies" for the first time:
 		say "[italic type]Then begone with you! I don't want anything to do with that!";
 		now BlooSympathy is false.
 	
-The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux. He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, the Scoop ..."
+The description of Trapist is "A huge man with thick strands of muscle. His eyes are shaded by pitch black sunglasses, he wears an orange helmet under which a broad smile splits his mouth apart. Between the teeth he holds some sort of cigarette which seems to be fueled by Flux. He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, Frizza ... for a list of all topics, 'ask Trapist about topics'."
 
 A person can be friendly or neutral. Trapist is neutral. A person can be unasked or asked. Trapist is unasked.
-A Power Cell is in the Control Tower_Frizza. The description of the Power Cell is "Two solid columns of dark metal, welded together and supplied with little blue lines that indicate their power level. They're beastly heavy. On their backside you see the words [italic type]Fluxus Corp[roman type] impressed into the metal."
+A Power Cell is in the Control Tower_Frizza. The description of the Power Cell is "Two solid columns of dark metal, welded together and supplied with little blue lines that indicate their power level. They're beastly heavy. On their backside you see the words 'Fluxus Corp.'[roman type] impressed into the metal."
 
 A Cabin is in the Scoop_Frizza. The Cabin is fixed in place. The Cabin is an open container. The description of the Cabin is "The only one you can safely reach. One part of it seems to be solidly built into the rock, the other half protruding into the sheer abyss of the ravine. By the look of it you could swear that it will topple down the cliff any moment, but it holds. Inside you see a warm light and someone moving. You could try to [bold type]approach[roman type]."
 
 After approaching the Cabin:
-	say "You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.[paragraph break][italic type]Oi, mate! What ya doin' all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya [bold type]name[roman type], mate?[paragraph break][roman type]The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.";
+	say "You scramble over the ghastly landscape, keeping the ravine's edge to a good distance. You get an even better view of the structures that span the width of the gorge, you are now certain that there is mining equipment and transportation units, some manned and some apparently controlled remotely. You approach the cabin, saving a couple of steps in distance, and try to glance into the inside of the cabin. Someone sits there at a metal desk, wearing a hardhat and sunglasses, between ridiculous heaps of papers and files. In his mouth there is an oblong roll, glowing blue, and on one of the inside wall hangs an oversized metal suit, equipped with all kind of complex-looking gear. As you eyeball the scene, the man suddenly turns his head and straigthly spots you through his shaded glasses. He stands up opens a window, pointing in your direction. You see a broad smile stamped into his face.[paragraph break][italic type]'Oi, mate! What ya doin' all by yaself out there? Ya ain't have no mischief in mind, do ya? Don't look like one of those blue Duju folk. What's ya [bold type]name[roman type], mate?'[paragraph break][roman type]The thick accent washes over you. Momentarily, you believe you smelled grilled meat ... you abandon the thought.";
 	now Trapist is in the Cabin in the Scoop_Frizza;
 	now the description of the Cabin is "A small hut in which Trapist is working. There are heaps of paperwork, the faint glow of a light bulb and Trapist sitting in the midst of it, his face illuminated by his bluishly burning cigarette."
 	
 After answering Trapist that "Axesto" for the first time:
-	say "[italic type]Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.[paragraph break][roman type]He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, the Scoop ...";
+	say "[italic type]'Strange name that. Ah well, I don't mind as long as you ain't starting to act funny. Mine's Trapist ... guess that sounds strange as well, I'm the foreman here. Nice chatter, but I guess it's back to work now, you certainly see that pile of misery on the desk there. Ain't no gain for no work. Let me now if y'all need something.'[paragraph break][roman type]He might know how to fuel your [bold type]discharged spaceship[roman type], you could try asking him. Of course you also ask him about the things surrounding you: the Flux, the Techies, Frizza ... for a list of all topics, 'ask Trapist about topics'.";
 	now Trapist is asked;
 	now Trapist is friendly.
 
 After asking Trapist about anything:
 	if Trapist is unasked:
-		say "[italic type]Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?";
+		say "[italic type]'Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?'";
 	if Trapist is asked:
 		continue the action.
 		
@@ -2184,71 +2203,73 @@ Instead of dropping the Iron Bar:
 		
 After asking Trapist about "Rock":
 	if the player has the Miserable Lever:
-		say "[italic type]Mate it looks like you already have sump'n to help ya, wherever ya got that from. Ya won't need my help for that anymore.";
+		say "[italic type]'Mate it looks like you already have sump'n to help ya, wherever ya got that from. Ya won't need my help for that anymore.'";
 	else:
-		say "[italic type]What the heck you want with that rock? Ah, I see, you trying to mine Flux, half Techie is what you are by now. Right, let me help ya.[paragraph break][roman type]He fetches a nearby iron bar and continues to throw it in your direction. You barely catch it.[paragraph break][italic type]Y'all know physics? If ya do, ya'll make this baby work. Good luck.[paragraph break]You receaive an [bold type]Iron Bar[roman type].";
+		say "[italic type]'What the heck you want with that rock? Ah, I see, you trying to mine Flux, half Techie is what you are by now. Right, let me help ya.'[paragraph break][roman type]He fetches a nearby iron bar and continues to throw it in your direction. You barely catch it.[paragraph break][italic type]'Y'all know physics? If ya do, ya'll make this baby work. Good luck.'[paragraph break][roman type]You receive an [bold type]Iron Bar[roman type].";
 		now the player has the Iron Bar.
 		
 		
 After asking Trapist about "help":
-	say "[italic type]Ya'll need to get a bit more specific than that."
+	say "[italic type]'Ya'll need to get a bit more specific than that.'"
 		
 After asking Trapist about a topic listed in the Table of Trapist responses:
 	if Trapist is unasked:
-		say "[italic type]Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?";
+		say "[italic type]'Wait a second, why not introduce yourself first? You shy, mate? What's ya[bold type] name[roman type]?'";
 	if Trapist is asked:
 		say "[response entry]".
 		
 Table of Trapist Responses 
 Topic	Response
-"Flux" 	"[italic type]Now that's why we're all here. That slack goo gives yaself, ya family, ya neighbors and ya soot'n great-step-uncle money for a thousand years to come. One time lucky, never care about anything anymore. At least if we'd keep the profit. Damn tough mining that stuff though.[paragraph break]"	
-"Techies"	"[italic type]Ah, you've met one of the Bloo folk, eh? Otherwise ya hadn't got our nickname. Nevermind. I've grown to it - that baby there on the wall, that's the only thing keeping me alive when I'm in the stream scoopin'. If that's no proof for the power of technology, I don't know what is.[paragraph break]"
-"Kollock"	"[italic type]Bloody zealot. He wish that we go right to hell, and that feeling's mutual. I'd throw him in the deepest hole on that godforsaken planet if I could.[paragraph break]"
-"Dunia"	"[italic type]Who? Never heard of that.[paragraph break]"
-"Duju"	"[italic type]Them were here before us, you bet. But that ain't meaning the planet's all theirs. We keep their sacred grounds where we can, but there's no drilling aroung a hundred-mile-mountain. You ought to make a compromise in such cases, but not that folk, no. I respect them and I try helping where I can, but when talking about the 'Bloo' here in the Scoop, you know what's up, and you know the talk won't be gentle.[paragraph break]"
-"Scoop"	"[italic type]That's our main source of the Flux right here. We established it a couple decades ago - Duju folk were okay with it back then. Things have changed though.[paragraph break]"
-"Cabin"	"[italic type]Oh my, you must have quite a bore if you want about that miserable hut. I'm here for the bureaucracy shenanigans, so that's what's all the paperwork about. I'll fall asleep though if you ask about it further.[paragraph break]"
-"Du'un"	"[italic type]That's that spiritual leader of theirs, right? Never had much to do with him, 'though he seems like the type ya can talk to."
-"City"	"[italic type]Seems like ya saw the Bloo settlement right up north. That's what ya could call their 'capitol' in these lands, that Kollock guy sits there I guess. They won't let you in though, except in chains."
-"Bridge"	"[italic type]That one leads to the Control Tower. Lots of high types and big brains in there, part of which never saw a Flux. Anyway, biggest piece of work is done by the A.I. - that's who controls our little mining friends. Wouldn't advise ya to go over there, all ya need ya'll get from me."
+"Flux" 	"[italic type]'Now that's why we're all here. That slack goo gives yaself, ya family, ya neighbors and ya soot'n great-step-uncle money for a thousand years to come. One time lucky, never care about anything anymore. At least if we'd keep the profit. Damn tough mining that stuff though.'[paragraph break]"	
+"Techies"	"[italic type]'Ah, you've met one of the Bloo folk, eh? Otherwise ya hadn't got our nickname. Nevermind. I've grown to it - that baby there on the wall, that's the only thing keeping me alive when I'm in the stream scoopin'. If that's no proof for the power of technology, I don't know what is.'[paragraph break]"
+"Kollock"	"[italic type]'Bloody zealot. He wish that we go right to hell, and that feeling's mutual. I'd throw him in the deepest hole on that godforsaken planet if I could.'[paragraph break]"
+"Dunia"	"[italic type]'Who? Never heard of that.'[paragraph break]"
+"Duju"	"[italic type]'Them were here before us, you bet. But that ain't meaning the planet's all theirs. We keep their sacred grounds where we can, but there's no drilling aroung a hundred-mile-mountain. You ought to make a compromise in such cases, but not that folk, no. I respect them and try helping where I can, but when talking about the 'Bloo' here in the Scoop, you know what's up, and you know the talk won't be gentle.'[paragraph break]"
+"Scoop"	"[italic type]'That's our main source of the Flux right here. We established it a couple decades ago - Duju folk were okay with it back then. Things have changed though.'[paragraph break]"
+"Cabin"	"[italic type]'Oh my, you must have quite a bore if you want about that miserable hut. I'm here for the bureaucracy shenanigans, so that's what's all the paperwork about. I'll fall asleep though if you ask about it further.'[paragraph break]"
+"Du'un"	"[italic type]'That's that spiritual leader of theirs, right? Never had much to do with him, though he seems like the type ya can talk to.'"
+"City"	"[italic type]'Seems like ya saw the Bloo settlement right up north. That's what ya could call their 'capitol' in these lands, that Kollock guy sits there I guess. They won't let you in though, except in chains.'[paragraph break]"
+"Bridge"	"[italic type]'That one leads to the Control Tower. Lots of high types and big brains in there, part of which never saw a Flux. Anyway, biggest piece of work is done by the A.I. - that's who controls our little mining friends. Wouldn't advise ya to go over there, all ya need ya'll get from me.'[paragraph break]"
+"Frizza"	"[italic type]'Proxis B-12, System Z009, Subsystem D44 - the only rock floating around that sick sun that's barely life-supporting, but just barely. What you see is what you get: nasty stones, steep mountains, blue aliens and that river of misery down there. Only two reasons why ya should be here: you need the money or you are from Duju folk. Hell, if I would have known I would've went to Balaris, they say you can trade your blood for gold there. For Frizza, your blood's not enough. Frizza will take your essence and gladly weave it into that goddamn Flux.'[paragraph break]"
+"Topics"	"You can ask Trapist about Flux, Techies, Duju, Scoop, Cabin, City, Bridge, Frizza and a couple of other things that you must first discover."
 
 After asking Trapist about "Discharged Spaceship":
 	if Trapist is friendly:
 		if ConcealedDunia is true:
-			say "[italic type]Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.";
+			say "[italic type]'Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.'";
 		else if ConcealedDunia is false:			
 			if BlooSympathy is true:
-				say "[italic type]Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.";
+				say "[italic type]'Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.'";
 			else if the player wears the Sinkan Cloak:
-				say "[italic type]Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.";
+				say "[italic type]'Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.'";
 				now Trapist is neutral;
 			else if BlooSympathy is false:
 				if the Power Cell is in the Control Tower_Frizza:
-					say "[italic type]Mate! I've got somethin' for ya. Catch![paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]That stuff kicks your cute spaceship through whole galaxies, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
+					say "[italic type]'Mate! I've got somethin' for ya. Catch!'[paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]'That stuff kicks your cute spaceship to the other end of the universe, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.'[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
 					now the player has the Power Cell;
 				else:
-					say "[italic type]That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.";
+					say "[italic type]'That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.'";
 	else:
-		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
+		say "[italic type]'Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate.'"
 		
 After asking Trapist about "Spaceship":
 	if Trapist is friendly:
 		if ConcealedDunia is true:
-			say "[italic type]Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.";
+			say "[italic type]'Y'are in quite a pickle, eh? Mhh... Tell ya something: come back later a bit. I'll see what I can do. If we do have one thing, it's energy.'";
 		else if ConcealedDunia is false:			
 			if BlooSympathy is true:
-				say "[italic type]Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.";
+				say "[italic type]'Yeah, I might soon have something for ya. One thing tough ... ya look like Flux, not the Techie type, but rather blue, one gets a sense for that after staying on that planet longer than healthy. My advice: don't get too close with the Duju. It's not that I will judge ya, but the others will judge me for giving anything to ya.'";
 			else if the player wears the Sinkan Cloak:
-				say "[italic type]Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.";
+				say "[italic type]'Now that's a surprise. Listen, you better get rid of that cloak of yours. Everybody here knows what that is and who it is that wears it. That fuel you look for, I guess that has to wait now, folk would talk about me giving a cloak-wearer our gear. Look out for yaself.'";
 				now Trapist is neutral;
 			else if BlooSympathy is false:
 				if the Power Cell is in the Control Tower_Frizza:
-					say "[italic type]Mate! I've got somethin' for ya. Catch![paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]That stuff kicks your cute spaceship through whole galaxies, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
+					say "[italic type]'Mate! I've got somethin' for ya. Catch!'[paragraph break][roman type]Trapist produces something that looks like two columns of dark metal, welded together on their long end. He leisurely throws it in your direction, you rush to catch it and are crushed by their weight.[paragraph break][italic type]'That stuff kicks your cute spaceship to the other end of the universe, if you let it. We fuel dozens of these each and every day for gear that would take your dinghy pickaback. Now no need to get emotional, I'm glad for everyone who leaves these lands all in one piece.'[paragraph break][roman type]You receive a [bold type]Power Cell[roman type].";
 					now the player has the Power Cell;
 				else:
-					say "[italic type]That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.";
+					say "[italic type]'That thingy should power ya vessel through all that comes. I'm glad for everyone who leaves these lands all in one piece.'";
 	else:
-		say "[italic type]Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate."
+		say "[italic type]'Gosh, bad situation that. Can't do anything for ya at the moment though, pardon me Mate.'"
 
 
 
