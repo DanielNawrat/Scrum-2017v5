@@ -13,8 +13,8 @@ release to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the L
 storyfile leafname "On the Lookout.gblorb"
 storyfile "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
 ifiction "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
-cover "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Cover.jpg"
+cover "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
+picture 1 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
 picture 3 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Sitis1.png"
 picture 4 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\gaisetto1.png"
 picture 5 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
@@ -63,9 +63,25 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc406.html><img border=0 src=inform:/doc_images/help.png></a>||
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "On the Lookout.gblorb.js"
+template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "C:\Users\Tim\Documents\Inform\Templates"
+template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
+
+! Website instructions
+
+template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "C:\Users\Tim\Documents\Inform\Templates"
+template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
