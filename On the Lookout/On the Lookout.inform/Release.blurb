@@ -58,11 +58,12 @@ placeholder [IFID] = "6FBBE230-0EF6-429B-A3C2-DBCE746D1D49"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2017"
 placeholder [TITLE] = "Axesto's Journey"
-placeholder [AUTHOR] = "Daniel Nawrat, Tim Schmude, Franziska Kirchner, Kevin Koch, Tobias Gaschler"
+placeholder [AUTHOR] = "Daniel, Tim, Franziska, Kevin, Tobias"
 placeholder [BLURB] = "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process."
 
 ! Other material to release
 
+auxiliary "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Sitis1.png" "Figure of Flat Rock_Sitis" "--"
 
 ! Website instructions
 
@@ -82,7 +83,7 @@ template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line1"><img border=0 src=inform:/doc_images/Reveal.png></a>||
-status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status instruction ||&nbsp;<a href="source:story.ni#line2"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||

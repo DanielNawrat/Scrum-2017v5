@@ -131,42 +131,48 @@ Teleporting to Sitis is an action applying to nothing.
 Understand "teleport to Sitis" as teleporting to Sitis.
 
 After teleporting to Sitis:
-	now the Player is in the Flat Rock_Sitis.
+	now the Player is in the Flat Rock_Sitis;
+	now the Counter is 1.
 
 
 Teleporting to Gaisetto is an action applying to nothing.
 Understand "teleport to Gaisetto" as teleporting to Gaisetto.
 
 After teleporting to Gaisetto:
-	now the Player is in the landingzone_Gaisetto.
+	now the Player is in the landingzone_Gaisetto;
+	now the Counter is 2.
 	
 
 Teleporting to Geysiria is an action applying to nothing.
 Understand "teleport to Geysiria" as teleporting to Geysiria.
 
 After teleporting to Geysiria:
-	now the Player is in the Spaceship Bridge_Geysiria.
+	now the Player is in the Spaceship Bridge_Geysiria;
+	now the Counter is 3.
 	
 
 Teleporting to Frizza is an action applying to nothing.
 Understand "teleport to Frizza" as teleporting to Frizza.
 
 After teleporting to Frizza:
-	now the Player is in the Landing Zone_Frizza.
+	now the Player is in the Landing Zone_Frizza;
+	now the Counter is 4.
 	
 
 Teleporting to Kaldríss is an action applying to nothing.
 Understand "teleport to Kaldríss" as teleporting to Kaldríss.
 
 After teleporting to Kaldríss:
-	now the Player is in the Spaceship Bridge_Kaldríss.
+	now the Player is in the Spaceship Bridge_Kaldríss;
+	now the Counter is 5.
 	
 
 Teleporting to end is an action applying to nothing.
 Understand "teleport to end" as teleporting to end.
 
 After teleporting to end:
-	now the Player is in the Bifröst Portal Chamber.
+	now the Player is in the Bifröst Portal Chamber;
+	now the Counter is 5.
 
 
 

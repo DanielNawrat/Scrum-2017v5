@@ -7,7 +7,7 @@
         </identification>
         <bibliographic>
             <title>Axesto's Journey</title>
-            <author>Daniel Nawrat, Tim Schmude, Franziska Kirchner, Kevin Koch, Tobias Gaschler</author>
+            <author>Daniel, Tim, Franziska, Kevin, Tobias</author>
             <headline>A Space Quest</headline>
             <genre>Science Fiction</genre>
             <firstpublished>2017</firstpublished>
@@ -15,6 +15,12 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>Sitis1.png</leafname>
+                <description>Figure of Flat Rock_Sitis</description>
+            </auxiliary>
+        </resources>
         <cover>
             <format>png</format>
             <height>242</height>
