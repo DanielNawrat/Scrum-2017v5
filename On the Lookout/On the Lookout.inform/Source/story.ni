@@ -498,9 +498,9 @@ Jungle_Gaisetto is region.
 [When play begins:
 	say "Hell that was a harsh landing. Thanks God you landed safely on this clearing right next to the cliff. Only some meters besides and your Spaceship would have been shuttered into a thousand pieces. Hopeful all this effort isn’t for nothing at all and I will find some food here. You look around. South of you is the spaceship in front of the cliff. All the other directions you see a jungle."]
 	
-Landingzone_Gaisetto is a room in the Jungle_Gaisetto. "You are standing an a clearing. South of you is your spaceship right in front of a cliff. All the other directions you are surrounded by the deep green of the jungle." The printed name of Landingzone_Gaisetto is "Landingzone".
+Landingzone_Gaisetto is a room in the Jungle_Gaisetto. "You are standing an a clearing. [bold type]South[roman type] of you is your spaceship right in front of a cliff. [bold type]All the other directions[roman type] you are surrounded by the deep green of the jungle." The printed name of Landingzone_Gaisetto is "Landingzone".
 
-Jungle_1 is a room in the Jungle_Gaisetto. "The versatility of the flora around you is incredible. All thinkable sizes and forms of trees, bushes, ferns and flowers exdend   everywhere as far as the eye can reach. Sadly nothing here looks eatable. You look around and see your Spaceship south of you. Eastward it looks like it goes deeper in the jungle. Somethink shines threw the trees west of you and in the north there must be some kind of stony wall." The printed name of Jungle_1 is "Jungle".
+Jungle_1 is a room in the Jungle_Gaisetto. "The versatility of the flora around you is incredible. All thinkable sizes and forms of trees, bushes, ferns and flowers exdend   everywhere as far as the eye can reach. Sadly nothing here looks eatable. You look around and see your Spaceship [bold type]south[roman type] of you. [bold type]Eastward[roman type] it looks like it goes deeper in the jungle. Somethink shines threw the trees [bold type]west[roman type] of you and in the [bold type] north[roman type] there must be some kind of stony wall." The printed name of Jungle_1 is "Jungle".
 
 	[Tempel]
 				[Alles zum Tempel an Beschreibungen]
@@ -513,7 +513,7 @@ The plinth is door. The plinth is north of the Temple_Gaisetto. The plinth is lo
 
 After opening the plinth:
 	remove golden plate from play;
-	say "the plinth move to the side and revealed a hole in the templewall.".
+	say "the plinth moves to the side and revealed a hole in the templewall.".
 
 The floor mosaic is door. Floor mosaic is above the Catacombs. The floor mosaic is locked. 
 
@@ -523,7 +523,9 @@ the Inscription on the Plinth is scenery.
 
 After examining the floor mosaic:
 	if the player has the flute:
-		say "The floor mosaic moved apart and reveals a secret staircase down to Catacombs ";
+		say "The floor mosaic moved apart and reveals a secret staircase [bold type]down[roman type] to catacombs ";
+	if the player has the ruby:
+		say "The floor mosaic moved apart and reveals a secret staircase [bold type]down[roman type] to catacombs ";
 	else:
 		say "On each corner of it is a stone to be seen. One is red as fire and covered in flames, the otherone blue like the ocean and covered in waves and the last one green like the jungle, that sourrounds the temple, covered in leavs."
 	
@@ -548,17 +550,19 @@ After examining the emerald:
 After examining huge very old tree:
 	say "Is this the sound of the wind blowing threw the leaves or is there somthing snorring?".
 
+After taking the emerald:
+	now the description of temple_gaisetto is "A little temple in the middle of the jungle. It looks very old, because the whole building is covered in moss and seems to be in danger of collapsing. Inside the temple there are inscriptions on the [bold type]right templewall [roman type]and [bold type]left templewall [roman type]as well as a colourfull [bold type]floor mosaic[roman type], that shows a triangle.  In front of you on the north wall of the temple is a gigantic [bold type]statue [roman type]on a [bold type]plinth.[roman type] It looks like an insect with a huge compact thorax and six long hairy legs. On the head are foure jaws as huge as you are. It looks verys dangerous and frightening.".
 
 [Dschungel]
 
-Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t see the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around you bear fruits or nuts, that could be eatable. South of you is the cliff. East of you lies the clearing with your spaceship. North of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
-Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one [bold type]huge very old[roman type] tree with dark red leavs. Because of its gigantic crown no sunlight reaches the mossy floor. Thus the place is surrounded by a very mystery and unreal aura. South of you is the cliff. West of you lies the clearing with your spaceship. North of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
+Jungle_2 is a room in the Jungle_Gaisetto. "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t see the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around you bear fruits or nuts, that could be eatable. [bold type]South[roman type] of you is the cliff. [bold type]East[roman type] of you lies the clearing with your spaceship. [bold type]North[roman type] of you is something shining through the trees. Maybe there is something reflecting the sunlight."  The printed name of Jungle_2 is "Jungle".
+Jungle_3 is a room in the Jungle_Gaisetto. "There are many trees around you, but only one [bold type]huge very old tree [roman type]with dark red leavs. Because of its gigantic crown no sunlight reaches the mossy floor. Thus the place is surrounded by a very mystery and unreal aura. [bold type]South[roman type] of you is the cliff. [bold type]West[roman type] of you lies the clearing with your spaceship. [bold type]North [roman type]of you stretches the vastness of the jungle."  The printed name of Jungle_3 is "Jungle".
 Jungle_4 is a room in the Jungle_Gaisetto. "You found a [bold type]lake [roman type]in the middle of the jungle. It’s strange, because you can’t find a spring or a stream. You wonder, is it water? It looks like, but where is the water coming from?"  The printed name of Jungle_4 is "Jungle".
-Jungle_5 is a room in the Jungle_Gaisetto. " Some plants look snapped off. Was it an animal that made its way threw the undergrowth? It's strange because you haven't heared any animal sound so far. Not a single bird was singing. Only total silence besides the sound of the wind blowing softly threw the branches. There is a possibility to go west or south deeper in the jungle." The printed name of Jungle_5 is "Jungle".
+Jungle_5 is a room in the Jungle_Gaisetto. " Some plants look snapped off. [italic type]Was it an animal that made its way threw the undergrowth? It's strange because you haven't heared any animal sound so far. Not a single bird was singing. Only total silence besides the sound of the wind blowing softly threw the branches. [roman type]There is a possibility to go[bold type] west[roman type] or [bold type]south[roman type] deeper in the jungle." The printed name of Jungle_5 is "Jungle".
 Jungle_6 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little [bold type]blue shrine[roman type]. It seems like it is able to unlock and open with some kind of stone."The printed name of Jungle_6 is "Jungle".
 Jungle_7 is a room in the Jungle_Gaisetto. "Threw a small hole in the dense jungle you found a little [bold type]green shrine[roman type]. It seems like it is able to unlock and open with some kind of stone."  The printed name of Jungle_7 is "Jungle".
-Catacombs is a room in the Jungle_Gaisetto. "The Catacombs is a small room carryed by six massive stone pillars. Its verys dark but it seems to be totaly empty. Only east of you is a faint light coming from a tunnel."
-Tunnel is a room in the Jungle_Gaisetto. "Surrounded by stonewalls and a low ceiling is looks like there is a small hole above your head that let the sunlight through". 
+Catacombs is a room in the Jungle_Gaisetto. "The Catacombs is a small room carryed by six massive stone pillars. Its verys dark but it seems to be totaly empty. Only [bold type]east [roman type]of you is a faint light coming from a tunnel."
+Tunnel is a room in the Jungle_Gaisetto. "Surrounded by stonewalls and a low ceiling is looks like there is a small hole [bold type]above [roman type]your head that let the sunlight through. [italic type]Maby I can climb through?". 
 Jungle_8 is a room in Jungle_Gaisetto. "Without the hot flames you can see a little [bold type]red shrine[roman type]. It seems like it is able to unlock and open it with some kind of stone." The printed name of Jungle_8 is "Jungle".
 
 Jungle_1 is north of the Landingzone_Gaisetto.
@@ -597,11 +601,11 @@ food is a object in the lager.
 [Dorf]
 
 The Formizer_Village is a region. 
-The Chain_bridge is a room in the Formizer_Village. "You are standing on a chain bridge made by vines and wood. Hopefully it carries my way and won't tear down. On the other end of the bridge in the south you can see a little path. East of the path is a little wooden hut. It seems like you fond some kind of zivilization." The printed name of Chain_bridge is "Chain Bridge".
-The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply lead to all the huts in the back.  Right next to the squareare are only two huts. In the west and in the east. In front of you, in the north, is a totem."The printed name of Village_Square is "Square".
+The Chain_bridge is a room in the Formizer_Village. "You are standing on a chain bridge made by vines and wood. Hopefully it carries my way and won't tear down. On the other end of the bridge in the[bold type] south[roman type] you can see a little path.[bold type] East[roman type] of the path is a little wooden hut. It seems like you fond some kind of zivilization." The printed name of Chain_bridge is "Chain Bridge".
+The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply lead to all the huts in the back. Right next to the squareare are only two huts. One in the [bold type]west [roman type]and the otherone in the [bold type]east.[roman type] In front of you, in the[bold type] north[roman type], is a totem."The printed name of Village_Square is "Square".
 Village_hut2 is a room in Formizer_Village. The printed name of Village_hut2 is "Shaman's Hut".
 Village_hut3 is a room in Formizer_Village. The printed name of the Village_hut3 is "Hut".
-Village_Path is a room in Formizer_Village. "The dusty path leads north to a big square. On the right is some hut." The printed name of the Village_path is "Path".
+Village_Path is a room in Formizer_Village. "The dusty path leads [bold type]north[roman type] to a big square. [bold type]East [roman type] of you is some kind of hut." The printed name of the Village_path is "Path".
 Village_stable is a room in Formizer_Village. The printed name of the Village_stable is "Stable".
 The totem is a room in Formizer_Village. "(..)"  The printed name of the totem is "Totem".
 
@@ -625,7 +629,7 @@ Instead of going nowhere from totem: say "You should not leave the village.".
 [Objekte im Dorf]
 
 
-battlestaff is a object in the lager.
+blade is a object in the lager.
 chest is a container in the Village_hut2. it is fixed in place. the printed name is "chest". The chest is a closed openable container. the carving is in the chest.
 saddle is a object in the lager.
 
@@ -640,21 +644,21 @@ child is a person in Village_hut1.]
 old man is a person in Village_hut3.
 
 Before going to the Village_hut2:
-	unless player carries battlestaff:
+	unless player carries blade:
 		move the player to the village_square;
-		say "It is locked";
+		say "The entrance seems to be locked";
 		stop the action.
 
 Before going to the Village_stable:
 	unless player carries saddle:
 		move the player to the village_path;
-		say "It is locked";
+		say "The entrance seems to be locked";
 		stop the action.	
 		
 Before going to the Village_hut3:
-	unless player carries battlestaff:
+	unless player carries blade:
 		move the player to the village_square;
-		say "It is locked";
+		say "The entrance seems to be locked";
 		stop the action.
 		
 [Personen, Objekte und Container im Dschungel]
@@ -667,7 +671,7 @@ the lake is in the Jungle_4. It is scenery.
 
 The green shrine is in Jungle_7. It is fixed in place. The printed name is "Shrine covered in moss. It looks very old and has a mysterious green shine." The green shrine is a openable container. it is locked. The emerald unlocks the green shrine. 
 The blue shrine is in the Jungle_6. It is fixed in place. The printed name is "Shrine surrounded my blue grass and shallow water. It looks very old and has a mysterious blue shine." The blue shrine is a openable container. it is locked. The sapphire unlocks the blue shrine. 
-The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine circled by a firewall. It looks very old and hat a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. 
+The red shrine is in Jungle_8. It is fixed in place. The printed name is "Shrine that looks very old and has a mysterious red shine." The red shrine is a openable container. it is locked. The ruby unlocks the red shrine. 
 
 Before going to the Jungle_8:
 	unless player carries ruby:
@@ -676,8 +680,10 @@ Before going to the Jungle_8:
 		stop the action.		
 
 After opening green shrine:
-	 now the description of Jungle_4 is "What happend to the lake? The erea is completely dried out and on the ground divulges a blue stone.";
+	now the description of Jungle_4 is "What happend to the lake? The erea is completely dried out and on the ground divulges a blue stone called [bold type]sapphire.";
 	now the description of the Jungle_7 is "It's like the green shrine has never existed. All you can see around you is the dense jungle.";
+	now the description of the Jungle_1 is "The versatility of the flora around you is incredible. All thinkable sizes and forms of trees, bushes, ferns and flowers exdend   everywhere as far as the eye can reach. Sadly nothing here looks eatable. You look around and see your Spaceship [bold type]south[roman type] of you. [bold type]Eastward [roman type]and [bold type]westward[roman type] it looks like it goes deeper in the jungle. In the [bold type] north[roman type] there must be some kind of stony wall.";
+	now the description of the Jungle_2 is "You are surrounded by strange plants. Some of them have beautiful colourful blossoms and shine in the sunlight. There are huge trees, so high you can’t see the top of the crowns and violet ferns covered in blue sticky fluid. Sadly none of the plant around you bear fruits or nuts, that could be eatable. [bold type]South[roman type] of you is the cliff. [bold type]East[roman type] of you lies the clearing with your spaceship. [bold type]North[roman type] of you it looks like it goes deeper in the jungle.";
 	say "The ground starts to shake and the green shrine gets swollowed by the earth. There is a noice far away from you. It sounds like water spashing together.";
 	move green shrine to Lager;
 	move sapphire to Jungle_4;
@@ -685,7 +691,10 @@ After opening green shrine:
 
 
 After taking sapphire:
-	say "It feels wet".
+	say "It feels wet";
+	now the description of Jungle_4 is "The dried out aera where the lake used to be."
+	
+	
 	
 
 After opening blue shrine:
@@ -696,7 +705,7 @@ After opening blue shrine:
 	move flute to Jungle_6.
 
 After taking flute:
-	say "What did I just hear? It sounded like stone grinds on stone somewhere east. Must sound must come from the temple";
+	say "[italic type]What did I just hear?[roman type] It sounded like stone grinds on stone somewhere east. This sound must have come from the temple";
 	now floor mosaic is open.
 
 PLaying the flute is an action applying to nothing.
@@ -707,7 +716,7 @@ The description of the flute is "you should try to [bold type]play the flute".
 After playing the flute:
 	if the player has the flute:
 		if the player is in the jungle_3:
-			say "[italic type] WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction over all of us! [roman type] The [bold type]huge very old tree[roman type] moves its brunches and drops the [bold type]ruby";
+			say "[italic type] 'WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction over all of us!' [roman type] The [bold type]huge very old tree[roman type] moves its brunches and drops the [bold type]ruby. Your flute crumbles into dust.";
 			move ruby to jungle_3;
 			remove flute from play;
 		else:
@@ -722,28 +731,18 @@ After opening red shrine:
 	remove ruby from play;
 	move golden plate to Jungle_8.
 	
+After taking golden plate:
+	say "Its a round, flat, golden plate. [italic type]Maby it has some kind of use and it fits somewhere in?".
+
 
 After going to totem for the first time:
-	say "You are on the north end of the square. A five meter high colourful painted totem is in front of you. Right next to it is a about a meter tall being with shining black skin. It stands on four legs that have claws at the end. On both arms it carries a battlestaff. Instead of a head it looks like it wears a triangular mark in the colours green, blue and red. You want to run away, but the being starts to talk: [italic type]Oh what have you done? You moved the plinth and made the way clear for it to attack us! I closed this passage many many lunar cycles in the past, so we can live here safe. Ohh what have you done?! It will kill us! We have to arm us! No! You have to save us from this beast! You allowed it to come here! Take this battlestaff and go in my hut. It's the one on the left from the suqare. Inside you will find a [bold type]cest[italic type]. You have to open it and take the [bold type]carving[roman type]. Bring it to the oldest across the square! Hurry up!";
-	now the player carries battlestaff.
+	say "You are on the north end of the square. A five meter high colourful painted totem is in front of you. Right next to it is a about a meter tall being with shining black skin. It stands on four legs that have claws at the end. On both arms it carries a blade. Instead of a head it looks like it wears a triangular mark in the colours green, blue and red. You want to run away, but the being starts to talk: [italic type]'Oh what have you done? You moved the plinth and made the way clear for it to attack us! I closed this passage many many lunar cycles in the past, so we can live here safe. Ohh what have you done?! It will kill us! We have to arm us! No! You have to save us from this beast! You allowed it to come here! Take this blade and go in my hut. It's the one[bold type] west [italic type]of the suqare. Inside you will find a [bold type]cest[italic type]. You have to[bold type] open[italic type] it and[bold type] take[italic type] the [bold type]carving[roman type]. Bring it to the oldest across the square! Hurry up!'";
+	now the player carries blade.
 	
 
-
-[After asking shaman about a topic listed in the Table of shaman Responses:
-			say "[response entry]";
-			move battlestaff to totem.
-			
-		
-Table of shaman Responses
-Topic	Response
-"Götti" 	"[italic type]- Yeah, our essence and all that shit. Don't mention it.[paragraph break]"	
-"weapon"	"[italic type]- We should arm ourselfe..."]
-	
-[After taking battlestaff:
-	say "yeah".]
 	
 After opening the chest:
-	say "Inside the [bold type]chest[roman type] lies a [bold type]carving[roman type],that looks like the statue.".
+	say "Inside the [bold type]chest[roman type] lies a [bold type]carving[roman type], that looks like the statue in the temple.".
 
 After taking carving:
 	say "You took the [bold type]carving.".
@@ -767,11 +766,13 @@ After saddle the götti:
 		
 After going to Village_hut3:
 	if the player has the carving:
-		say "[italic type]Oh I hade a feeling this day will come. It's like then! The events will be repeated. The last time i saw this carving many of us died a horrible death. You need a götti to be fast enogh to have a chance against it. Take this [bold type]saddle [italic type]and go to the stable in the south. You have to [bold type]saddle[italic type] the göttis so you can ride it.";
+		say "[italic type]'Oh I hade a feeling this day will come. It's like then! The events will be repeated. The last time i saw this carving many of us died a horrible death. Its the [bold type]chungusimba[italic type] a gigantic creature, that kills and eats everything it can reach. You need a [bold type]götti [italic type]to be fast enogh to have a chance against it. Take this [bold type]saddle [italic type]and go to the stable in the south. You have to [bold type]saddle the göttis[italic type] so you can ride it.";
 		remove carving from play;
 		now player carries saddle;
+	if the player has the saddle:
+		say "[italic type]Go to the stable in the south. You have to [bold type]saddle the göttis[italic type] so you can ride it.";
 	else: 
-		say "[italic type] What the fuck are you little scumbag doing in my fucking hut?".
+		say "[italic type] 'What the fuck are you little scumbag doing in my fucking hut?'".
 		
 
 [the götti is a person in the village_stable. ]
@@ -781,7 +782,7 @@ Understand "ride the götti" as ride the götti.
 
 After ride the götti:
 	if the location of the player is the location of the götti and player does not carry saddle:
-		say "you ride outside the stable to fight the beast. Meanwhile it crossed the cliff and stands right in front of you, ready to kill you any secound.";
+		say "you ride outside the stable to fight the beast. Meanwhile it crossed the cliff and stands right in front of you, ready to kill you any secound.Now or never: [bold type] attack the chungusimba!";
 		move player to village_path;
 		move götti to the village_path;
 	else:
@@ -795,12 +796,18 @@ After going to the village_path:
 		say "[italic type]Wrooooommmppppsss![roman type] The chungusimba made its way threw the hole in the temple. Eveything that seperates you from the beast is the cliff. You should hurry up!".
 
 
-Before going to the village_square:
+Before going to the village_square from the village_path:
 	if player carries saddle:
 		move the player to the village_path;
 		say "You have to [bold type]saddle the götti[roman type]! Now!";
 		stop the action.
 
+Before going to the village_path from the village_stable:
+	if player carries saddle:
+		move the player to the village_stable;
+		say "You have to [bold type]saddle the götti[roman type]! Now!";
+		stop the action.
+		
 Before going to the chain_bridge:
 	if player carries saddle:
 		move the player to the village_path;
@@ -825,8 +832,8 @@ Before going to the chain_bridge:
 attack the chungusimba is an action applying to nothing.
 Understand "attack the chungusimba" as attack the chungusimba.
 After attack the chungusimba :
-	if the player has the battlestaff and the location of the player is the location of the götti:
-		say "You attack the chungusimba with your battlestaff. It starts to stagger and makes a step back. The cliff is only millimetre behind it. You have to [bold type]push the chungusimba.";
+	if the player has the blade and the location of the player is the location of the götti:
+		say "You attack the chungusimba with your blade. It starts to stagger and makes a step back. The cliff is only millimetre behind it. You have to [bold type]push the chungusimba.";
 		move shaman to village_path;
 		move food to the village_path;
 	else:
@@ -835,7 +842,7 @@ After attack the chungusimba :
 push the chungusimba is an action applying to nothing.
 Understand "push the chungusimba" as push the chungusimba.
 After push the chungusimba :
-	if the player has the battlestaff and the location of the player is the location of the götti:
+	if the player has the blade and the location of the player is the location of the götti:
 		say "You push it and it falls of! Shaman: [italic type]You killed it. We are so thankful, [bold type]take some food [italic type] and we bring you to you spaceship.";
 		move shaman to village_path;
 		move food to the village_path;
@@ -845,7 +852,7 @@ After push the chungusimba :
 After taking food:
 	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky. The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
 	move player to Spaceship Bridge_Geysiria;
-	remove battlestaff from play;
+	remove blade from play;
 	now the Counter is 3.
 
 
