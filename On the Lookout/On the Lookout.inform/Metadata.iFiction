@@ -11,16 +11,10 @@
             <headline>A Space Quest</headline>
             <genre>Science Fiction</genre>
             <firstpublished>2017</firstpublished>
-            <description>Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process.</description>
+            <description>Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process.<br/>If you want to play the game on your desktop (advised), please download one of the interpreters for your system (e.g. Windows Glulxe) and download the Story File.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
-        <resources>
-            <auxiliary>
-                <leafname>Sitis1.png</leafname>
-                <description>Figure of Flat Rock_Sitis</description>
-            </auxiliary>
-        </resources>
         <cover>
             <format>png</format>
             <height>242</height>

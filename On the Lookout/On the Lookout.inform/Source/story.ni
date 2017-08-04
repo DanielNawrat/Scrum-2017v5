@@ -1,11 +1,11 @@
-Release along with a website and an interpreter and cover art.
+Release along with a website, the "Quixe" interpreter, cover art, the source text and an introductory postcard.
 
 The story title is "Axesto's Journey".
 The story headline is "A Space Quest".
 The story author is "Daniel, Tim, Franziska, Kevin, Tobias".
 The story genre is "Science Fiction".
 The release number is 1.
-The story description is "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process."
+The story description is "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process. If you want to play the game on your desktop (advised), please download one of the interpreters for your system (e.g. Windows Glulxe) and download the Story File."
 The story creation year is 2017. 
 
 [Anchor rooms Testsection]
