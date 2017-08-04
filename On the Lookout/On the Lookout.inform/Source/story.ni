@@ -1,6 +1,6 @@
 Release along with a website, the "Quixe" interpreter, cover art, the source text and an introductory postcard.
 
-The story title is "Axesto's Journey".
+The story title is "On the Lookout".
 The story headline is "A Space Quest".
 The story author is "Daniel, Tim, Franziska, Kevin, Tobias".
 The story genre is "Science Fiction".
