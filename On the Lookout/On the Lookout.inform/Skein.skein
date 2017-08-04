@@ -4,14 +4,14 @@
   <activeNode nodeId="node-1"/>
   <item nodeId="node-1">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Tim, Franziska, Kevin, Tobias&#x000A;Release 1 / Serial number 170804 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;You can see Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldr&#x00ED;ss here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!&#x000A;&#x000A;On the Lookout&#x000A;An Interactive Fiction by Daniel, Tim, Franziska, Kevin, Tobias&#x000A;Release 1 / Serial number 170804 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Your arrival point. The Flat Rock&#x000A;You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away in the east you recognise some kind of different rooftops. Maybe someones living there who could help you?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
       <child nodeId="node-2"/>
-      <child nodeId="node-25"/>
+      <child nodeId="node-101"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -25,7 +25,7 @@
       <child nodeId="node-3"/>
       <child nodeId="node-8"/>
       <child nodeId="node-23"/>
-      <child nodeId="node-197"/>
+      <child nodeId="node-25"/>
     </children>
   </item>
   <item nodeId="node-3">
@@ -261,7 +261,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-197">
+  <item nodeId="node-25">
     <command xml:space="preserve">take geysiria</command>
     <result xml:space="preserve">Spaceship Bridge&#x000A;Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key  Examine this key in order to see if it's the right combination . In order to leave the spaceship, you have to head south.&#x000A;&#x000A;You can see an encryptionkey here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -269,10 +269,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-198"/>
+      <child nodeId="node-26"/>
     </children>
   </item>
-  <item nodeId="node-198">
+  <item nodeId="node-26">
     <command xml:space="preserve">heler</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -280,10 +280,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-199"/>
+      <child nodeId="node-27"/>
     </children>
   </item>
-  <item nodeId="node-199">
+  <item nodeId="node-27">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -291,10 +291,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-200"/>
+      <child nodeId="node-28"/>
     </children>
   </item>
-  <item nodeId="node-200">
+  <item nodeId="node-28">
     <command xml:space="preserve">helper</command>
     <result xml:space="preserve">---&#x000A;This is the help section, you will get a list of essential commands that you can use in the game.&#x000A;&#x000A;Basic Commands&#x000A;&#x000A;look - shows you the room you are currently in&#x000A; e(x)amine (something)- get information about a thing or a person (if no object or person is specified, something will be examined automatically, if it's the only thing in the room&#x000A; take (something) - take and carry something&#x000A; (i)nventory - show what you are carrying&#x000A;&#x000A;(e)ast - go east&#x000A; (w)est - go west&#x000A; (s)outh - go south&#x000A; (n)orth - go north&#x000A;&#x000A;save - produce a local save file on your computer&#x000A; restore - load a local save file&#x000A; quit - quit the game&#x000A;&#x000A;Geysiria&#x000A;End of help section&#x000A;---&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -302,10 +302,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-201"/>
+      <child nodeId="node-29"/>
     </children>
   </item>
-  <item nodeId="node-201">
+  <item nodeId="node-29">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Spaceship Bridge&#x000A;Shit, this was exhausting. The impact of the landing was pretty heavy. The Spaceship Bridge still works though. Hm, on your left side there is a little bit of food, to your right there is a small storage unit with an encryption key  Examine this key in order to see if it's the right combination . In order to leave the spaceship, you have to head south.&#x000A;&#x000A;You can see Teleportation Stone - Kaldr&#x00ED;ss, Teleportation Stone - Frizza, Teleportation Stone - Geysiria, Teleportation Stone - Gaisetto, Teleportation Stone - Sitis and an encryptionkey here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -313,10 +313,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-202"/>
+      <child nodeId="node-30"/>
     </children>
   </item>
-  <item nodeId="node-202">
+  <item nodeId="node-30">
     <command xml:space="preserve">take encryptionkey</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -324,10 +324,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-203"/>
+      <child nodeId="node-31"/>
     </children>
   </item>
-  <item nodeId="node-203">
+  <item nodeId="node-31">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Spaceship Storage&#x000A;Taking a quick look inside the storage room doesn't seem to reveal anything particularly interesting. There are only some random souvenirs from your previous intergalactic travels and your locker which you haven't opened in ages.  Examine this locker in order to see if the key fits . If you wish to leave the spaceship immediately, head south.&#x000A;&#x000A;You can see a lockbox (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -335,10 +335,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-204"/>
+      <child nodeId="node-32"/>
     </children>
   </item>
-  <item nodeId="node-204">
+  <item nodeId="node-32">
     <command xml:space="preserve">unlock lockbox</command>
     <result xml:space="preserve">What do you want to unlock the lockbox with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -346,10 +346,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-205"/>
+      <child nodeId="node-33"/>
     </children>
   </item>
-  <item nodeId="node-205">
+  <item nodeId="node-33">
     <command xml:space="preserve">unlock lockbox with encryptionkey</command>
     <result xml:space="preserve">You unlock the lockbox.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -357,10 +357,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-206"/>
+      <child nodeId="node-34"/>
     </children>
   </item>
-  <item nodeId="node-206">
+  <item nodeId="node-34">
     <command xml:space="preserve">open lockbox</command>
     <result xml:space="preserve">You open the lockbox, revealing an underwater system map.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -368,10 +368,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-207"/>
+      <child nodeId="node-35"/>
     </children>
   </item>
-  <item nodeId="node-207">
+  <item nodeId="node-35">
     <command xml:space="preserve">take map</command>
     <result xml:space="preserve">The Geysiria Underwater Cave System Map. Without this tool you are pretty much lost and won't be able to leave this planet as you have to stop the huge ash cloud and geysir fountains. The map will help you get to the location where you'll be able to stop pretty much every action going on here on this vast planet. But be careful - don't lose it and read the instructions carefully, as you don't have second chances here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -379,10 +379,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-208"/>
+      <child nodeId="node-36"/>
     </children>
   </item>
-  <item nodeId="node-208">
+  <item nodeId="node-36">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Spaceship Exit&#x000A;Bye Spaceship. Let's go and have a look around. There's more to this planet than ash clouds, lava and rocky landscape if you use your knowledge and cleverness. On the western side you see massives waves detonating on the shores. You turn around and you see a vastland of volcanoes, mountains and dry land. This must be the vast landscape of Geysiria. First I try to explain the map a little - sorry, I don't know everything, but I think I can give you some hints I know from King Kamehameha. Here are your options, respectively the options I know: On the horizon, in the east, there is your landing zone, where you normally land. You landed a little more west on a steep cliff but you were lucky, the spaceship is still in one piece. Here you can either head north on the Kamehameha Route to the North Shore to hopefully reach the big area where all the infamous geysirs are. Your second option is heading towards the little village which is in the eastern part of the planet. You can explore the region of all the volcanoes here. To this point I don't know much more. Keep me updated and I will try and connect the dots at the next stops.&#x000A;&#x000A;Head east to leave the spaceship.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -390,10 +390,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-209"/>
+      <child nodeId="node-37"/>
     </children>
   </item>
-  <item nodeId="node-209">
+  <item nodeId="node-37">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Landing Zone&#x000A;It is windy, dusty and your sight is limited to only a few meters. Look around, as you maybe realised you are on Geysiria. The name comes from its massive Geysirs in the north east of the planet which will maybe help you out of this unpleasant vastland. Hmmm, or is it more clever to head to the village in order to search for hints in this little ghost town? I don't know, you decide.&#x000A;&#x000A;You have three options: You can either go back to the spaceship (west), head north towards the northern shores and the geysir areas or you can hike east towards the volcanoes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -401,10 +401,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-210"/>
+      <child nodeId="node-38"/>
     </children>
   </item>
-  <item nodeId="node-210">
+  <item nodeId="node-38">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Kamehameha Route&#x000A;A very famous route you are walking on. A century ago King Kamehameha ventured along this very tiny path you can barely see anymore. He made this entire path for about two hundred kilometers until Hale'iwa, a little spot on the northern Shores of Geysiria. This little spot is called after a bird that is living there. It is a little outlook nestled in a vast land where you can overlook the whole North Shore. The windward west side, the eastern side where many land mines lay below the ground and the ocean is what you can see here.&#x000A;&#x000A;Three options: head south, back to the Landing Zone. Hike north on the trail towards the Geysirs.&#x000A;&#x000A;You can see a massive rock here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -412,10 +412,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-211"/>
+      <child nodeId="node-39"/>
     </children>
   </item>
-  <item nodeId="node-211">
+  <item nodeId="node-39">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Field of Death&#x000A;People say there are some land mines still in this area. You can go back to the Landing Zone and try another way. In order to master the Kamehameha Route which only King Kamehameha passed a few hundred years ago you need some tools to get access to the Seaside. Be patient, calm and collected and make good choices. You would be the second one to master this way full of obstacles. You know you have to pass that massive rock, too.&#x000A;&#x000A;But be careful, check it out first. Maybe it's a not a good idea - I don't know. Examine the land mine. Take the land mine.&#x000A;&#x000A;Head west - back onto the Kamehameha Route or remain on the Field of Death - you won't make it very long until one of those land mines will detonate and kill you, so I'd recommend heading back to the trail.&#x000A;&#x000A;You can see a land mine here.&#x000A;&#x000A;Take the land mine.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -423,10 +423,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-212"/>
+      <child nodeId="node-40"/>
     </children>
   </item>
-  <item nodeId="node-212">
+  <item nodeId="node-40">
     <command xml:space="preserve">take land mine</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -434,10 +434,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-213"/>
+      <child nodeId="node-41"/>
     </children>
   </item>
-  <item nodeId="node-213">
+  <item nodeId="node-41">
     <command xml:space="preserve">x mine</command>
     <result xml:space="preserve">You see nothing special about the land mine.&#x000A;&#x000A;Be careful, a land mine is not a toy! I know you're a big boy so you should be able to handle a little land mine. This one should help you get this massive rock out of your way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -445,10 +445,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-214"/>
+      <child nodeId="node-42"/>
     </children>
   </item>
-  <item nodeId="node-214">
+  <item nodeId="node-42">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Too dangerous, the Field of Death is huge, you really don't want to get lost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -456,10 +456,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-215"/>
+      <child nodeId="node-43"/>
     </children>
   </item>
-  <item nodeId="node-215">
+  <item nodeId="node-43">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Too dangerous, the Field of Death is huge, you really don't want to get lost here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -467,10 +467,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-216"/>
+      <child nodeId="node-44"/>
     </children>
   </item>
-  <item nodeId="node-216">
+  <item nodeId="node-44">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Kamehameha Route&#x000A;A very famous route you are walking on. A century ago King Kamehameha ventured along this very tiny path you can barely see anymore. He made this entire path for about two hundred kilometers until Hale'iwa, a little spot on the northern Shores of Geysiria. This little spot is called after a bird that is living there. It is a little outlook nestled in a vast land where you can overlook the whole North Shore. The windward west side, the eastern side where many land mines lay below the ground and the ocean is what you can see here.&#x000A;&#x000A;Three options: head south, back to the Landing Zone. Hike north on the trail towards the Geysirs.&#x000A;&#x000A;You can see a massive rock here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -478,10 +478,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-217"/>
+      <child nodeId="node-45"/>
     </children>
   </item>
-  <item nodeId="node-217">
+  <item nodeId="node-45">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the massive rock)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -489,10 +489,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-218"/>
+      <child nodeId="node-46"/>
     </children>
   </item>
-  <item nodeId="node-218">
+  <item nodeId="node-46">
     <command xml:space="preserve">x rock</command>
     <result xml:space="preserve">You see nothing special about the massive rock.&#x000A;&#x000A;Shit, you have been walking for a few hours now on this tiny trail and now there is this huge rock in front of you. The surface is very smooth, there is no grip, you won't be able to climb over it. You need to burst it away in order to continue your journey.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -500,10 +500,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-219"/>
+      <child nodeId="node-47"/>
     </children>
   </item>
-  <item nodeId="node-219">
+  <item nodeId="node-47">
     <command xml:space="preserve">destroy rock</command>
     <result xml:space="preserve">Violence isn't the answer to this one.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -511,10 +511,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-220"/>
+      <child nodeId="node-48"/>
     </children>
   </item>
-  <item nodeId="node-220">
+  <item nodeId="node-48">
     <command xml:space="preserve">use land mine</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -522,10 +522,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-221"/>
+      <child nodeId="node-49"/>
     </children>
   </item>
-  <item nodeId="node-221">
+  <item nodeId="node-49">
     <command xml:space="preserve">x mine</command>
     <result xml:space="preserve">You see nothing special about the land mine.&#x000A;&#x000A;Be careful, a land mine is not a toy! I know you're a big boy so you should be able to handle a little land mine. This one should help you get this massive rock out of your way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -533,10 +533,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-222"/>
+      <child nodeId="node-50"/>
     </children>
   </item>
-  <item nodeId="node-222">
+  <item nodeId="node-50">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Landing Zone&#x000A;It is windy, dusty and your sight is limited to only a few meters. Look around, as you maybe realised you are on Geysiria. The name comes from its massive Geysirs in the north east of the planet which will maybe help you out of this unpleasant vastland. Hmmm, or is it more clever to head to the village in order to search for hints in this little ghost town? I don't know, you decide.&#x000A;&#x000A;You have three options: You can either go back to the spaceship (west), head north towards the northern shores and the geysir areas or you can hike east towards the volcanoes.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -544,10 +544,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-223"/>
+      <child nodeId="node-51"/>
     </children>
   </item>
-  <item nodeId="node-223">
+  <item nodeId="node-51">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Pe'ahi Trail&#x000A;The well known Pe'ahi Trail, better known as Jaws is a nerve -wracking trail with lots of ups and downs - you will walk for hours eventhough the walk itself is only a few kilometers long. On this part of the planet the temperature at day is around 35 to 40 degrees celcius, so you might want to hike in the early hours, in the evening or even at night. In the night time you will see a few animals but they are shy and you won't see many anyway. But if you do, say hi and be happy about some company eventhough the animals don't speak your language.&#x000A;&#x000A;Three options: head west, back to the Landing Zone. From the Landing Zone you can walk on the Kamehameha Route and eventually reach the northern end of the planet. Hike east on the Pe'ahi Trail towards the volcanoes. Take the tiny path to Lihue - which is south from where you are.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -555,10 +555,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-224"/>
+      <child nodeId="node-52"/>
     </children>
   </item>
-  <item nodeId="node-224">
+  <item nodeId="node-52">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Haiku Volcano&#x000A;Very high, very bad sight and dangerous drop-offs characterize the Haiku Volcano. Many centuries ago this volcano area has been formed and Haiku Volcano is the highest one. Imagine the power that has been set free in that eruption. This must have been a massive spectacke. Ah, yeah and you can climb that infamous volcano - if it's not too cloudy you will have a great view over... well... wasteland. You know it, only deserted landscape without much more. But anyway, standing on top something is cool isn't it? Decide for yourself if it's worth the hassle. I heard a rumour that a mysterious cave is underneath this particular volcano...&#x000A;&#x000A;Your options here are: Go west to walk the Pe'ahi trail back to the little village Lihue and therefore direction Landing Zone. You can also east on the Na Pali trail to reach the other end of Lihue. Last but not least, as you might know already if you're able to read between the lines you can also step down here. Try it, going down doesn't hurt. Only sometimes.&#x000A;&#x000A;You can see lava keyhole here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -566,10 +566,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-225"/>
+      <child nodeId="node-53"/>
     </children>
   </item>
-  <item nodeId="node-225">
+  <item nodeId="node-53">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">There is no way to advance in this direction.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -577,10 +577,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-226"/>
+      <child nodeId="node-54"/>
     </children>
   </item>
-  <item nodeId="node-226">
+  <item nodeId="node-54">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">Haiku Volcano&#x000A;Very high, very bad sight and dangerous drop-offs characterize the Haiku Volcano. Many centuries ago this volcano area has been formed and Haiku Volcano is the highest one. Imagine the power that has been set free in that eruption. This must have been a massive spectacke. Ah, yeah and you can climb that infamous volcano - if it's not too cloudy you will have a great view over... well... wasteland. You know it, only deserted landscape without much more. But anyway, standing on top something is cool isn't it? Decide for yourself if it's worth the hassle. I heard a rumour that a mysterious cave is underneath this particular volcano...&#x000A;&#x000A;Your options here are: Go west to walk the Pe'ahi trail back to the little village Lihue and therefore direction Landing Zone. You can also east on the Na Pali trail to reach the other end of Lihue. Last but not least, as you might know already if you're able to read between the lines you can also step down here. Try it, going down doesn't hurt. Only sometimes.&#x000A;&#x000A;You can see lava keyhole here.&#x000A;&#x000A;It's closed. There is a thick layer of lava mass which has a little hole in it - you will need a special key to open this keyhole. Go find it brother.&#x000A;&#x000A;(first opening lava keyhole)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -588,10 +588,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-227"/>
+      <child nodeId="node-55"/>
     </children>
   </item>
-  <item nodeId="node-227">
+  <item nodeId="node-55">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -599,10 +599,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-228"/>
+      <child nodeId="node-56"/>
     </children>
   </item>
-  <item nodeId="node-228">
+  <item nodeId="node-56">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Na Pali Trail&#x000A;Na Pali is Geysirian and means The Long Walk. You will walk for a while I guess. But that's not a problem for you as you are a tough and strong dude, aren't you Axesto?&#x000A;&#x000A;You can either head south and stay on the trail to reach the little ghost town Lihue, head north to reach the highest volcano, the Haiku Volcano or head west in order to go back to the Landing Zone to try another way into the heart of the planet.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -610,10 +610,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-229"/>
+      <child nodeId="node-57"/>
     </children>
   </item>
-  <item nodeId="node-229">
+  <item nodeId="node-57">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">The Old Chapel&#x000A;Tons of figures you know from the bible and other holy papers are exhibited here. No one knows why, maybe they explain the gold rush where people from all over the galaxy flocked to this particular place. Some seemed to be very religious and brought some belongings along with them. The ceiling is a little bit demolished but the chapel as a whole doesn't look too bad actually. It's quite an intimidating place because there is not a soul in sight and the pictures on the wall have angry faces everywhere. In the corner where the confessional box is there is an arsenal of a few old weapons including swords and a dagger. The dagger might help you as it has a volcano engraved. The coffin under the altar contains something you will need for sure. Somewhere in the little Village there is a hidden key for that particular coffin. Go search for that key and come back later.&#x000A;&#x000A;&#x000A;In the south you'll find the house where the Mayor used to politically tie the ropes for Lihue. If you head north you will walk on another long trail in order to reach the highest Volcano in the area. In the west, there is the center of Lihue.&#x000A;&#x000A;You can see a coffin (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -621,10 +621,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-230"/>
+      <child nodeId="node-58"/>
     </children>
   </item>
-  <item nodeId="node-230">
+  <item nodeId="node-58">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Lihue&#x000A;A little Village called Lihue nestled in - oh wonder - deserted landscape. Lihue is a ghost town. Many thousand years ago this little town used was rich because of a gold rush. It only took a few years until the little village turned into a ghost town as the gold rush didn't take very long. You have many houses you can look into and search for some hints in order to leave this planet as soon as possible. Stroll around, here are a few spots you should definitely check out. There is an interesting old building right next to the big market place - you will probably need a special key to open the doors there... Around the place there are lots of other buildings, the house of the mayor with a huge amount of old files and many hidden treasure boxes, a little hut where they used to sell Galaxy Coke and a little chapel which kind of looks a bit intimidating.&#x000A;&#x000A;You are situated in the centre of Lihue. You can head into each direction. The volcano is in north east from where you are at the moment. Every other part of Lihue is somewhere around you. Go and explore a little.&#x000A;&#x000A;&gt;Error exploring east from Lihue.</result>
     <commentary xml:space="preserve"></commentary>
@@ -632,10 +632,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-231"/>
+      <child nodeId="node-59"/>
     </children>
   </item>
-  <item nodeId="node-231">
+  <item nodeId="node-59">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">The Blunt Box&#x000A;You are standing in front of a little hut, there is not much here except a little toolbox. Back in the day they used to sell Galaxy Coke here as it was legal. The only thing the inhabitants of the village didn't know was the fact that the owners of the little hut regularly stole from the Lihue people. That's the reason why you see this little picklock on top of every other tool. Who needs a grinder, some lamps and spades when you have a picklock that opens any door and makes you rich while other people sleep?&#x000A;&#x000A;Examine the picklock in order to see if it's a helpful tool or not. The Blunt Box is situated south of the Lihue town center and east of the Mayor's house. Every other direction is too dangerous as the Blunt Box is situated on a very exposed location.&#x000A;&#x000A;You can see a picklock here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -643,10 +643,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-232"/>
+      <child nodeId="node-60"/>
     </children>
   </item>
-  <item nodeId="node-232">
+  <item nodeId="node-60">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">The Mayor Mansion&#x000A;The house where the mayor lived. Some say he was a good mayor, some others say he was corrupt, an alcoholic and he had a feed of clay for cocaine. But there is no proof. Maybe you find a cocaine line somewhere but I guess it is too late for you to play detective. You better check the surroundings in this house in order to find something you really need.&#x000A;&#x000A;The house where the Mayor resided is far in the south of Lihue. You can either head north towards the Old Chapel or you head west to the Blunt Box.&#x000A;&#x000A;You can see a case (closed) here.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -654,10 +654,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-233"/>
+      <child nodeId="node-61"/>
     </children>
   </item>
-  <item nodeId="node-233">
+  <item nodeId="node-61">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -665,10 +665,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-234"/>
+      <child nodeId="node-62"/>
     </children>
   </item>
-  <item nodeId="node-234">
+  <item nodeId="node-62">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">The Blunt Box&#x000A;You are standing in front of a little hut, there is not much here except a little toolbox. Back in the day they used to sell Galaxy Coke here as it was legal. The only thing the inhabitants of the village didn't know was the fact that the owners of the little hut regularly stole from the Lihue people. That's the reason why you see this little picklock on top of every other tool. Who needs a grinder, some lamps and spades when you have a picklock that opens any door and makes you rich while other people sleep?&#x000A;&#x000A;Examine the picklock in order to see if it's a helpful tool or not. The Blunt Box is situated south of the Lihue town center and east of the Mayor's house. Every other direction is too dangerous as the Blunt Box is situated on a very exposed location.&#x000A;&#x000A;You can see a picklock here.&#x000A;&#x000A;&gt;Error exploring east from The Blunt Box.</result>
     <commentary xml:space="preserve"></commentary>
@@ -676,10 +676,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-235"/>
+      <child nodeId="node-63"/>
     </children>
   </item>
-  <item nodeId="node-235">
+  <item nodeId="node-63">
     <command xml:space="preserve">take all</command>
     <result xml:space="preserve">picklock: Taken.&#x000A;&#x000A;&gt;Error exploring east from The Blunt Box.</result>
     <commentary xml:space="preserve"></commentary>
@@ -687,10 +687,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-236"/>
+      <child nodeId="node-64"/>
     </children>
   </item>
-  <item nodeId="node-236">
+  <item nodeId="node-64">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">The Mayor Mansion&#x000A;The house where the mayor lived. Some say he was a good mayor, some others say he was corrupt, an alcoholic and he had a feed of clay for cocaine. But there is no proof. Maybe you find a cocaine line somewhere but I guess it is too late for you to play detective. You better check the surroundings in this house in order to find something you really need.&#x000A;&#x000A;The house where the Mayor resided is far in the south of Lihue. You can either head north towards the Old Chapel or you head west to the Blunt Box.&#x000A;&#x000A;You can see a case (closed) here.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -698,10 +698,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-237"/>
+      <child nodeId="node-65"/>
     </children>
   </item>
-  <item nodeId="node-237">
+  <item nodeId="node-65">
     <command xml:space="preserve">unlock case with picklock</command>
     <result xml:space="preserve">You unlock the case.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -709,10 +709,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-238"/>
+      <child nodeId="node-66"/>
     </children>
   </item>
-  <item nodeId="node-238">
+  <item nodeId="node-66">
     <command xml:space="preserve">open cae</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -720,10 +720,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-239"/>
+      <child nodeId="node-67"/>
     </children>
   </item>
-  <item nodeId="node-239">
+  <item nodeId="node-67">
     <command xml:space="preserve">open cae</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -731,10 +731,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-240"/>
+      <child nodeId="node-68"/>
     </children>
   </item>
-  <item nodeId="node-240">
+  <item nodeId="node-68">
     <command xml:space="preserve">open case</command>
     <result xml:space="preserve">You open the case, revealing an old_key.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -742,10 +742,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-241"/>
+      <child nodeId="node-69"/>
     </children>
   </item>
-  <item nodeId="node-241">
+  <item nodeId="node-69">
     <command xml:space="preserve">take old_key</command>
     <result xml:space="preserve">(putting the underwater system map into the backpack to make room)&#x000A;Taken.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -753,10 +753,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-242"/>
+      <child nodeId="node-70"/>
     </children>
   </item>
-  <item nodeId="node-242">
+  <item nodeId="node-70">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -764,10 +764,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-243"/>
+      <child nodeId="node-71"/>
     </children>
   </item>
-  <item nodeId="node-243">
+  <item nodeId="node-71">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">The Blunt Box&#x000A;You are standing in front of a little hut, there is not much here except a little toolbox. Back in the day they used to sell Galaxy Coke here as it was legal. The only thing the inhabitants of the village didn't know was the fact that the owners of the little hut regularly stole from the Lihue people. That's the reason why you see this little picklock on top of every other tool. Who needs a grinder, some lamps and spades when you have a picklock that opens any door and makes you rich while other people sleep?&#x000A;&#x000A;Examine the picklock in order to see if it's a helpful tool or not. The Blunt Box is situated south of the Lihue town center and east of the Mayor's house. Every other direction is too dangerous as the Blunt Box is situated on a very exposed location.&#x000A;&#x000A;&gt;Error exploring east from The Blunt Box.</result>
     <commentary xml:space="preserve"></commentary>
@@ -775,10 +775,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-244"/>
+      <child nodeId="node-72"/>
     </children>
   </item>
-  <item nodeId="node-244">
+  <item nodeId="node-72">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">The Mayor Mansion&#x000A;The house where the mayor lived. Some say he was a good mayor, some others say he was corrupt, an alcoholic and he had a feed of clay for cocaine. But there is no proof. Maybe you find a cocaine line somewhere but I guess it is too late for you to play detective. You better check the surroundings in this house in order to find something you really need.&#x000A;&#x000A;The house where the Mayor resided is far in the south of Lihue. You can either head north towards the Old Chapel or you head west to the Blunt Box.&#x000A;&#x000A;You can see a case (empty) here.&#x000A;&#x000A;&gt;Error exploring west from The Mayor Mansion.</result>
     <commentary xml:space="preserve"></commentary>
@@ -786,10 +786,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-245"/>
+      <child nodeId="node-73"/>
     </children>
   </item>
-  <item nodeId="node-245">
+  <item nodeId="node-73">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">The Blunt Box&#x000A;You are standing in front of a little hut, there is not much here except a little toolbox. Back in the day they used to sell Galaxy Coke here as it was legal. The only thing the inhabitants of the village didn't know was the fact that the owners of the little hut regularly stole from the Lihue people. That's the reason why you see this little picklock on top of every other tool. Who needs a grinder, some lamps and spades when you have a picklock that opens any door and makes you rich while other people sleep?&#x000A;&#x000A;Examine the picklock in order to see if it's a helpful tool or not. The Blunt Box is situated south of the Lihue town center and east of the Mayor's house. Every other direction is too dangerous as the Blunt Box is situated on a very exposed location.&#x000A;&#x000A;&gt;Error exploring east from The Blunt Box.</result>
     <commentary xml:space="preserve"></commentary>
@@ -797,10 +797,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-246"/>
+      <child nodeId="node-74"/>
     </children>
   </item>
-  <item nodeId="node-246">
+  <item nodeId="node-74">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Lihue&#x000A;A little Village called Lihue nestled in - oh wonder - deserted landscape. Lihue is a ghost town. Many thousand years ago this little town used was rich because of a gold rush. It only took a few years until the little village turned into a ghost town as the gold rush didn't take very long. You have many houses you can look into and search for some hints in order to leave this planet as soon as possible. Stroll around, here are a few spots you should definitely check out. There is an interesting old building right next to the big market place - you will probably need a special key to open the doors there... Around the place there are lots of other buildings, the house of the mayor with a huge amount of old files and many hidden treasure boxes, a little hut where they used to sell Galaxy Coke and a little chapel which kind of looks a bit intimidating.&#x000A;&#x000A;You are situated in the centre of Lihue. You can head into each direction. The volcano is in north east from where you are at the moment. Every other part of Lihue is somewhere around you. Go and explore a little.&#x000A;&#x000A;&gt;Error exploring east from Lihue.</result>
     <commentary xml:space="preserve"></commentary>
@@ -808,10 +808,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-247"/>
+      <child nodeId="node-75"/>
     </children>
   </item>
-  <item nodeId="node-247">
+  <item nodeId="node-75">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">The Old Chapel&#x000A;Tons of figures you know from the bible and other holy papers are exhibited here. No one knows why, maybe they explain the gold rush where people from all over the galaxy flocked to this particular place. Some seemed to be very religious and brought some belongings along with them. The ceiling is a little bit demolished but the chapel as a whole doesn't look too bad actually. It's quite an intimidating place because there is not a soul in sight and the pictures on the wall have angry faces everywhere. In the corner where the confessional box is there is an arsenal of a few old weapons including swords and a dagger. The dagger might help you as it has a volcano engraved. The coffin under the altar contains something you will need for sure. Somewhere in the little Village there is a hidden key for that particular coffin. Go search for that key and come back later.&#x000A;&#x000A;&#x000A;In the south you'll find the house where the Mayor used to politically tie the ropes for Lihue. If you head north you will walk on another long trail in order to reach the highest Volcano in the area. In the west, there is the center of Lihue.&#x000A;&#x000A;You can see a coffin (closed) here.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -819,10 +819,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-248"/>
+      <child nodeId="node-76"/>
     </children>
   </item>
-  <item nodeId="node-248">
+  <item nodeId="node-76">
     <command xml:space="preserve">open coffin</command>
     <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -830,10 +830,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-249"/>
+      <child nodeId="node-77"/>
     </children>
   </item>
-  <item nodeId="node-249">
+  <item nodeId="node-77">
     <command xml:space="preserve">unlock coffin with old_key</command>
     <result xml:space="preserve">You unlock the coffin.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -841,10 +841,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-250"/>
+      <child nodeId="node-78"/>
     </children>
   </item>
-  <item nodeId="node-250">
+  <item nodeId="node-78">
     <command xml:space="preserve">open coffin</command>
     <result xml:space="preserve">Wow, a black mysterious key with some letters on it saying LAVA KEY. Take it. &#x000A;&#x000A; You can only take it if you type in take lavakey.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -852,10 +852,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-251"/>
+      <child nodeId="node-79"/>
     </children>
   </item>
-  <item nodeId="node-251">
+  <item nodeId="node-79">
     <command xml:space="preserve">take key</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -863,10 +863,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-252"/>
+      <child nodeId="node-80"/>
     </children>
   </item>
-  <item nodeId="node-252">
+  <item nodeId="node-80">
     <command xml:space="preserve">take lavakey</command>
     <result xml:space="preserve">(putting the land mine into the backpack to make room)&#x000A;Taken.&#x000A;&#x000A;&gt;Error exploring west from The Old Chapel.</result>
     <commentary xml:space="preserve"></commentary>
@@ -874,10 +874,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-253"/>
+      <child nodeId="node-81"/>
     </children>
   </item>
-  <item nodeId="node-253">
+  <item nodeId="node-81">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Na Pali Trail&#x000A;Na Pali is Geysirian and means The Long Walk. You will walk for a while I guess. But that's not a problem for you as you are a tough and strong dude, aren't you Axesto?&#x000A;&#x000A;You can either head south and stay on the trail to reach the little ghost town Lihue, head north to reach the highest volcano, the Haiku Volcano or head west in order to go back to the Landing Zone to try another way into the heart of the planet.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -885,10 +885,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-254"/>
+      <child nodeId="node-82"/>
     </children>
   </item>
-  <item nodeId="node-254">
+  <item nodeId="node-82">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Haiku Volcano&#x000A;Very high, very bad sight and dangerous drop-offs characterize the Haiku Volcano. Many centuries ago this volcano area has been formed and Haiku Volcano is the highest one. Imagine the power that has been set free in that eruption. This must have been a massive spectacke. Ah, yeah and you can climb that infamous volcano - if it's not too cloudy you will have a great view over... well... wasteland. You know it, only deserted landscape without much more. But anyway, standing on top something is cool isn't it? Decide for yourself if it's worth the hassle. I heard a rumour that a mysterious cave is underneath this particular volcano...&#x000A;&#x000A;Your options here are: Go west to walk the Pe'ahi trail back to the little village Lihue and therefore direction Landing Zone. You can also east on the Na Pali trail to reach the other end of Lihue. Last but not least, as you might know already if you're able to read between the lines you can also step down here. Try it, going down doesn't hurt. Only sometimes.&#x000A;&#x000A;You can see lava keyhole here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -896,10 +896,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-255"/>
+      <child nodeId="node-83"/>
     </children>
   </item>
-  <item nodeId="node-255">
+  <item nodeId="node-83">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">(first opening lava keyhole)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -907,10 +907,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-256"/>
+      <child nodeId="node-84"/>
     </children>
   </item>
-  <item nodeId="node-256">
+  <item nodeId="node-84">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">(first opening lava keyhole)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -918,10 +918,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-257"/>
+      <child nodeId="node-85"/>
     </children>
   </item>
-  <item nodeId="node-257">
+  <item nodeId="node-85">
     <command xml:space="preserve">unlock lava keyhole with lavakey</command>
     <result xml:space="preserve">You unlock lava keyhole.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -929,10 +929,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-258"/>
+      <child nodeId="node-86"/>
     </children>
   </item>
-  <item nodeId="node-258">
+  <item nodeId="node-86">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">(first opening lava keyhole)&#x000A;&#x000A;Paia Cave&#x000A;You made it. Just a few more steps and you will be ready to leave this lifeless and vast planet. All you have to do is find the point on your underwater map where you can use one of your tools (if you found it) in order to make the volcanoes and geysirs go to sleep.&#x000A;&#x000A;You can either head UP again, if you need to search for a tool that fits into the heart of the volcano. There is also an option to go west - Paia Cave and Pu'ulau Cave are connected through the underwater cave system.&#x000A;&#x000A;You can see lava keyhole here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -940,10 +940,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-259"/>
+      <child nodeId="node-87"/>
     </children>
   </item>
-  <item nodeId="node-259">
+  <item nodeId="node-87">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Pu'ulau Cave&#x000A;The infamous Pu'ulau Cave - no one has ever been here before. Many have had the underwater map, but congratulations again, you are the first one to ever connect the dots and find the right way into this little and very complex underwater system. Do you see the light at the end of the tunnel? This is the heart of the volcano. If you reach it before a fire storm from Paia Cave coes - you will destroy every volcano on this planet and you can head back to your spaceship to leave the extincted area.&#x000A;&#x000A;Two options: Go east in order to head a volcanic cave called Paia Cave. You'll find a connection to another part of the planet there.&#x000A;&#x000A;Climb UP to exit the cave system through the geysir entry. Head west to reach the heart of the whole Geysiria system.&#x000A;&#x000A;You can see a waterdagger here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -951,10 +951,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-260"/>
+      <child nodeId="node-88"/>
     </children>
   </item>
-  <item nodeId="node-260">
+  <item nodeId="node-88">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">The Heart of Geysiria&#x000A;This is your last step to finally stop all the ash clouds and the constant lava flow above ground. The underwater system map led you here - you should make use of your one and only tool that will fit into the little heart that is at the end of this tiny corridor. May Geysiria rest in peace.&#x000A;&#x000A;Examine the water dagger hole in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. You also have the option to walk back (west).&#x000A;&#x000A;You can see a water dagger hole (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -962,10 +962,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-261"/>
+      <child nodeId="node-89"/>
     </children>
   </item>
-  <item nodeId="node-261">
+  <item nodeId="node-89">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">Pu'ulau Cave&#x000A;The infamous Pu'ulau Cave - no one has ever been here before. Many have had the underwater map, but congratulations again, you are the first one to ever connect the dots and find the right way into this little and very complex underwater system. Do you see the light at the end of the tunnel? This is the heart of the volcano. If you reach it before a fire storm from Paia Cave coes - you will destroy every volcano on this planet and you can head back to your spaceship to leave the extincted area.&#x000A;&#x000A;Two options: Go east in order to head a volcanic cave called Paia Cave. You'll find a connection to another part of the planet there.&#x000A;&#x000A;Climb UP to exit the cave system through the geysir entry. Head west to reach the heart of the whole Geysiria system.&#x000A;&#x000A;You can see a waterdagger here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -973,10 +973,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-262"/>
+      <child nodeId="node-90"/>
     </children>
   </item>
-  <item nodeId="node-262">
+  <item nodeId="node-90">
     <command xml:space="preserve">take waterdagger</command>
     <result xml:space="preserve">(putting the picklock into the backpack to make room)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -984,10 +984,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-263"/>
+      <child nodeId="node-91"/>
     </children>
   </item>
-  <item nodeId="node-263">
+  <item nodeId="node-91">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">The Heart of Geysiria&#x000A;This is your last step to finally stop all the ash clouds and the constant lava flow above ground. The underwater system map led you here - you should make use of your one and only tool that will fit into the little heart that is at the end of this tiny corridor. May Geysiria rest in peace.&#x000A;&#x000A;Examine the water dagger hole in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. You also have the option to walk back (west).&#x000A;&#x000A;You can see a water dagger hole (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -995,10 +995,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-264"/>
+      <child nodeId="node-92"/>
     </children>
   </item>
-  <item nodeId="node-264">
+  <item nodeId="node-92">
     <command xml:space="preserve">x dagegr</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1006,10 +1006,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-265"/>
+      <child nodeId="node-93"/>
     </children>
   </item>
-  <item nodeId="node-265">
+  <item nodeId="node-93">
     <command xml:space="preserve">x dagger</command>
     <result xml:space="preserve">You see nothing special about the water dagger hole.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1017,10 +1017,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-266"/>
+      <child nodeId="node-94"/>
     </children>
   </item>
-  <item nodeId="node-266">
+  <item nodeId="node-94">
     <command xml:space="preserve">x water dagger</command>
     <result xml:space="preserve">You see nothing special about the water dagger hole.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1028,10 +1028,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-267"/>
+      <child nodeId="node-95"/>
     </children>
   </item>
-  <item nodeId="node-267">
+  <item nodeId="node-95">
     <command xml:space="preserve">put water dagger into hol</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1039,10 +1039,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-268"/>
+      <child nodeId="node-96"/>
     </children>
   </item>
-  <item nodeId="node-268">
+  <item nodeId="node-96">
     <command xml:space="preserve">put water dagger into hole</command>
     <result xml:space="preserve">(first taking the water dagger hole)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1050,10 +1050,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-269"/>
+      <child nodeId="node-97"/>
     </children>
   </item>
-  <item nodeId="node-269">
+  <item nodeId="node-97">
     <command xml:space="preserve">open hole</command>
     <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1061,10 +1061,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-270"/>
+      <child nodeId="node-98"/>
     </children>
   </item>
-  <item nodeId="node-270">
+  <item nodeId="node-98">
     <command xml:space="preserve">unlock hole</command>
     <result xml:space="preserve">What do you want to unlock the water dagger hole with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1072,10 +1072,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-271"/>
+      <child nodeId="node-99"/>
     </children>
   </item>
-  <item nodeId="node-271">
+  <item nodeId="node-99">
     <command xml:space="preserve">unlock hole with dagger</command>
     <result xml:space="preserve">(first taking the water dagger hole)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1083,10 +1083,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-272"/>
+      <child nodeId="node-100"/>
     </children>
   </item>
-  <item nodeId="node-272">
+  <item nodeId="node-100">
     <command xml:space="preserve">unlock water dagger hole with water dagger</command>
     <result xml:space="preserve">(first taking the water dagger hole)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -1094,7 +1094,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-25">
+  <item nodeId="node-101">
     <command xml:space="preserve">take kaldr&#x00ED;ss</command>
     <result xml:space="preserve">Spaceship Bridge&#x000A;The place where all the magic happens. Well, it used to be at least - during the impact most of the important equpiment, including the communication systems, must have been fried and doesn't seem to work anymore.&#x000A;&#x000A;There's only a single flickering light inside the command panel.&#x000A;&#x000A;What could this mean? I should probably open the command panel and take a look. I could also go south and check the storage of the spaceship first.&#x000A;&#x000A;You can see a command panel (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>

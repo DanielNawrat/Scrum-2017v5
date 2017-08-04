@@ -14,7 +14,14 @@ The player is in the Flat Rock_Sitis.
 
 Instead of going to the Anchors, say "There is no way to advance in this direction."
 
+Saying thanks is an action applying to nothing.
+Understand "say thanks" as saying thanks.
 
+After saying thanks:
+	say "It is duly appreciated."
+
+Understand "look around" as looking.
+Understand "end" as quitting the game.
 [---]
 
 [Helper]
@@ -100,7 +107,8 @@ quit - quit the game[line break][line break]";
 		push (something) - try to push something, if you have a tool it will be used automatically[line break]
 		insert (something) into (something) or put (something) into (somehting) - insert whatever generates enough power into the power unit[line break]";
 	if the Counter is 5:
-		say "[bold type]Kaldríss[line break]
+		say "[bold type]Kaldríss
+
 		[roman type]open/close (something)[line break]
 		unlock/lock (something)[line break]
 		put (something) on (e.g. clothing)[line break]";	
@@ -109,58 +117,50 @@ quit - quit the game[line break][line break]";
 
 [End of Helper Section]
 
-[Teleport Stones Testsection]
+[Teleport Testsection]
 
-Teleportation Stone - Sitis, Teleportation Stone - Gaisetto, Teleportation Stone - Geysiria, Teleportation Stone - Frizza and Teleportation Stone - Kaldríss are in the Flat Rock_Sitis.
+Teleporting to Sitis is an action applying to nothing.
+Understand "teleport to Sitis" as teleporting to Sitis.
 
-After taking Teleportation Stone - Sitis:
-	now the player is in The Flat Rock_Sitis;
-	move the Teleportation Stone - Sitis to the location of the player;
-	move the Teleportation Stone - Gaisetto to the location of the player;
-	move the Teleportation Stone - Geysiria to the location of the player;
-	move the Teleportation Stone - Frizza to the location of the player;
-	move the Teleportation Stone - Kaldríss to the location of the player.
+After teleporting to Sitis:
+	now the Player is in the Flat Rock_Sitis.
 
-After taking Teleportation Stone - Gaisetto:
-	now the player is in the Landingzone_Gaisetto;
-	move the Teleportation Stone - Sitis to the location of the player;
-	move the Teleportation Stone - Gaisetto to the location of the player;
-	move the Teleportation Stone - Geysiria to the location of the player;
-	move the Teleportation Stone - Frizza to the location of the player;
-	move the Teleportation Stone - Kaldríss to the location of the player.
+
+Teleporting to Gaisetto is an action applying to nothing.
+Understand "teleport to Gaisetto" as teleporting to Gaisetto.
+
+After teleporting to Gaisetto:
+	now the Player is in the landingzone_Gaisetto.
 	
-After taking Teleportation Stone - Geysiria:
-	now the player is in the Spaceship Bridge_Geysiria;
-	move the Teleportation Stone - Sitis to the location of the player;
-	move the Teleportation Stone - Gaisetto to the location of the player;
-	move the Teleportation Stone - Geysiria to the location of the player;
-	move the Teleportation Stone - Frizza to the location of the player;
-	move the Teleportation Stone - Kaldríss to the location of the player.
+
+Teleporting to Geysiria is an action applying to nothing.
+Understand "teleport to Geysiria" as teleporting to Geysiria.
+
+After teleporting to Geysiria:
+	now the Player is in the Spaceship Bridge_Geysiria.
 	
-After taking Teleportation Stone - Frizza:
-	now the player is in the Landing Zone_Frizza;
-	move the Teleportation Stone - Sitis to the location of the player;
-	move the Teleportation Stone - Gaisetto to the location of the player;
-	move the Teleportation Stone - Geysiria to the location of the player;
-	move the Teleportation Stone - Frizza to the location of the player;
-	move the Teleportation Stone - Kaldríss to the location of the player.
+
+Teleporting to Frizza is an action applying to nothing.
+Understand "teleport to Frizza" as teleporting to Frizza.
+
+After teleporting to Frizza:
+	now the Player is in the Landing Zone_Frizza.
 	
-After taking Teleportation Stone - Kaldríss:
-	now the player is in the Spaceship Bridge_Kaldríss;
-	move the Teleportation Stone - Sitis to the location of the player;
-	move the Teleportation Stone - Gaisetto to the location of the player;
-	move the Teleportation Stone - Geysiria to the location of the player;
-	move the Teleportation Stone - Frizza to the location of the player;
-	move the Teleportation Stone - Kaldríss to the location of the player.
+
+Teleporting to Kaldríss is an action applying to nothing.
+Understand "teleport to Kaldríss" as teleporting to Kaldríss.
+
+After teleporting to Kaldríss:
+	now the Player is in the Spaceship Bridge_Kaldríss.
 	
-After going from the Spaceship Bridge_Kaldríss for the first time:
-	move the Teleportation Stone - Sitis to the the Spaceship Bridge_Kaldríss ;
-	move the Teleportation Stone - Gaisetto to the Spaceship Bridge_Kaldríss;
-	move the Teleportation Stone - Geysiria to the Spaceship Bridge_Kaldríss;
-	move the Teleportation Stone - Frizza to the Spaceship Bridge_Kaldríss;
-	move the Teleportation Stone - Kaldríss to the Spaceship Bridge_Kaldríss.
-	
-[End of Teleport Stone Section ]
+
+Teleporting to end is an action applying to nothing.
+Understand "teleport to end" as teleporting to end.
+
+After teleporting to end:
+	now the Player is in the Bifröst Portal Chamber.
+
+
 
 [Limited Inventory]
 The carrying capacity of the player is 3. The backpack is the player's holdall. The player is wearing the backpack. The backpack is open and not openable. The carrying capacity of the backpack is 3.
@@ -1882,15 +1882,6 @@ Before examining the Flux Current:
 
 Approaching is an action applying to one visible thing.
 Understand "approach [something]" as approaching.
-
-Saying thanks is an action applying to nothing.
-Understand "say thanks" as saying thanks.
-
-After saying thanks:
-	say "It is duly appreciated."
-
-Understand "look around" as looking.
-Understand "end" as quitting the game.
 
 Extracting is an action applying to one visible thing.
 Understand "extract sample from [Regulated Flux Current]" as extracting. 
