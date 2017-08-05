@@ -8,12 +8,19 @@
         <bibliographic>
             <title>On the Lookout</title>
             <author>Daniel, Tim, Franziska, Kevin, Tobias</author>
-            <headline>An Interactive Fiction</headline>
-            <genre>Fiction</genre>
+            <headline>A Space Quest</headline>
+            <genre>Science Fiction</genre>
             <firstpublished>2017</firstpublished>
+            <description>Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process. If you want to play the game on your desktop (advised), please download one of the interpreters for your system (e.g. Windows Glulxe) and download the Story File.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <cover>
+            <format>png</format>
+            <height>500</height>
+            <width>500</width>
+            <description>The cover art.</description>
+        </cover>
         <releases>
             <attached>
                 <release>
@@ -33,6 +40,7 @@
             <serial>170804</serial>
             <release>1</release>
             <compiler>Inform 7 build 6M62</compiler>
+            <coverpicture>1</coverpicture>
         </glulx>
     </story>
 </ifindex>

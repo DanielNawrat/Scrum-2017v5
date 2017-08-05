@@ -1,6 +1,12 @@
-"On the Lookout" by Daniel, Tim, Franziska, Kevin, Tobias
+Release along with a website, the "Quixe" interpreter, cover art, the source text and an introductory postcard.
 
-[Release along with a website and an interpreter and cover art.]
+The story title is "On the Lookout".
+The story headline is "A Space Quest".
+The story author is "Daniel, Tim, Franziska, Kevin, Tobias".
+The story genre is "Science Fiction".
+The release number is 1.
+The story description is "Axesto, a bumbling little alien, is cast out from his home planet Fidartis for his ill behaviour. Subsequently, he drifts through space, looking for a new home, but getting into all kinds of space trouble in the process. If you want to play the game on your desktop (advised), please download one of the interpreters for your system (e.g. Windows Glulxe) and download the Story File."
+The story creation year is 2017. 
 
 [Anchor rooms Testsection]
 
@@ -22,6 +28,8 @@ After saying thanks:
 
 Understand "look around" as looking.
 Understand "end" as quitting the game.
+
+
 [---]
 
 [Helper]
@@ -123,42 +131,48 @@ Teleporting to Sitis is an action applying to nothing.
 Understand "teleport to Sitis" as teleporting to Sitis.
 
 After teleporting to Sitis:
-	now the Player is in the Flat Rock_Sitis.
+	now the Player is in the Flat Rock_Sitis;
+	now the Counter is 1.
 
 
 Teleporting to Gaisetto is an action applying to nothing.
 Understand "teleport to Gaisetto" as teleporting to Gaisetto.
 
 After teleporting to Gaisetto:
-	now the Player is in the landingzone_Gaisetto.
+	now the Player is in the landingzone_Gaisetto;
+	now the Counter is 2.
 	
 
 Teleporting to Geysiria is an action applying to nothing.
 Understand "teleport to Geysiria" as teleporting to Geysiria.
 
 After teleporting to Geysiria:
-	now the Player is in the Spaceship Bridge_Geysiria.
+	now the Player is in the Spaceship Bridge_Geysiria;
+	now the Counter is 3.
 	
 
 Teleporting to Frizza is an action applying to nothing.
 Understand "teleport to Frizza" as teleporting to Frizza.
 
 After teleporting to Frizza:
-	now the Player is in the Landing Zone_Frizza.
+	now the Player is in the Landing Zone_Frizza;
+	now the Counter is 4.
 	
 
 Teleporting to Kaldríss is an action applying to nothing.
 Understand "teleport to Kaldríss" as teleporting to Kaldríss.
 
 After teleporting to Kaldríss:
-	now the Player is in the Spaceship Bridge_Kaldríss.
+	now the Player is in the Spaceship Bridge_Kaldríss;
+	now the Counter is 5.
 	
 
 Teleporting to end is an action applying to nothing.
 Understand "teleport to end" as teleporting to end.
 
 After teleporting to end:
-	now the Player is in the Bifröst Portal Chamber.
+	now the Player is in the Bifröst Portal Chamber;
+	now the Counter is 5.
 
 
 
