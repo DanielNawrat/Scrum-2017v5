@@ -2306,19 +2306,17 @@ Figure of Spaceship Bridge_Kaldríss is the file "kaldriss_spaceship.png".
 The room-illustration of Spaceship Bridge_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 	
 Figure of Spaceship Storage_Kaldríss is the file "kaldriss_spaceship.png".
-The room-illustration of Spaceship Storage_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Spaceship Storage_Kaldríss is the Figure of Spaceship Storage_Kaldríss.
 
 Figure of Spaceship Exit_Kaldríss is the file "kaldriss_spaceship.png".
-The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Exit_Kaldríss.
 		
 Figure of Crash Zone_Kaldríss is the file "KALDRISS.png".
 The room-illustration of Crash Zone_Kaldríss is the Figure of Crash Zone_Kaldríss.
 		
 Figure of Hunting Grounds_Kaldríss is the file "KALDRISS.png".
 The room-illustration of Hunting Grounds_Kaldríss is the Figure of Hunting Grounds_Kaldríss.
-		
-Figure of Yundar's Cave is the file "KALDRISS.png".
-The room-illustration of Yundar's Cave is the Figure of Yundar's Cave.
+
 		
 
 [Finding a way off the space ship]
@@ -2552,14 +2550,17 @@ Section 2 - Yetíss Cave System
 Yetíss Caves System is a region.  Main Cave_Kaldríss, Yundar's Cave, Yarwol's Cave and Secret Cave_Kaldríss is in Yetíss Caves System.
 
 [Images]
+Figure of Yundar's Cave is the file "KALDRISS.png".
+The room-illustration of Yundar's Cave is the Figure of Yundar's Cave.
+
 Figure of Yarwol's Cave is the file "KALDRISS.png".
-The room-illustration of Yarwol's Cave is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Yarwol's Cave is the Figure of Yarwol's Cave.
 		
 Figure of Main Cave_Kaldríss is the file "KALDRISS.png".
-The room-illustration of Main Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Main Cave_Kaldríss is the Figure of Main Cave_Kaldríss.
 	
 Figure of Secret Cave_Kaldríss is the file "KALDRISS.png".
-The room-illustration of Secret Cave_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Secret Cave_Kaldríss is the Figure of Secret Cave_Kaldríss.
 
 [Rooms]
 [Yundar's Cave]
@@ -2695,16 +2696,16 @@ The Blakkríss Temple is a region. The Blakkríss Temple Entrance, the Great Hal
 
 [Images]
 Figure of Blakkríss Temple Entrance is the file "KALDRISS.png".
-The room-illustration of Blakkríss Temple Entrance is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Blakkríss Temple Entrance is the Figure of Blakkríss Temple Entrance.
 	
 Figure of Great Hall_Kaldríss is the file "KALDRISS.png".
-The room-illustration of Great Hall_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Great Hall_Kaldríss is the Figure of Great Hall_Kaldríss.
 	
 Figure of Spectral Bridge is the file "KALDRISS.png".
-The room-illustration of Spectral Bridge is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Spectral Bridge is the Figure of Spectral Bridge.
 
 Figure of Portal Chamber is the file "KALDRISS.png".
-The room-illustration of Portal Chamber is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Portal Chamber is the Figure of Portal Chamber.
 
 [Rooms]
 The Blakkríss Temple Entrance is a room. "This seems to be the entrance of a temple. It is really huge. Like really really huge. There are also ancient rune inscriptions on every single one of the pillars that make up this majestic entrance."
@@ -2773,6 +2774,7 @@ After answering Heimdallr  that "42":
 
 After going to the Portal for the first time:
 	end the story saying "You wake up lying in your bed on board of your spaceship. For a moment you thought that you were just having a bad dream but then you realize that only moments ago you've been on Kaldríss, one of the coldest planets in this solar system. You almost freezed to death, got lost in a cave that apparently is inhabited by Yetíss and then you talked to Heimdallr, some kind of ancient warden, that magically teleported you into a portal chamber. After that just blanks. You simply can't remember how you actually managed to get off this planet.[paragraph break][italic type]Was all of this really just a bad dream? Perhaps a result of all the bad things that recently happened to me on all the other planets I've visited, well, not willingly though.[paragraph break]But it felt so real? Maybe this is just the consequence of trying to calibrate ancient portal devices which I don't really know anything about.[paragraph break]On the other hand I should just be grateful that I'm still alive and that I have my spaceship back.[paragraph break]After all the stuff that has happened I should probably just leave this galaxy and head home. It might not be perfect but I should appreciate it for what it is.[paragraph break]It's still better than anything out here.[paragraph break]---[paragraph break]THE END"
+
 	
 			
 			
