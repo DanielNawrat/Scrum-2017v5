@@ -119,7 +119,9 @@ quit - quit the game[line break][line break]";
 
 		[roman type]open/close (something)[line break]
 		unlock/lock (something)[line break]
-		put (something) on (e.g. clothing)[line break]";	
+		put (something) on (e.g. clothing)[line break]
+		ask (someone) about (something)[line break]
+		answer (something) to (someone)[line break]";	
 	remove Helper from play;
 	say "[line break]End of help section[line break]---"
 
