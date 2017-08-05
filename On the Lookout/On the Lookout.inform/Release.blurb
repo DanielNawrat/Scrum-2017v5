@@ -1,16 +1,17 @@
 ! Blurb file created by Inform build 6M62
 
-status "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform"
-release to "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release"
+project folder "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.inform"
+release to "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release"
 
 ! Blorb instructions
 
 storyfile leafname "On the Lookout.gblorb"
+<<<<<<< HEAD
 storyfile "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
 ifiction "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
 cover "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
@@ -51,6 +52,48 @@ picture 35 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Look
 picture 36 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
 picture 37 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
 picture 38 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+=======
+storyfile "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
+ifiction "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
+cover "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
+picture 1 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
+picture 3 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Sitis1.png"
+picture 4 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\gaisetto1.png"
+picture 5 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 6 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 7 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
+picture 8 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
+picture 9 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
+picture 10 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\mine_area.png"
+picture 11 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\puulau_cave.png"
+picture 12 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
+picture 13 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
+picture 14 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 15 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 16 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
+picture 17 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 18 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 19 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 20 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 21 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
+picture 22 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\paia_cave.png"
+picture 23 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\exit_geysiria.png"
+picture 24 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\frizza_background_new.png"
+picture 25 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Flux.png"
+picture 26 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
+picture 27 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
+picture 28 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
+picture 29 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 30 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 31 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 32 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 33 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 34 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 35 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 36 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 37 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+picture 38 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
+>>>>>>> f079f8f5c4e16ea1db2ad9b1fb2a60ab3fac23ea
 
 ! Placeholder variables
 
@@ -64,12 +107,17 @@ placeholder [BLURB] = "Axesto, a bumbling little alien, is cast out from his hom
 ! Other material to release
 
 source public
+<<<<<<< HEAD
 auxiliary "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Postcard.pdf" "IF Postcard" "--"
+=======
+auxiliary "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Postcard.pdf" "IF Postcard" "--"
+>>>>>>> f079f8f5c4e16ea1db2ad9b1fb2a60ab3fac23ea
 placeholder [OTHERCREDITS] = "The postcard was written by Andrew Plotkin and designed by Lea Albaugh."
 
 ! Website instructions
 
 placeholder [ENCODEDSTORYFILE] = "On the Lookout.gblorb.js"
+<<<<<<< HEAD
 template path "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
 template path "C:\Users\tgasc_000\Documents\Inform\Templates"
 template path "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Templates"
@@ -82,6 +130,20 @@ base64 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.
 template path "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
 template path "C:\Users\tgasc_000\Documents\Inform\Templates"
 template path "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Templates"
+=======
+template path "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "D:\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
+
+! Website instructions
+
+template path "D:\Documents\GitHub\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "D:\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+>>>>>>> f079f8f5c4e16ea1db2ad9b1fb2a60ab3fac23ea
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line1"><img border=0 src=inform:/doc_images/Reveal.png></a>||
