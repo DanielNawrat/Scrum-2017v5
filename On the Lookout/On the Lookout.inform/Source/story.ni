@@ -2312,13 +2312,13 @@ Figure of Spaceship Exit_Kaldríss is the file "kaldriss_spaceship.png".
 The room-illustration of Spaceship Exit_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
 		
 Figure of Crash Zone_Kaldríss is the file "KALDRISS.png".
-The room-illustration of Crash Zone_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Crash Zone_Kaldríss is the Figure of Crash Zone_Kaldríss.
 		
 Figure of Hunting Grounds_Kaldríss is the file "KALDRISS.png".
-The room-illustration of Hunting Grounds_Kaldríss is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Hunting Grounds_Kaldríss is the Figure of Hunting Grounds_Kaldríss.
 		
 Figure of Yundar's Cave is the file "KALDRISS.png".
-The room-illustration of Yundar's Cave is the Figure of Spaceship Bridge_Kaldríss.
+The room-illustration of Yundar's Cave is the Figure of Yundar's Cave.
 		
 
 [Finding a way off the space ship]
