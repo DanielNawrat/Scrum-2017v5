@@ -11,11 +11,10 @@ release to "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Look
 ! Blorb instructions
 
 storyfile leafname "On the Lookout.gblorb"
-<<<<<<< HEAD
 storyfile "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
 ifiction "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
-cover "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Cover.jpg"
+cover "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
+picture 1 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
 picture 3 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Sitis1.png"
 picture 4 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\gaisetto1.png"
 picture 5 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
@@ -52,48 +51,6 @@ picture 35 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Look
 picture 36 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
 picture 37 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
 picture 38 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-=======
-storyfile "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" include
-ifiction "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Metadata.iFiction" include
-cover "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
-picture 1 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Cover.png"
-picture 3 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Sitis1.png"
-picture 4 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\gaisetto1.png"
-picture 5 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
-picture 6 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
-picture 7 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\spaceship_cockpit.png"
-picture 8 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
-picture 9 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\background_geysiria_CS.png"
-picture 10 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\mine_area.png"
-picture 11 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\puulau_cave.png"
-picture 12 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
-picture 13 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\geysir_area.png"
-picture 14 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
-picture 15 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
-picture 16 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\volcano_vastland.png"
-picture 17 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
-picture 18 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
-picture 19 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
-picture 20 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
-picture 21 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\lihue.png"
-picture 22 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\paia_cave.png"
-picture 23 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\exit_geysiria.png"
-picture 24 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\frizza_background_new.png"
-picture 25 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\Flux.png"
-picture 26 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
-picture 27 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
-picture 28 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\kaldriss_spaceship.png"
-picture 29 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 30 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 31 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 32 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 33 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 34 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 35 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 36 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 37 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
-picture 38 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Figures\KALDRISS.png"
->>>>>>> cbdcca563cbc74b398a2776dd3d6540224207704
 
 ! Placeholder variables
 
@@ -107,24 +64,24 @@ placeholder [BLURB] = "Axesto, a bumbling little alien, is cast out from his hom
 ! Other material to release
 
 source public
-auxiliary "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Postcard.pdf" "IF Postcard" "--"
+auxiliary "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Miscellany\Postcard.pdf" "IF Postcard" "--"
 placeholder [OTHERCREDITS] = "The postcard was written by Andrew Plotkin and designed by Lea Albaugh."
 
 ! Website instructions
 
 placeholder [ENCODEDSTORYFILE] = "On the Lookout.gblorb.js"
-template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
-template path "C:\Users\Tim\Documents\Inform\Templates"
-template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
+template path "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "C:\Users\tgasc_000\Documents\Inform\Templates"
+template path "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Templates"
 placeholder [INTERPRETERSCRIPTS] = " "
 interpreter "Quixe" "g"
-base64 "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
+base64 "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.inform\Build\output.ulx" to "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Release\interpreter\On the Lookout.gblorb.js"
 
 ! Website instructions
 
-template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
-template path "C:\Users\Tim\Documents\Inform\Templates"
-template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Templates"
+template path "C:\Users\tgasc_000\Documents\Scrum-2017v5\On the Lookout\On the Lookout.materials\Templates"
+template path "C:\Users\tgasc_000\Documents\Inform\Templates"
+template path "C:\Users\tgasc_000\Desktop\Inform 7\Internal\Templates"
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line1"><img border=0 src=inform:/doc_images/Reveal.png></a>||

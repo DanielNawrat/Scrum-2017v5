@@ -544,11 +544,9 @@ After examining the floor mosaic:
 		say "On each corner of it is a stone to be seen. One is red as fire and covered in flames, the otherone blue like the ocean and covered in waves and the last one green like the jungle, that sourrounds the temple, covered in leavs."
 	
 
-After examining the plinth:
-	say "There is a round cafity and a engraving on the plinth that says [italic type] From this day till the end of time this guard will keep us save from... [roman type] Sadly the rest is illegible."
+The description of the plinth is "There is a round cafity and a engraving on the plinth that says [italic type] From this day till the end of time this guard will keep us save from... [roman type] Sadly the rest is illegible."
 
-After examining the statue:
-	say "It looks like an insect with a huge compact thorax and six long hairy legs. On the head are foure jaws as huge as you are. It looks verys dangerous and frightening."
+The description of the statue is "It looks like an insect with a huge compact thorax and six long hairy legs. On the head are foure jaws as huge as you are. It looks verys dangerous and frightening."
 	
 
 The left templewall is a object in the Temple_gaisetto. it is scenery.
@@ -558,11 +556,13 @@ The left templewall is a object in the Temple_gaisetto. it is scenery.
 The right templewall is a object in the Temple_gaisetto. it is scenery.
 "[italic type]Never remove the hearts from their secret places. Bringing them to their shrines will destroy our shield of protection and we are no longer be safe from the chungusimba."
 
-After examining the emerald:
-	say "It shines green."					
+The description of the emerald is "It shines green."	
 
-After examining huge very old tree:
-	say "Is this the sound of the wind blowing threw the leaves or is there somthing snorring?".
+The description of the sapphire is "It shines blue."	
+
+The description of the ruby is "It shines red."					
+
+The description of the huge very old tree is "Is this the sound of the wind blowing threw the leaves or is there somthing snorring?".
 
 After taking the emerald:
 	now the description of temple_gaisetto is "A little temple in the middle of the jungle. It looks very old, because the whole building is covered in moss and seems to be in danger of collapsing. Inside the temple there are inscriptions on the [bold type]right templewall [roman type]and [bold type]left templewall [roman type]as well as a colourfull [bold type]floor mosaic[roman type], that shows a triangle.  In front of you on the north wall of the temple is a gigantic [bold type]statue [roman type]on a [bold type]plinth.[roman type] It looks like an insect with a huge compact thorax and six long hairy legs. On the head are foure jaws as huge as you are. It looks verys dangerous and frightening.".
@@ -616,12 +616,12 @@ food is a object in the lager.
 
 The Formizer_Village is a region. 
 The Chain_bridge is a room in the Formizer_Village. "You are standing on a chain bridge made by vines and wood. Hopefully it carries my way and won't tear down. On the other end of the bridge in the[bold type] south[roman type] you can see a little path.[bold type] East[roman type] of the path is a little wooden hut. It seems like you fond some kind of zivilization." The printed name of Chain_bridge is "Chain Bridge".
-The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply lead to all the huts in the back. Right next to the squareare are only two huts. One in the [bold type]west [roman type]and the otherone in the [bold type]east.[roman type] In front of you, in the[bold type] north[roman type], is a totem."The printed name of Village_Square is "Square".
-Village_hut2 is a room in Formizer_Village. The printed name of Village_hut2 is "Shaman's Hut".
-Village_hut3 is a room in Formizer_Village. The printed name of the Village_hut3 is "Hut".
 Village_Path is a room in Formizer_Village. "The dusty path leads [bold type]north[roman type] to a big square. [bold type]East [roman type] of you is some kind of hut." The printed name of the Village_path is "Path".
-Village_stable is a room in Formizer_Village. The printed name of the Village_stable is "Stable".
-The totem is a room in Formizer_Village. "(..)"  The printed name of the totem is "Totem".
+The Village_Square is a room in Formizer_Village. "You stand in the middle of a huge square that looks like the heart of the village. There are many paths that proberply lead to all the huts in the back. Right next to the squareare are only two huts. One in the [bold type]west [roman type]and the otherone in the [bold type]east.[roman type] In front of you, in the[bold type] north[roman type], is a totem."The printed name of Village_Square is "Square".
+Village_hut2 is a room in Formizer_Village. "You are standing in the middle of the shamans hut. There are many little bottles with liquids in all thinkeble colours. Right next to the bottles are some kind of barks with letters engraved. On you right side is the cest you were looking for."  The printed name of Village_hut2 is "Shaman's Hut".
+Village_hut3 is a room in Formizer_Village. "You are in the hut of the eldest. He lies on a lounger and stares at you. He looks like the chaman, but without the mask." The printed name of the Village_hut3 is "Hut".
+Village_stable is a room in Formizer_Village. "The stable is filled with hay and staw. It the middle of it stands a strange looking thing. It looks kind of a mantis but talles then you. This must be the götti they told you to saddle." The printed name of the Village_stable is "Stable".
+The totem is a room in Formizer_Village. "You are on the north end of the square. A five meter high colourful painted totem is in front of you."  The printed name of the totem is "Totem".
 
 
 The Village_path is north of the chain_bridge.
@@ -652,8 +652,6 @@ saddle is a object in the lager.
 Götti is a person in Village_stable.
 Shaman is a person in totem.
 
-[Collector is a person in Village_hut1.
-child is a person in Village_hut1.]
 
 old man is a person in Village_hut3.
 
@@ -709,6 +707,8 @@ After taking sapphire:
 	now the description of Jungle_4 is "The dried out aera where the lake used to be."
 	
 	
+After going to the Village_path for the first time:
+	say "The dusty path leads [bold type]north[roman type] to a big square. [bold type]East [roman type] of you is some kind of hut".
 	
 
 After opening blue shrine:
@@ -730,7 +730,7 @@ The description of the flute is "you should try to [bold type]play the flute".
 After playing the flute:
 	if the player has the flute:
 		if the player is in the jungle_3:
-			say "[italic type] 'WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction over all of us!' [roman type] The [bold type]huge very old tree[roman type] moves its brunches and drops the [bold type]ruby. Your flute crumbles into dust.";
+			say "[italic type] 'WHAAAAAA! You woke me up from my eternal sleep! I know exactly why you did this. You want the red stone from me that protects you from the flames. You can have it but you should know that if you open the plinth there will be no turning back and you will bing blight and destruction over all of us!' [roman type] The [bold type]huge very old tree[roman type] moves its brunches and drops the [bold type]ruby. [roman type]Your flute crumbles into dust.";
 			move ruby to jungle_3;
 			remove flute from play;
 		else:
@@ -762,8 +762,6 @@ After taking carving:
 	say "You took the [bold type]carving.".
 	
 
-[After taking saddle:
-	say "cool".]
 
 saddle the götti is an action applying to nothing.
 Understand "saddle the götti" as saddle the götti.
@@ -788,6 +786,8 @@ After going to Village_hut3:
 	else: 
 		say "[italic type] 'What the fuck are you little scumbag doing in my fucking hut?'".
 		
+The description of the carving is "A wooden little carving that looks like the statue from the temple."
+The description of the saddle is "A saddle made out of plants and roots".
 
 [the götti is a person in the village_stable. ]
 
@@ -802,8 +802,7 @@ After ride the götti:
 	else:
 		say "nope".
 
-after examining götti:
-	say "Grewww".
+The description of the götti is "Grewww".
 	
 After going to the village_path:
 	if the player carries saddle:
@@ -857,7 +856,7 @@ push the chungusimba is an action applying to nothing.
 Understand "push the chungusimba" as push the chungusimba.
 After push the chungusimba :
 	if the player has the blade and the location of the player is the location of the götti:
-		say "You push it and it falls of! Shaman: [italic type]You killed it. We are so thankful, [bold type]take some food [italic type] and we bring you to you spaceship.";
+		say "You push the chungusimba and it start to stagger. Without control of its legs it makes a step back and looses grap. It falles down cliff while screaming [italic type] CHZAAAAAAHHHH! [roman type] The shaman comes closer to you. [italic type]You killed it. We are so thankful, [bold type]take some food [italic type] and we bring you to you spaceship.";
 		move shaman to village_path;
 		move food to the village_path;
 	else:
