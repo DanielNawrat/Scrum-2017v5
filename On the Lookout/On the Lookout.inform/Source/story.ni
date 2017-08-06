@@ -105,7 +105,8 @@ quit - quit the game[line break][line break]";
 		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
 
 	if the Counter is 2:
-		say "[bold type]Gaisetto";
+		say "[bold type]Gaisetto
+		[roman type]unlock (something) with (something)";
 	if the Counter is 3:
 		say "[bold type]Geysiria";
 	if the Counter is 4:
