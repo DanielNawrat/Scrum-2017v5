@@ -538,8 +538,38 @@ Machitikos is a person in the Shelter_Sitis. The printed name of Machitikos is "
 
 Chapter 2 - Gaisetto
 
-Figure of landingzone_gaisetto is the file "gaisetto1.png".
-The room-illustration of landingzone_gaisetto is the Figure of landingzone_gaisetto.
+Include Basic Screen Effects by Emily Short.
+Include Simple Graphical Window by Emily Short.
+Include Locations Images by Emily Short.
+
+
+Figure of gaisetto is the file "gaisetto1.png".
+Figure of formizer is the file "formizer_Village.png".
+
+
+
+The room-illustration of landingzone_gaisetto is the Figure of gaisetto.
+The room-illustration of Jungle_1 is the Figure of gaisetto.
+The room-illustration of Jungle_2 is the Figure of gaisetto.
+The room-illustration of Jungle_3 is the Figure of gaisetto.
+The room-illustration of Jungle_4 is the Figure of gaisetto.
+The room-illustration of Jungle_5 is the Figure of gaisetto.
+The room-illustration of Jungle_6 is the Figure of gaisetto.
+The room-illustration of Jungle_7 is the Figure of gaisetto.
+The room-illustration of Jungle_8 is the Figure of gaisetto.
+The room-illustration of Catacombs is the Figure of gaisetto.
+The room-illustration of Tunnel is the Figure of gaisetto.
+The room-illustration of temple_gaisetto is the Figure of gaisetto.
+The room-illustration of chain_bridge is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_square is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_stable is the Figure of formizer.
+The room-illustration of village_hut2 is the Figure of formizer.
+The room-illustration of village_hut3 is the Figure of formizer.
+The room-illustration of totem is the Figure of formizer.
+
+
 
 [Dschungel]
 
