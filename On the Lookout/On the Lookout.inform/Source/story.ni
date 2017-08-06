@@ -529,8 +529,6 @@ Machitikos is a person in the Shelter_Sitis. The printed name of Machitikos is "
 
 
 
-
-
 Chapter 2 - Gaisetto
 
 Figure of landingzone_gaisetto is the file "gaisetto1.png".
