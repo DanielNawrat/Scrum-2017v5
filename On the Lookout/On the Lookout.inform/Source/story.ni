@@ -101,7 +101,7 @@ quit - quit the game[line break][line break]";
 		
 		[roman type]answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
 		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
-		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned[line break]
+		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
 		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
 
 	if the Counter is 2:
