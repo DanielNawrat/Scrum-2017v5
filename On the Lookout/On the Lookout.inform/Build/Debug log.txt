@@ -14,7 +14,7 @@ Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Langu
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 39763 words long.
+I've now read your source text, which is 39176 words long.
 
 
 -----------------------------------------------------
@@ -24,24 +24,535 @@ Phase II ... Semantic analysis Ia
 I've also read Standard Rules by Graham Nelson, which is 42655 words long.
 I've also read English Language by Graham Nelson, which is 2297 words long.
 I've also read Basic Screen Effects by Emily Short, which is 2218 words long.
-Author: emily short
-Title: simple graphical window
-Problem PM_BogusExtension issued from inform7/Chapter 12/Read Source Text.w, line 143
 
-  >--> I can't find the extension 'Simple Graphical Window by Emily Short',
-    which seems not to be installed, but was requested by: 'Include Simple
-    Graphical Window by Emily Short' (source text, line 213). You can get hold
-    of extensions which people have made public at the Inform website,
-    www.inform7.com, or by using the Public Library in the Extensions panel.
+
+-----------------------------------------------------
+Phase III ... Initialise language semantics
+-----------------------------------------------------
 
 
 
 -----------------------------------------------------
-Phase III ... Compilation now complete
+Phase IV ... Semantic analysis Ib
 -----------------------------------------------------
 
-Total of 3 files written as streams.
-CPU time: 13 centiseconds
+
+
+-----------------------------------------------------
+Phase V ... Semantic analysis II
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VI ... Semantic analysis III
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VII ... First pass through assertions
+-----------------------------------------------------
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+    In Chapter 1 - Sitis:
+
+
+      >--> I am reading the sentence 'The room-illustration of Flat Rock_Sitis is
+        the Figure of the Flat Rock_Sitis' (source text, line 198) as saying that a
+        thing called 'room-illustration of Flat Rock_Sitis' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of the Wide
+        Desert_Sitis is the figure of the Flat Rock_Sitis' (source text, line 199)
+        as saying that a thing called 'room-illustration of the Wide Desert_Sitis'
+        is a value, but this makes no sense to me - it would be like saying 'the
+        chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of the Rampart of
+        Sicuum_Sitis is the figure of the Flat Rock_Sitis' (source text, line 200)
+        as saying that a thing called 'room-illustration of the Rampart of
+        Sicuum_Sitis' is a value, but this makes no sense to me - it would be like
+        saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of the Rock Mine_Sitis
+        is the figure of the Rock Mine_Sitis' (source text, line 203) as saying
+        that a thing called 'room-illustration of the Rock Mine_Sitis' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of the Tree
+        Thicket_Sitis is the figure of the Rock Mine_Sitis' (source text, line 204)
+        as saying that a thing called 'room-illustration of the Tree Thicket_Sitis'
+        is a value, but this makes no sense to me - it would be like saying 'the
+        chair is 10'.
+
+    Problem PM_ChalkCheese issued from inform7/Chapter 15/Make Assertions.w, line 1530
+
+      >--> The sentence 'The room-illustration of the Agora_Sitis is the figure of
+        the Agora-Sitis' (source text, line 207) appears to say two things are the
+        same - I am reading 'room-illustration of the Agora_Sitis' and 'figure of
+        the Agora-Sitis' as two different things, and therefore it makes no sense
+        to say that one is the other: it would be like saying that 'John is Paul'.
+        It would be all right if the second thing were the name of a kind, perhaps
+        with properties: for instance 'Abbey Road is a lighted room' says that
+        something called Abbey Road exists and that it is a 'room', which is a kind
+        I know about, combined with a property called 'lighted' which I also know
+        about.
+
+    Problem PM_ChalkCheese issued from inform7/Chapter 15/Make Assertions.w, line 1530
+
+      >--> The sentence 'The room-illustation of the Domum Praesidium_Sitis is the
+        figure of the Landing Zone_Sitis' (source text, line 208) appears to say
+        two things are the same - I am reading 'room-illustation of the Domum
+        Praesidium_Sitis' and 'figure of the Landing Zone_Sitis' as two different
+        things, and therefore it makes no sense to say that one is the other: it
+        would be like saying that 'John is Paul'. It would be all right if the
+        second thing were the name of a kind, perhaps with properties: for instance
+        'Abbey Road is a lighted room' says that something called Abbey Road exists
+        and that it is a 'room', which is a kind I know about, combined with a
+        property called 'lighted' which I also know about.
+
+    Problem PM_ExistingRegion issued from inform7/Chapter 34/Regions.w, line 176
+
+      >--> You wrote 'The Landing Zone_Sitis is a region' (source text, line 228),
+        but the figure of the Landing Zone_Sitis (which I notice in another
+        sentence) seems now to be declared as a new region, which is suspect.
+        Perhaps I have misinterpreted what was meant to be a new name for an old
+        one?
+
+    Problem PM_ExistingRegion issued from inform7/Chapter 34/Regions.w, line 176
+
+      >--> You wrote 'The Desert_Sitis is a region' (source text, line 246), but
+        the room-illustration of the Wide Desert_Sitis (which I notice in another
+        sentence) seems now to be declared as a new region.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Chapter 2 - Gaisetto:
+
+
+      >--> I am reading the sentence 'The room-illustration of landingzone_gaisetto
+        is the Figure of landingzone_gaisetto' (source text, line 547) as saying
+        that a thing called 'room-illustration of landingzone_gaisetto' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'jungle_gaisetto'-region()(I112'jungle_gaisetto')
+     == region
+    Regional: CONSTANT_VNT'the formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Regional: CONSTANT_VNT'formizer_village'-region()(I136'formizer_village')
+     == region
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Chapter 3- Geysiria:
+
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Bridge_Geysiria is the figure of Spaceship Bridge_Geysiria' (source text, line 932)
+        as saying that a thing called 'room-illustration of Spaceship
+        Bridge_Geysiria' is a value, but this makes no sense to me - it would be
+        like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Storage_Geysiria is the figure of Spaceship Storage_Geysiria' (source text, line 935)
+        as saying that a thing called 'room-illustration of Spaceship
+        Storage_Geysiria' is a value, but this makes no sense to me - it would be
+        like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Exit_Geysiria is the figure of Spaceship Exit_Geysiria' (source text, line 938)
+        as saying that a thing called 'room-illustration of Spaceship
+        Exit_Geysiria' is a value, but this makes no sense to me - it would be like
+        saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In SECTION 1 - CRASH SITE:
+
+
+      >--> I am reading the sentence 'The room-illustration of Landing
+        Zone_Geysiria is the Figure of Geysiria' (source text, line 1007) as saying
+        that a thing called 'room-illustration of Landing Zone_Geysiria' is a
+        value, but this makes no sense to me - it would be like saying 'the chair
+        is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Coastway is the
+        Figure of Coastway' (source text, line 1009) as saying that a thing called
+        'room-illustration of Coastway' is a value, but this makes no sense to me -
+        it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Mine_Area is the
+        Figure of Mine_Area' (source text, line 1013) as saying that a thing called
+        'room-illustration of Mine_Area' is a value, but this makes no sense to me
+        - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Underwater_Cave is
+        the Figure of Underwater_Cave' (source text, line 1017) as saying that a
+        thing called 'room-illustration of Underwater_Cave' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Regional: CONSTANT_VNT'the coast'-region()(I174'coast')
+     == region
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In SECTION 2 - OCEAN REGION:
+
+
+      >--> I am reading the sentence 'The room-illustration of Seaside is the
+        figure of Seaside' (source text, line 1067) as saying that a thing called
+        'room-illustration of Seaside' is a value, but this makes no sense to me -
+        it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Geysir_Area is the
+        figure of Geysir_Area' (source text, line 1070) as saying that a thing
+        called 'room-illustration of Geysir_Area' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Regional: CONSTANT_VNT'the volcano_area'-region()(I189'volcano_area')
+     == region
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In SECTION 3 - VOLCANO AREA:
+
+
+      >--> I am reading the sentence 'The room-illustration of Volcanoway is the
+        Figure of Volcanoway' (source text, line 1234) as saying that a thing
+        called 'room-illustration of Volcanoway' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Volcano is the
+        Figure of Volcano' (source text, line 1236) as saying that a thing called
+        'room-illustration of Volcano' is a value, but this makes no sense to me -
+        it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Volcanoway2 is the
+        Figure of Volcanoway2' (source text, line 1238) as saying that a thing
+        called 'room-illustration of Volcanoway2' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of
+        Volcano_VillageSquare is the Figure of Volcano_VillageSquare' (source text, line 1240)
+        as saying that a thing called 'room-illustration of Volcano_VillageSquare'
+        is a value, but this makes no sense to me - it would be like saying 'the
+        chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of
+        Volcano_VillageChapel is the Figure of Volcano_VillageChapel' (source text, line 1242)
+        as saying that a thing called 'room-illustration of Volcano_VillageChapel'
+        is a value, but this makes no sense to me - it would be like saying 'the
+        chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of
+        Volcano_VillageMayorhouse is the Figure of Volcano_VillageMayorhouse' (source
+        text, line 1244) as saying that a thing called 'room-illustration of
+        Volcano_VillageMayorhouse' is a value, but this makes no sense to me - it
+        would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of
+        Volcano_VillageWeedhut is the Figure of Volcano_VillageWeedhut' (source
+        text, line 1246) as saying that a thing called 'room-illustration of
+        Volcano_VillageWeedhut' is a value, but this makes no sense to me - it
+        would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of
+        Volcano_VillageOldbuilding is the Figure of Volcano_VillageOldbuilding' (source
+        text, line 1248) as saying that a thing called 'room-illustration of
+        Volcano_VillageOldbuilding' is a value, but this makes no sense to me - it
+        would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Volcano_Cave is the
+        Figure of Volcano_Cave' (source text, line 1250) as saying that a thing
+        called 'room-illustration of Volcano_Cave' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Underwater_CaveHeart
+        is the Figure of Underwater_CaveHeart' (source text, line 1394) as saying
+        that a thing called 'room-illustration of Underwater_CaveHeart' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Chapter 4 - Frizza:
+
+
+      >--> I am reading the sentence 'The room-illustration of Landing Zone_Frizza
+        is the Figure of Frizza' (source text, line 1599) as saying that a thing
+        called 'room-illustration of Landing Zone_Frizza' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Upper Desert_Frizza
+        is the Figure of Frizza' (source text, line 1600) as saying that a thing
+        called 'room-illustration of Upper Desert_Frizza' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Lower Desert_Frizza
+        is the Figure of Frizza' (source text, line 1601) as saying that a thing
+        called 'room-illustration of Lower Desert_Frizza' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Scoop_Frizza is the
+        Figure of Frizza' (source text, line 1602) as saying that a thing called
+        'room-illustration of Scoop_Frizza' is a value, but this makes no sense to
+        me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Surface Flux_Frizza
+        is the Figure of Flux' (source text, line 1603) as saying that a thing
+        called 'room-illustration of Surface Flux_Frizza' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Upper Gate_Frizza is
+        the Figure of Flux' (source text, line 1604) as saying that a thing called
+        'room-illustration of Upper Gate_Frizza' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Verge_Frizza is the
+        Figure of Frizza' (source text, line 1605) as saying that a thing called
+        'room-illustration of Verge_Frizza' is a value, but this makes no sense to
+        me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Surface Flux
+        2_Frizza is the Figure of Flux' (source text, line 1606) as saying that a
+        thing called 'room-illustration of Surface Flux 2_Frizza' is a value, but
+        this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Ascent_Frizza is the
+        Figure of Frizza' (source text, line 1607) as saying that a thing called
+        'room-illustration of Ascent_Frizza' is a value, but this makes no sense to
+        me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Flux Core_Frizza is
+        the Figure of Flux' (source text, line 1608) as saying that a thing called
+        'room-illustration of Flux Core_Frizza' is a value, but this makes no sense
+        to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Chapter 5 - Kaldríss, Section 1 - Crash Site:
+
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Bridge_Kaldríss is the Figure of Spaceship Bridge_Kaldríss' (source text, line 2345)
+        as saying that a thing called 'room-illustration of Spaceship
+        Bridge_Kaldríss' is a value, but this makes no sense to me - it would be
+        like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Storage_Kaldríss is the Figure of Spaceship Storage_Kaldríss' (source text, line 2348)
+        as saying that a thing called 'room-illustration of Spaceship
+        Storage_Kaldríss' is a value, but this makes no sense to me - it would be
+        like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Spaceship
+        Exit_Kaldríss is the Figure of Spaceship Exit_Kaldríss' (source text, line 2351)
+        as saying that a thing called 'room-illustration of Spaceship
+        Exit_Kaldríss' is a value, but this makes no sense to me - it would be like
+        saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Crash Zone_Kaldríss
+        is the Figure of Crash Zone_Kaldríss' (source text, line 2354) as saying
+        that a thing called 'room-illustration of Crash Zone_Kaldríss' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Hunting
+        Grounds_Kaldríss is the Figure of Hunting Grounds_Kaldríss' (source text, line 2357)
+        as saying that a thing called 'room-illustration of Hunting
+        Grounds_Kaldríss' is a value, but this makes no sense to me - it would be
+        like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Section 2 - Yetíss Cave System:
+
+
+      >--> I am reading the sentence 'The room-illustration of Yundar's Cave is the
+        Figure of Yundar's Cave' (source text, line 2593) as saying that a thing
+        called 'room-illustration of Yundar's Cave' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Yarwol's Cave is the
+        Figure of Yarwol's Cave' (source text, line 2596) as saying that a thing
+        called 'room-illustration of Yarwol's Cave' is a value, but this makes no
+        sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Main Cave_Kaldríss
+        is the Figure of Main Cave_Kaldríss' (source text, line 2599) as saying
+        that a thing called 'room-illustration of Main Cave_Kaldríss' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Secret Cave_Kaldríss
+        is the Figure of Secret Cave_Kaldríss' (source text, line 2602) as saying
+        that a thing called 'room-illustration of Secret Cave_Kaldríss' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+     In Section 4 - Blakkríss Temple:
+
+
+      >--> I am reading the sentence 'The room-illustration of Blakkríss Temple
+        Entrance is the Figure of Blakkríss Temple Entrance' (source text, line 2738)
+        as saying that a thing called 'room-illustration of Blakkríss Temple
+        Entrance' is a value, but this makes no sense to me - it would be like
+        saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Great Hall_Kaldríss
+        is the Figure of Great Hall_Kaldríss' (source text, line 2741) as saying
+        that a thing called 'room-illustration of Great Hall_Kaldríss' is a value,
+        but this makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Spectral Bridge is
+        the Figure of Spectral Bridge' (source text, line 2744) as saying that a
+        thing called 'room-illustration of Spectral Bridge' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+    Problem PM_ObjectIsValue issued from inform7/Chapter 15/Make Assertions.w, line 1449
+
+      >--> I am reading the sentence 'The room-illustration of Portal Chamber is
+        the Figure of Portal Chamber' (source text, line 2747) as saying that a
+        thing called 'room-illustration of Portal Chamber' is a value, but this
+        makes no sense to me - it would be like saying 'the chair is 10'.
+
+
+
+-----------------------------------------------------
+Phase VIII ... Compilation now complete
+-----------------------------------------------------
+
+Total of 4 files written as streams.
+CPU time: 50 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

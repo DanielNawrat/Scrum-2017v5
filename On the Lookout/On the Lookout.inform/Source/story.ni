@@ -99,7 +99,9 @@ quit - quit the game[line break][line break]";
 	if the Counter is 1:
 		say "[bold type]Sitis
 		
-		[roman type]answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+		[roman type]in generell: 
+		always construct your commands with a verb/an action followed by a noun or a name/the printed topic[line break]
+		answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
 		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
 		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
 		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
@@ -440,7 +442,7 @@ The old knotted tree is a thing. The old knotted tree is not portable. The old k
 
 Understand the command "climb" as something new.
 Climbing up the old knotted tree is an action applying to nothing.
-Understand "climb up old knotted tree" and "climb up the old knotted tree" and "climb up tree" and "climb up the tree" as climbing up the old knotted tree.
+Understand "climb up old knotted tree" and "climb up the old knotted tree" and "climb up tree" and "climb up the tree" and "climb up" as climbing up the old knotted tree.
 
 After climbing up the old knotted tree for the first time:
 	say "With a lot of strength, you bore your claws in the old dry wood. Your grip is so strong, you reach your destination easily. You just made it a few seconds before you see Machitikos running downhill. He is looking everywhere around to find you but does not seem to think about the possibility that you are hiding in the treetops. So, keep your spear ready. Take a deep breath. And three, two, one... [bold type]ATTACK![roman type]";
@@ -463,7 +465,7 @@ After attacking Machitikos the first time:
 	now Anaidis is in the Tree Thicket_sitis;
 	
 Clawing Machitikos is an action applying to nothing.
-Understand "claw Machitikos" and "scratch Machitikos" and "claw" and "scratch" as clawing Machitikos.
+Understand "claw Machitikos" and "scratch Machitikos" and "claw" and "scratch" and "claw him" and "scratch him" as clawing Machitikos.
 
 After clawing Machitikos the first time:
 	say "This was definitely the right move. You've cut Machitikos left cheek so deep that he releases his chokehold shortly. Short enough for you to save yourself from him.[paragraph break]";
@@ -496,7 +498,7 @@ After clawing his eyes:
 	say "You wave good-bye to them, turn to your spaceship and [bold type]enter[roman type]."
 	
 Entering spaceship is an action applying to nothing.
-Understand "enter spaceship" as entering spaceship.
+Understand "enter spaceship" and "enter the spaceship" and "enter" as entering spaceship.
 
 After entering spaceship:
 	say "You enter your spaceship. The engine starts. This journey goes on.[paragraph break]";
@@ -533,6 +535,9 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 [Charaktere]
 Scorpius is a person in the Shelter_Sitis. The printed name of Scorpius is "the great Scorpius". 
 Machitikos is a person in the Shelter_Sitis. The printed name of Machitikos is "Machitikos". The description of Machitikos is "Machitikos does not say a word. He just grunts aggressively and throws a long sharp spear in front of you. [italic type]'[bold type]Take it![roman type]'"
+
+Taking the spear is an action applying to nothing.
+Understand "take the spear" and "take it" and "take spear" as taking the spear.
 
 
 
