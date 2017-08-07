@@ -58,7 +58,7 @@ After going from the Landing Zone_Frizza:
 	now the Counter is 4;
 	produce a room description with going spacing conventions.
 	
-[After opening the water dagger hole:
+[After opening the daggerhole:
 	now the Counter is 4.]
 	
 After going from the Spaceship Bridge_Kaldríss:
@@ -1065,14 +1065,14 @@ The Magic Hole is south of the Geysir_Area.
 The waterdagger is an object.
 The waterdagger is in the Underwater_Cave.
 The waterdagger can be taken.
-The waterdagger unlocks the water dagger hole.
+The waterdagger unlocks the daggerhole.
 After examining the waterdagger:
 	say "Look on your map, that's the little thing called [Italic type]Haleakala[Roman type]. Weird, I know. We call this thing water dagger. But if I read it correctly, this must be the most important tool for you right now. Take it."
 	
-The water dagger hole is a container in the Underwater_CaveHeart.
+The daggerhole is a container in the Underwater_CaveHeart.
 It is fixed in place. 
-The water dagger hole is locked. 
-The water dagger hole is openable.
+The daggerhole is locked. 
+The daggerhole is openable.
 
 
 [Geysir Gate is an object. It is scenery. 
@@ -1100,7 +1100,7 @@ Head [Bold type]west[Roman type] - back onto the Kamehameha Route or remain on t
 
 The description of Underwater_CaveHeart is "This is your last step to finally stop all the ash clouds and the constant lava flow above ground. The underwater system map led you here - you should make use of your one and only tool that will fit into the little heart that is at the end of this tiny corridor. May Geysiria rest in peace.
 
-[Bold type]Examine the water dagger hole[Roman type] in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. 
+[Bold type]Examine the daggerhole[Roman type] in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. 
 You also have the option to walk back [Bold type](west)[Roman type]."
 
 
@@ -1341,7 +1341,7 @@ Old Building is an object. It is scenery. Old Building is in the Volcano_Village
 After examining Old Building:
 	say "Look into old building and check your surroundings. Do you have the map that is supposed to be in the spaceship? Did you forget it? The old building has a few maps of Geysiria - I'm not too sure if there is one of the underwater system but since you only have a few buildings with easy access you should consider checking it out. So many folders in those massive shelves. Take the ladder to your right and search through every map folder here - maybe you're lucky and find a copy of that particular underwater system map. You already found the treasure box, so why shouldn't you be able to find the map you need.".
 
-After opening the water dagger hole:
+After opening the daggerhole:
 	say "Boooooooooom. Explosions everywhere. Luckily you are under the ground and everything you feel is just a little earthquake. The good thing is your spaceship is in the west of the  and the exploding volcanoes are here in the east. Lava, falling rocks and huge ash clouds turn Geysiria into hell. It takes a few hours to let the volcanoes disappear... I know, you are not very patient Axesto but it's better to wait until the last volcano is destroyed. [paragraph break][italic type] Sixteen hours later... [Roman type] Now it's time to head back to the spaceship on the western side of the planet and leave the planet as soon as possible. You are starting the engine and the spaceship is flying high above the wasteland that is Geysiria now. Wow, finally you can see this vast landscape from above. No ashclouds, nothing. A totally clear view of the planet that let you struggle so much. But in the end it was worth it. A quick look onto your planet map says the next stop will be Frizza. Hmmm, Frizza, it sounds a little freezing, doesn't it? You have a few hundred more hours to fly through the galaxy, so turn on the auto pilot and get some rest. The days on Geysiria were tough. Axesto is sleeping like a little child on the locker between some folders and some first aid kits. [paragraph break][Italic type] Three days later, Axesto finally sees the Flux which must be the Flux of Frizza. [Roman type]
 	[paragraph break]
 	
@@ -1349,7 +1349,9 @@ After opening the water dagger hole:
 	[paragraph break]Frizza looks like a monstrous black rock, nothing more. Is this really the planet you are supposed to land on? Yes, you have to land on Frizza because your little fusion reactor is working slower than before. It's an old one you got on Fidartis. This planet is not known to produce the best technology. So you better try to land safely on Frizza. This turns out to be an extreme adventure as you end up in a massive thunderstorm. But that's not a problemm for you - you are the most experienced spaceship commander in the whole galaxy. Without any noise you land smoothly on Frizza. Your first impression from many kilometers away are confirmed: it looks very unfriendly and actually uninhabited too. Maybe you should talk to your on-board computer first, there may be a few hints that will help you to explore Frizza. I heard it's supposed to be a planet with a lot of potential. Have fun.";
 	say "Your spaceship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. [line break]Black planes and sharp cliffs of a dark red shape the landscape. In the [bold type]east [roman type]you perceive a massive rock formation, in the [bold type]west [roman type]you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the [bold type]south [roman type]there seem to be some sort of industrial constructions, far in the [bold type]north [roman type]you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. [line break]Your ship's on the ground, and you are too, barely. Welcome to Frizza.";
 	now the player is in the Landing Zone_Frizza;
-	now the Counter is 4.
+	now the Counter is 4;
+	remove the land mine from play;
+	remove the underwater system map from play.
 
 Figure of Underwater_CaveHeart is the file "exit_geysiria.png".
 	The room-illustration of Underwater_CaveHeart is the Figure of Underwater_CaveHeart.
@@ -2166,7 +2168,12 @@ Instead of taking the Power Unit:
 
 
 After inserting the Pure Flux Essence into the Power Unit:
-	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]
+
+
+[Bold type]CHAPTER 5 - KALDRÍSS[Roman type]
+
+You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Pure Flux Essence from play;
 	now the Counter is 5;
 	now the player is in the Spaceship Bridge_Kaldríss.
