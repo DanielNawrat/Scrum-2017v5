@@ -97,9 +97,16 @@ quit - quit the game[line break][line break]";
 	if the Counter is 0:
 		say "[bold type]Sitis";
 	if the Counter is 1:
-		say "[bold type]Sitis";
+		say "[bold type]Sitis
+		
+		[roman type]answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
+		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
+		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
+
 	if the Counter is 2:
-		say "[bold type]Gaisetto";
+		say "[bold type]Gaisetto
+		[roman type]unlock (something) with (something)";
 	if the Counter is 3:
 		say "[bold type]Geysiria";
 	if the Counter is 4:
@@ -182,21 +189,34 @@ After teleporting to end:
 The carrying capacity of the player is 3. The backpack is the player's holdall. The player is wearing the backpack. The backpack is open and not openable. The carrying capacity of the backpack is 3.
 
 
-
-
-
 Chapter 1 - Sitis
 
-Figure of Flat Rock_Sitis is the file "Sitis1.png".
-The room-illustration of Flat Rock_Sitis is the Figure of Flat Rock_Sitis.
+[Bilder]
+
+Figure of the Flat Rock_Sitis is the file "Sitis1.png".
+The room-illustration of Flat Rock_Sitis is the Figure of the Flat Rock_Sitis.
+The room-illustration of the Wide Desert_Sitis is the figure of the Flat Rock_Sitis.
+The room-illustration of the Rampart of Sicuum_Sitis is the figure of the Flat Rock_Sitis.
+
+Figure of the Rock Mine_Sitis is the file "rock_mine_sitis.png".
+The room-illustration of the Rock Mine_Sitis is the figure of the Rock Mine_Sitis.
+The room-illustration of the Tree Thicket_Sitis is the figure of the Rock Mine_Sitis.
+
+Figure of the Agora_Sitis is the file "agora.png".
+The room-illustration of the Agora_Sitis is the figure of the Agora-Sitis.
+The room-illustation of the Domum Praesidium_Sitis is the figure of the Landing Zone_Sitis.
+
+
 
 [Beginn meiner Mapkonstruktion - Landing Zone, Wüste und Sicuum]
 
 Include Basic Screen Effects by Emily Short.
 The Start of the Adventure is a scene. The Start of the Adventure begins when play begins.
+Include Simple Graphical Window by Emily Short.
+Include Locations Images by Emily Short.
 
 [Anfangsbeschreibung - Von wo kommt Axesto? Was ist sein Plan?]
-"Welcome to your journey, Axesto! Take a seat, sit back and enjoy. Hier fehlt noch die Geschichte, warum Axesto seinen Heimatplaneten Fidatis verlassen hat. Der erste Planeten, den du ansteuerst, nennt sich Sitis. Der einzige Planeten, den du von deiner Heimat aus als goldbraun leuchtenden Stern wahnehmen konntest. Du hast dich schon immer gefragt, wer und was dort lebt. Also los gehts!"
+"Welcome to your journey, [bold type]Axesto[roman type]! You are going to leave your home planet Fidatis for the first time. Isn't it exciting? Finally, you can expercience everything by yourself. Although you love your home - the wide lush meadows, the different colourful flowers, the clear small seas and especially your family. But it's about time. You are full-aged now, so you are allowed to leave Fidatis for the first time. And not for anything in the world you would miss this chance. You already know what your first goal will be - the only planet you have been able to see since you are alive. You neither know its name nor anything else... but you know that you've always wanted to travel there. The engine starts, you focuse your view, the spaceship raises - your journey begins."
 
 Axesto is a person. The Player is Axesto. 
 [End of Initialisation]
@@ -207,7 +227,7 @@ Axesto is a person. The Player is Axesto.
 The Landing Zone_Sitis is a region. The Flat Rock_Sitis is in the Landing Zone_Sitis.
 
 [1. Raum]
-The Flat Rock_Sitis is a room. The printed name of the Flat Rock_Sitis is "Your arrival point. The Flat Rock". "You arrive on a planet called Sitis. You think the landing went great but as you leave your spaceship, you realise that two of your three water container broke down. Without minimum one new watertank you can not continue your journey. Far away [bold type]in the east[roman type] you recognise some kind of different rooftops. Maybe someones living there who could help you?"
+The Flat Rock_Sitis is a room. The printed name of the Flat Rock_Sitis is "Your arrival point: The Flat Rock". "You arrive on a planet called Sitis. You think the landing went flawlessly but as you leave your spaceship, you realise that two of your three water containers broke down. Without at least one new watertank you can not continue your journey. Far away in the [bold type]east[roman type] you recognise shapes like rooftops. Maybe someone is living there who could help you?"
 
 
 [Beschreibungen für andere Himmelsrichtungen und neue Raumbeschreibung]
@@ -218,25 +238,23 @@ After going east from the Flat Rock_Sitis for the first time:
 
 [Warum funktionieren diese hier nicht?]
 Instead of going nowhere from the Flat Rock_Sitis:
-	say "Sand, sand, sand. As long as your eyes can reach. You won't find water here.";
+	say "Sand everywhere. Sand as far as the eye can see. You won't find water here.";
 	stop the action.
 	
-
 [Region 2 - The Desert of Sitis]
 The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
 
-
 [Räume]
-The Wide Desert of Sitis_Sitis is a room. The printed name of the Wide Desert of Sitis_Sitis is "The Wide Desert". The description of the Wide Desert of Sitis_Sitis is "You've reached the Desert of Sitis. It gives you two things: First, an impression of what whole Sitis looks like - sandy, dry, with some deep stone canyons and huge rocks afar. But although this planet does not seem to be a place to life, the Desert also gives you the chance to discern that you are not alone. There IS life! When you look north, directly in front of you is a long corrugated iron bridge, guiding over one of those ravines. You can not access the bridge, it is blocked with a barbed wire fence, but straight ahead, at the end you see a majestic sandstone palace. In the bridge's middel, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look east from the point you are standing at right now, you see the kind of a rock mine. [bold type]In the south[roman type] you recognise a lot of small white houses surrounded by a rampart. It seems like [bold type]people are living here[roman type]."
+The Wide Desert of Sitis_Sitis is a room. The printed name of the Wide Desert of Sitis_Sitis is "The Wide Desert". The description of the Wide Desert of Sitis_Sitis is "You've reached the Desert of Sitis. It leaves you with two things: First of all, an impression of the landscape of Sitis - sandy, dry, with some deep stone canyons and huge rocks afar. And second of all, although this planet does not seem to be a place to live, the Desert still gives you the feeling of not being alone. There IS life! When you look [bold type]north[roman type], directly in front of you, there is a long corrugated iron bridge, guiding over one of those ravines. A majestic sandstone palace ascends at the end of that bridge. But the way is blocked by a barbed wired fence. In the bridge's center, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look [bold type]east[roman type] you see some kind of a rock mine. In the [bold type]south[roman type] you recognise a lot of small white houses surrounded by a rampart. It seems like [bold type]people are living here[roman type]."
 The Wide Desert of Sitis_Sitis is east of the Flat Rock_Sitis. 
 
-The Rampart around Sicuum_Sitis is a room. The printed name of the Rampart around Sicuum_Sitis is "The Rampart around Sicuum". 
+The Rampart around Sicuum_Sitis is a room. The printed name of the Rampart around Sicuum_Sitis is "The Rampart around Sicuum". The Description of the Rampart around Sicuum_Sitis is "This massive wooden rampart seems to protect what- or whoever is living behind. The only way to get passed it  is the gate you see."
 The Rampart around Sicuum_Sitis is south of the Wide Desert of Sitis_Sitis.
 
 The wooden gate is south of the Rampart around Sicuum_Sitis and north of the Agora_Sitis. The wooden gate is a door. The wooden gate is closed and openable.  
-The description of the wooden gate is "It seems to be closed. [bold type]Let's try to open it[roman type]."
+The description of the wooden gate is "It seems to be closed. Let's try to [bold type]open[roman type] it."
 
-The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Description of the Rock Mine_Sitis is "". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
+The Rock Mine_Sitis is a room. The printed name of the Rock Mine_Sitis is "Rock Mine". The Rock Mine_Sitis is east of the Wide Desert of Sitis_Sitis.
 
 The Protection Bridge_Sitis is a room. The printed name of the Protection Bridge_Sitis is "The Protection Bridge". 
 The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis.
@@ -244,32 +262,31 @@ The Protection Bridge_Sitis is north of the Wide Desert of Sitis_Sitis.
 
 [Instead of-Beschreibungen]
 
-Instead of going north from the Wide Desert of Sitis_Sitis for the first time:
-	say "Ouch! It hurts. Apparently, you needs to feel that you are not able to pass the barbed wire fence.";
-	do nothing;
-
-Instead of going east from the Wide Desert of Sitis_Sitis for the first time:
-	say "At the moment, there's nothing that could help you out there. You need humans to go on.";
-	do nothing;
+Instead of going north from the Wide Desert of Sitis_Sitis:
+	say "Ouch! It hurts. Apparently, you need to feel that you are not able to pass the barbed wire fence.";
+	stop the action.
 	
+Instead of going east from the Wide Desert of Sitis_Sitis for the first time:
+	say "At the moment, there's nothing that you could do out there. You need help to be able to continue your journey.";
 	
 [Szene vor dem wooden gate]
 
 The Person behind the door_Sitis is a person. The Person behind the door_Sitis is in the Agora_Sitis. The printed name of the Person behind the door_Sitis is "the faceless guardian". 
 
 Instead of opening the wooden gate:
-	say "Someone is yelling at you. [italic type]'Who are you? What is your name?'[roman type]";
+	say "Someone is yelling at you.[paragraph break]";
+	say "[italic type]'Who are you? [bold type]What is your name?'[roman type]";
 	now the Person behind the door_Sitis is in the Rampart around Sicuum_Sitis.
 	
 After answering that "Axesto":
-	say "[italic type]'I am Axesto, an alien of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover the life on other plantes. During the landing here, two of my water containers broke down. That's why I need you to ask for water. Can you give me a bit, please?' [roman type][paragraph break]";
-	say "First there's silence. Then the gate squeaks. [bold type]It opens slowly.[roman type]";
+	say "[italic type]'I am Axesto, an inhabitant of the planet Fidatis. I landed here because I am travelling through the whole galaxy to discover life on other planets. During the landing on this planet, two of my water containers broke down. That's why I need to ask you for water. Can you give me a drop, please?' [roman type][paragraph break]";
+	say "First there's silence. Then the gate squeaks and it opens slowly. Currently, [bold type]south[roman type] is still the direction you need to go.";
 	now the wooden gate is open;
 	remove the Person behind the door_Sitis from play;
 	now the wooden gate is scenery;
 	now the description of the wooden gate is "open.";
 	now the description of the Wide Desert of Sitis_Sitis is "";
-	
+	now the description of the the Rampart around Sicuum_Sitis is "";	
 
 
 [Region 3 - The Village Sicuum]
@@ -279,23 +296,30 @@ The Agora_Sitis, the Domum Praesidium_Sitis, the Shelter_Sitis, the Secret Passa
 [Räume]
 [Interaktion und Kommunikation auf dem Agora mit Anaidis]
 
-The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "Brisky bustle dominates this place. People are talking, buying things on the market and kids are playing with each other. No one is carrying about you. But right in the middle of this huddle, you realize a boy staring at you. He hides a bit behind one of those market booth. His view radiates a mixture of fear and fascination. Maybe you break the ice between you two, [bold type]if you friendly waves him?[roman type]"
+The Agora_Sitis is a room. The printed name of the Agora_Sitis is "The Agora of Sicuum". The Agora_Sitis is south of the wooden gate. The description of the Agora_Sitis is "Brisky bustle dominates this place. People are talking and buying things on the market and kids are playing with each other. No one seems to give you any attention. But right in the middle of this huddle, you realize a boy staring at you. He hides behind a market booth. His expression radiates a mixture of fear and fascination. Maybe you break the ice between you two, if you friendly [bold type]wave at him[roman type]?"
 
-Anaidis is a person. The printed name of Anaidis is "the hiding boy". Anaidis is in the Agora_Sitis.
+Anaidis is a person. The printed name of Anaidis is "the hiding boy". Anaidis is in the Agora_Sitis. The description of Anaidis is "Andaidis constantly smiles at you. You feel accepted."
 
-Waving the hiding boy is an action applying to nothing.
-Understand "wave the hiding boy" as waving the hiding boy.
+Understand the command "examine" as something new.
+Examining Anaidis is an action applying to nothing.
+Understand "examine the hiding boy" and "examine hiding boy" and "x hiding boy" and "x the hiding boy" as examining Anaidis.
 
-After waving the hiding boy for the first time:
-	say "First, nothing happens. But then, he smiles. And a few seconds later, he already stands directly in front of you and babbles cheerfully. [paragraph break][italic type]'Hi, I am Anaidis. First I thought you could be an enemy, but as I finked through the keyhole, I saw how funny you look. And such a funny-looking thing could never be dangerous. But I also did not wanted to 'out me straight as the guardian'. That's why I've hidden first. Oh boy! I just can repeat: You look so so funny. With your long neck and your thick round belly. And what about your non-existing legs? You just have feet. Did you already knew you have no legs? Aaaaaaand no hair! Oh, oh! And the way you walk, or should I say waddle, is just too amusing.'[roman type][paragraph break]";
+After examining Anaidis for the first time:
+	say "The boy directly cowers. But already one short moment later, his head shows up again. Let's try the [bold type]waving[roman type] thing.";
+
+Waving at hiding boy is an action applying to nothing.
+Understand "wave at hiding boy" and "wave hiding boy" and "wave at the hiding boy" as waving at hiding boy.
+
+After waving at hiding boy for the first time:
+	say "First, nothing happens. But then, he smiles. A few seconds later, he already stands directly in front of you and babbles cheerfully. [paragraph break][italic type]'Hi, I am Anaidis. First I thought you could be an enemy, but as I finked through the keyhole, I saw how funny you look. And such a funny-looking thing could never be dangerous. But I also did not want to 'out me straightly as the guardian'. That's why I've been hiding first. Oh boy! I just can repeat: You look so so funny. With your long neck and your thick round belly. And what about your non-existing legs? You just have feet. Did you already knew you have no legs? Aaaaaaand no hair! Oh, oh! And the way you walk, or should I say waddle, is just too amusing.'[roman type][paragraph break]";
 	say "You are not quite sure how to react to this statement. The moment you want to riposte something, the boy already yells around.[paragraph break]";
 	say "[italic type]'Hey everyone! Look what we got here.[roman type]'[paragraph break]";
 	say "People suddenly crowd around you. Without any scepticism. They consider you from all aspects, persuade you in a muddle. [italic type]'What are you?, 'How did you came here?' and 'I've never seen something like you.'[roman type] You start getting nervous. Anaidis seems to see this.[paragraph break]";
 	say "[italic type]'Hey, hey. People. Stop examining him like an unknown disease. His name is Axesto. He is an alien from the planet Fidatis. Right?'[roman type][paragraph break]";
 	say "You nod.[paragraph break]";
-	say "'[italic type]As he has landed here, two of his water containers broke down. Now he needs a bit water to be able to continue his journey from planet to planet.'[roman type][paragraph break]";
-	say "It becomes more silent. [italic type]'Water, huh?'[roman type], someone out of the crowd asks. Their faces darkens. Abruptly the whole euphoria the people have had about you has been gone. Anaidis also seems thoughtful. Few seconds later, he mentions, that you are not going to be successfull here concerning your water quest. Except you will fight for it. [paragraph break]";
-	say "You are confused. On the one hand it's said, you won't get water, on the other hand, apparently you can fight for it. [bold type]In generell - what's the matter about this fight. Probably, you should ask Anaidis.[roman type]";
+	say "'[italic type]During his landing on Sitis, two of his water containers broke down. Now he needs water to continue his journey from planet to planet.'[roman type][paragraph break]";
+	say "It becomes more silent. [italic type]'Water, huh?'[roman type], someone out of the crowd asks. Their faces darkens. Abruptly the whole euphoria the people have had about you has been gone. Anaidis also seems thoughtful. Few seconds later, he mentions, that you are not going to be successfull here concerning your water quest. Except you will have to fight for it. [paragraph break]";
+	say "You are confused. On the one hand it's said, you won't get water, on the other hand, apparently you can fight for it. In generell - what's the matter about [bold type]the fight[roman type]? Probably, you should [bold type]ask Anaidis about[roman type].";
 	now the printed name of Anaidis is "Anaidis";
 	
 	
@@ -303,12 +327,12 @@ After waving the hiding boy for the first time:
 
 Table of Anaidis Responses
 Topic	Response
-"the fight"	"What does that mean: I have to fight for water? Why and against whom?[paragraph break]"
+"the fight" 	"What does that mean: I have to fight for water? Why and against whom?[paragraph break]"
 "scorpius" 	"What is going on here? Who is this Scorpius?[paragraph break]"
 
 After asking Anaidis about "the fight" for the first time:
-	say "[italic type]'I know someone who is the right person to give you the right answers and does make you understand this story. Come with me!'[roman type][paragraph break]";
-	say "[bold type]Anaidis walks west to a huge hut.[roman type] Follow him!";	
+	say "[italic type]'I know the right person to give you the answers you need. Come with me!'[roman type][paragraph break]";
+	say "Anaidis walks [bold type]west[roman type] to a huge hut.";	
 	now Anaidis is in Mitéra's Room_Sitis;
 	now the printed name of Anaidis is "Anaidis";
 	now the description of the Agora_Sitis is "";
@@ -317,19 +341,19 @@ After asking Anaidis about "the fight" for the first time:
 [Instead of-Beschreibungen von der Agora aus]
 
 Instead of going east from the Agora_Sitis:
-	say "You are looking at a lovely small sand house. It looks cozy as a sand house is able to look cozy. The moment you want to enter a young beautiful woman is blocking your way.[paragraph break]";
-	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows our story better then this women does.'[roman type]";
-	do nothing;
+	say "You are looking at a lovely little sand house. It looks cozy as a sand house is able to look cozy. The moment you want to enter a young beautiful woman is blocking your way.[paragraph break]";
+	say "[italic type]'Kiddo, that's the wrong way. You really need to follow Anaidis. I know where he wants to take you and believe me - no one knows our story better then this women does. You need to go [bold type]west.[roman type]'[roman type]";
+	do nothing.
 
-[Beschreibung funktioniert nicht, wie bei den oben genannten auch]
-[Instead of going south from the Agora_Sitis:
-	say "You really need to check your knowledge about cardinal direction.";]
+Instead of going south from the Agora_Sitis:
+	say "You really need to check your knowledge about cardinal direction.";
+	do nothing.
 
 	
 [Anaidis geht mit Axesto zu Mitéra]
 
 The Domum Praesidium_Sitis is a room. The printed name of the Domum Praesidium_Sitis is "The Domum Praesidium of Sicuum". The Domum Praesidium_Sitis is west of The Agora_Sitis. 
-The description of the Domum Praesidium_Sitis is "You enter the Domum Praesidium of Sicuum. You see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. So, this huge sandy hut seems to have an official function. During you are still thinking about to whom you are going to speak right now, [bold type]Anaidis already walks west into a smaller room.[roman type] Hurry up. Otherwise you maybe going to lose him."
+The description of the Domum Praesidium_Sitis is "You enter the Domum Praesidium of Sicuum. You see a long table standing in the middle of a spacious room, with a lot of chairs around and kind of executive chair at the tabel's end. This huge sandy hut seems to have an official function. While you are still thinking about whom you are going to next, Anaidis walks [bold type]west[roman type] into a smaller room.[roman type] Come on, keep on his tail."
 
 After going to the Domum Praesidium_Sitis for the second time:
 	now the description of the Domum Praesidium_Sitis is "Anaidis went west. Do you remember?";
@@ -337,17 +361,17 @@ After going to the Domum Praesidium_Sitis for the second time:
 
 Mitéra's Room_Sitis is a room. The printed name of Mitéra's Room_Sitis is "Mitéra's Room". Mitéra's Room_Sitis is west of the Domum Praesidium_Sitis.
 
-Mitéra is a person in Mitéra's Room_Sitis. The printed name of Mitéra is "Mitéra". The description of Mitéra is "Mitéra is a small and wrinkled woman. At the moment she lies on a narrow enhancement out of stone. It seems to be her bed. Anaidis kneels on the ground next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up. [italic type][paragraph break]'Hello stranger! My name is Mitéra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?'[roman type]"
+Mitéra is a person in Mitéra's Room_Sitis. The printed name of Mitéra is "Mitéra". The description of Mitéra is "Mitéra is a small and wrinkled woman. At the moment she lies on a narrow edge out of stone. It seems to be her bed. Anaidis kneels next to her whispering something incomprehensible. Suddenly, she gets up, actuates you and then her eyes lighten up. [italic type][paragraph break]'Hello stranger! My name is Mitéra, I am the protectress of my loved ones here in Sicuum. Anaidis mentioned you are searching for water. Is that right?'[roman type]"
 
 After examining Mitéra for the first time:
 	say "You nod. It feels like Mitéra is trusting you. She continues.[paragraph break]";
-	say "[italic type]'You know, Axesto, there was a time, when our village Sicuum and the whole planet Sitis has been a lovely, peaceful and vivid place. Of course - the environment always resembled a desert. But we've had some plants, we've had some animals living here and especially we've had different water sources. These sources have been all around. You never needed to walk a long time until you've found one. But then, there came Scorpius...'[roman type][paragraph break]";
-	say "Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them concerned and deep male voices are yelling [italic type]'Out of our way! Out of HIS way!' [roman type]Anaidis runs shocked out of the room.[paragraph break]";
-	say "First, you want to follow him, but then you focuse on Mitéra again. However, she directly signals, [bold type]you should go after him[roman type]. So, what are you waiting for?[paragraph break]";
+	say "[italic type]'You know, Axesto, there was a time, when our village Sicuum and the whole planet Sitis has been a lovely, peaceful and vivid place. Of course - the environment always resembled a desert. But we've had some plants, we've had some animals living here and especially we've had different water sources, all around. But then, Scorpius came...'[roman type][paragraph break]";
+	say "Suddenly you hear loud noises from the Agora. Kids are screaming, parents are calling them anxiously and deep male voices are yelling [italic type]'Out of our way! Out of HIS way!' [roman type]Shocked Anaidis runs out of the room.[paragraph break]";
+	say "First, you want leave, too, but then you focuse on Mitéra again. However, she directly signals, you should [bold type]follow Anaidis[roman type]. So, what are you waiting for?[paragraph break]";
 	now the description of Mitéra is "The old woman is friendly looking at you.";
 	now Anaidis is in the Agora_Sitis;
 	now the description of the Domum Praesidium_Sitis is "Anaidis is outside at the Agora.";
-	now the description of the Agora_Sitis is "As you arrive at the Agora, you just wanna know what this Scorpius did. Specially, when you see how the people are reacting to him. But first, you need to grind out your way to Anaidis. He's hiding - again - behind one market booth. Luckily you are very small, so you are able to sneak through the crowd of people easily. The boy is totally focused on everything, but you. But you can't wait any longer. You wanna know the whole story about this Scorpius. [bold type]Go ask him![roman type]";
+	now the description of the Agora_Sitis is "As you arrive at the Agora, it is full of people looking a bit scared. They built a circle around something, you do not see. But anyway, you just wanna know what this Scorpius did. Specially, when you see how people react just talking about him. So, you need to grind out your way to Anaidis. He's hiding - again - behind one market booth. Luckily you are small, so you are able to sneak through the crowd of people easily. The boy is totally focused on anything, but you. Even so, you can't wait any longer. Therefore, [bold type]ask him about scorpius[roman type].";
 		
 Following Anaidis is an action applying to nothing.
 Understand "follow Anaidis" as following Anaidis.
@@ -355,123 +379,136 @@ Understand "follow Anaidis" as following Anaidis.
 After following Anaidis for the first time:
 	now Axesto is in the Agora_Sitis;
 	
-	
 [Kommunikation und Interaktion auf dem Agora MIT Scorpius und Machitikos]
 
 After asking Anaidis about "scorpius":
 	say "Anaidis whispers.[paragraph break]";
-	say "[italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full keg of water. If you lose... you have to survive one week without new water. And everyone who is trying to steal or to trick him, is going to prison. Immediately. So. This is the answer you were looking for. When you wanna leave the planet with new water, your only chance is also to fight against his warrior Machitikos. Are you going to?[roman type][paragraph break]";
-	say "You hesitate few seconds. This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. The chance that you will beat him seems slightly. Too slightly. But anyhow you feel determined - you really wanna overmatch Machitikos. For yourself and for the repressed Sitisianer. You step directly in front of Scorpius.[paragraph break]";
-	say "Scorpius is sitting on an amazingly big wooden throne. To be seen as Machitikos first opponent, you need to [bold type]step in front of Scorpius[roman type], where everyone can see you.";
+	say "[italic type]'He is a dictator. Earlier, Scorpius was one of us. I mean, the time before I was born. But he was always kind of different. A bit more selfish than other ones, a bit more aggressive and a bit more oppressive. One summer, an aridity befall the whole planet Sitis. We needed to calculate the water more precisely. Consequently, dividing it between everyone and relinquishing, when someone else still got no water, was taken for granted. Except for Scorpius. He refused to share his water and started to manipulate other ones to do the same. This reckless behaviour culminates in his decision to construct an underground system which blocks all of our water sources, so we can not draw on them anymore. The only one that still gave water, was the one in his new built palace, deep in the north. There was and there is no chance to burgle. His guardians are doing their job very well. Since that day, he comes to Siccum every week and forces us to fight for our water. If you win, you will get two full kegs of water. If you lose... you have to survive one week without new water. And everyone who is trying to steal or trick him, is going to prison. Immediately! So. When you wanna leave the planet with new water, your only chance is also to fight against his warrior Machitikos. Are you going to?'[roman type][paragraph break]";
+	say "You hesitate few seconds.[paragraph break]";
+	say "This gladiator Machitikos looks highly dangerous. He is tall, muscular and his sight is totally aggressive. While you stare at him, he's punching the air as he would already stick into a battle. The chance you will beat him seems slightly. Too slightly. But anyhow you feel determined - you really wanna overmatch Machitikos. For yourself and for the repressed Sitisianer.[paragraph break]";
+	say "To be seen as demanding opponent, you need to [bold type]run through the people[roman type].";
 	now Scorpius is in the Agora_Sitis;
 	
-	
-Stepping in front of Scorpius is an action applying to nothing.
-Understand "step in front of Scorpius" as stepping in front of Scorpius.
+Running through the people is an action applying to nothing.
+Understand "Run through the people" and "run" as running through the people.
 
-After stepping in front of Scorpius for the first time:
-	say "It needed a few seconds until the great Scorpius perceives you.[paragraph break]";
+After running through the people for the first time:
+	say "You reach the middle of the circle that has been built around Machitikos. Everyone can see you: all the Sitisianer and specially Machitikos himself. The only one who does not notice you is Scorpius. The pale shrunken self-described 'king' is sitting on a high wooden throne staring in another direction.[paragraph break]";
+	say "You [bold type]look for Anaidis[roman type] because right now you realise that you don't know how to go on.";
+	
+Looking for Anaidis is an action applying to nothing.
+Understand "look for Anaidis" as looking for Anaidis.
+	
+After looking for Anaidis for the first time:
+	say "Anaidis positionated himself on a bigger stone, so you can see him. He points in the throne's direction and imitates a bow. As the boy realises you do not exactly understand what he wants to say, he repeats the process more overblown.[paragraph break]";
+	say "Now you got it. [bold type]Take a bow[roman type] in front of Scorpius.";	
+		
+Taking a bow in front of Scorpius is an action applying to nothing.
+Understand "take a bow" and "take a bow in front of Scorpius" and "bow in front of Scorpius" and "bow" as taking a bow in front of Scorpius. 
+
+After taking a bow in front of Scorpius for the first time:
+	say "You need to bear this position a bit until the great Scorpius perceives you.[paragraph break]";
 	say "[italic type]'What do you want? You little deformed bastard?!'[roman type] [paragraph break]";
-	say "You answer assertive.[paragraph break]";
+	say "You answer assertively.[paragraph break]";
 	say "[italic type]'I wanna fight. I wanna fight against Machitikos.'[roman type][paragraph break]";
-	say "All the people around you start whispering fluttered. Scorpius stares at you incredulously. Then starts smiling devilishly.[paragraph break]";
-	say "[italic type]'So... go on. Abortion![roman type][paragraph break]";
-	say "Suddenly the mentioned warrior is standing right next to you.";
+	say "The people around you start whispering. Scorpius stares at you incredulously. But then he starts smiling devilishly.[paragraph break]";
+	say "[italic type]'So... go on. Have fun, you naive idiot![roman type][paragraph break]";
+	say "Suddenly the mentioned warrior, Machitikos, is standing right next to you. Maybe you can [bold type]examine him[roman type]?";
 	now Machitikos is in the Agora_Sitis;
-
-[You see nothing special about Machitikos - Fehler - wie beheben?]
-After examining Machitikos for the first time:
-	say "Machitikos does not say a word. He just grunts aggressively and throws a long sharp spear in front of you.[paragraph break]";
 	now the Spear is in the Agora_Sitis;
-	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this machine. As you look around, [bold type]you discover in the east the desert is going downhill.[roman type] You should go there because deeper in the north there is just adversarial territory.";
-	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. [bold type]But further in the east, you spot a tree thicket. Seems like the perfect place to hide.[roman type]";
+	now the description of the Wide Desert Sitis_Sitis is "However, you have been faster than Machitikos. That means, you have a bit time to think about, how you could defend yourself against this beast. As you look around, you discover [bold type]east[roman type] the desert is going downhill. You should go there because deeper in the north there is just adversarial territory.";
+	now the description of the Rock Mine_Sitis is "You are surrounded by huge grey stones. Too high for you to climb on. But further in the [bold type]east[roman type], you spot a [bold type] tree thicket[roman type]. Seems like the perfect place to hide.";
 	
-The Spear is a thing. The Spear is in the Shelter_Sitis. The Spear is portable. The description of the Spear is "You can fight with this spear."
+The Spear is a thing. The Spear is in the Shelter_Sitis. The Spear is portable. The description of the Spear is "You can fight with it."
 
 After taking the Spear:
-	say "The moment you take the spear, Machitikos begins to attack you with a spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, then running away towards the desert. Initially!";
+	say "The moment you take the spear, Machitikos begins to attack you with a spiked mace. You definitively underestimated this beast. He strikes you so hard, you do not know how to fight back, except running away towards the desert. Immediately!";
 	now Axesto is in the Wide Desert of Sitis_Sitis;
 	
 ["Region 4"]
 [Räume nach dem Beginn des Kampfs]
 
+Understand the command "climb" as something new.
+Climbing stone is an action applying to nothing.
+Understand "climb stone" and "climb the stone" and "climb the stones" as climbing stone.
+
+After climbing stone:
+	say "It's too high. You won't be successfull here. Keep trying to hide in the [bold type]eastern[roman type] tree thicket."
+
 The Tree Thicket_sitis is a room. The tree thicket_sitis is east of the Rock Mine_Sitis. The printed name of the Tree Thicket_sitis is "Tree Thicket". 
 
-The old knotted tree is a thing. The old knotted tree is not portable. The old knotted tree is in the Tree Thicket_Sitis. The printed name of the old knotted tree is "old knotted tree". 
-
-	
-[You can see nothing special about...]
-After examining the old knotted tree for the first time:
-	say "An majestic knotted treetop spreads out over your head. There are no leaves left, but that doesn't matter. This treetop is the perfect abditory to conquer Machitikos from the ambush. Specially because you are small, light and with long claws - [bold type]the best premises for climbing.[roman type]";
+The old knotted tree is a thing. The old knotted tree is not portable. The old knotted tree is in the Tree Thicket_Sitis. The printed name of the old knotted tree is "old knotted tree". The description of the old knotted tree is "An majestic knotted treetop spreads out over your head. There are no leaves left, but that doesn't matter. This treetop is the perfect abditory to conquer Machitikos from the ambush. Specially because you are small, light and you have long claws - the best premises for [bold type]climbing up[roman type].";
 
 Understand the command "climb" as something new.
-Climbing on is an action applying to one thing.
-Understand "climb on/onto [something]" as climbing on.	
+Climbing up the old knotted tree is an action applying to nothing.
+Understand "climb up old knotted tree" and "climb up the old knotted tree" and "climb up tree" and "climb up the tree" as climbing up the old knotted tree.
 
-After climbing on the old knotted tree for the first time:
-	say "With a lot of strength, you bore your claws in the old dry wood. Your grip is so strong, you reach your aim easily. You just made it a few seconds before you see Machitikos running downhill. He is looking everywhere around to find you but does not seem to think about the opportunity that you are hiding in the treetops. So, keep your spear ready. Take a deep breath. And three, two, one... [bold type]ATTACK![roman type]";
+After climbing up the old knotted tree for the first time:
+	say "With a lot of strength, you bore your claws in the old dry wood. Your grip is so strong, you reach your destination easily. You just made it a few seconds before you see Machitikos running downhill. He is looking everywhere around to find you but does not seem to think about the possibility that you are hiding in the treetops. So, keep your spear ready. Take a deep breath. And three, two, one... [bold type]ATTACK![roman type]";
 	now Machitikos is in the Tree Thicket_sitis;
 	now the description of Machitikos is "";
 	
 Attacking Machitikos is an action applying to nothing.
-Understand "attack Machitikos" as attacking Machitikos.
+Understand "attack Machitikos" and "attack" as attacking Machitikos.
 
 After attacking Machitikos the first time:
-	say "With an epic jump, holding the spear in the air, you jump on Machitikos muscly back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
-	say "No reaction anymore. No flattering of eyelashes, no breath. You can't believe it. You have thrown the opponent! Machitikos. This dangerous massive beast. He is just laying there. And you - you are still alive. You small and weaker alien.[paragraph break]";
-	say "[italic type]'I am alive! I-IIII am still alive! And you, you are - huh, moment, what are you? - oh, yeah, DAMAGED! You are damaged! That much damaged you can not fight against me again.'[roman type][paragraph break]";
-	say "You sing and dance around like a little child. As a result, you do not notice Machitikos is observing you. Then suddenly, as your back has been turned to him, he chokes you.[paragraph break]";
-	say "Your environment starts turning black. Bright stars come to your inner eye. You gasp for air. Desperately.[paragraph break]";
-	say "[italic type]'You abortion! Did you really thought you gonna knock me out that easily? Hahahahahaha. Are you megalomaniacal? The best, I kill you right here, right now. Cause you do not deserve to live anymore.'[roman type][paragraph break]";
-	say "Breath. Breath. Try to breath. You are not going to die. Think about the best weapon you have naturally. You are not tall, you are not particular strong. [bold type]But: your arms are long and your claws sharp.[roman type]";
+	say "With an epic jump, holding the spear in the air, you jump on Machitikos massive back. He shrieks, as your weapon pierces into his chest. You let up on him, he falters and falls![paragraph break]";
+	say "No reaction anymore. No flattering of eyelashes, no breath. You can't believe it. You have thrown the opponent! Machitikos. This dangerous muscular beast. He is just laying there. And you - you are still alive. You small and weaker alien.[paragraph break]";
+	say "[italic type]'I am alive! I-IIII am still alive! And you, you are - huh, wait, what are you? - oh, yeah, DEFEATED! You are defeated! You are so heavily injured that you can not fight me anymore.'[roman type][paragraph break]";
+	say "You sing and dance around like a little child, not noticing Machitikos is observing you. Then suddenly, when you turned your back to him, he chokes you.[paragraph break]";
+	say "Your view starts turning black. Bright stars come to your inner eye. You gasp for air desperately.[paragraph break]";
+	say "[italic type]'You Idiot! Did you really think you gonna knock me out that easily? Hahahahahaha. Are you megalomaniacal? The best bet is, I kill you right here, right now. Cause you do not deserve to live anymore.'[roman type][paragraph break]";
+	say "Breath. Breath. Try to breath. You are not going to die. Think about the best weapon you have naturally. You are not tall, you are not particular strong. But: your arms are long and [bold type]your claws sharp[roman type].";
 	now Scorpius is in the Tree Thicket_sitis;
 	now Mitéra is in the Tree Thicket_sitis;
 	now Anaidis is in the Tree Thicket_sitis;
 	
-Scratching Machitikos is an action applying to nothing.
-Understand "scratch Machitikos" as scratching Machitikos.
+Clawing Machitikos is an action applying to nothing.
+Understand "claw Machitikos" and "scratch Machitikos" and "claw" and "scratch" as clawing Machitikos.
 
-After scratching Machitikos the first time:
+After clawing Machitikos the first time:
 	say "This was definitely the right move. You've cut Machitikos left cheek so deep that he releases his chokehold shortly. Short enough for you to save yourself from him.[paragraph break]";
-	say "The moment after, it feels like someone has paused the scenery. Machitikos stares at you angrily. Blood runs down his cheeck. You stare back trying to ascertain which part of your opponent's body is the best one to injure. The one where a damage incapacitates this beast effectively. All at once it's totally clear. His eyes! You need to [bold type]scratch his eyes again.[roman type] Then Machitikos is disempowered - for now. His inability to see will be your benefit. You just needs to wait until he... oh, go, go, go!";
+	say "The moment after, it feels like someone has paused the scenery. Machitikos stares at you angrily. Blood runs down his cheeck. You stare back trying to ascertain which part of your opponent's body is the best one to injure. The one where a damage incapacitates this beast effectively. All at once it's totally clear. His eyes! You need to [bold type]claw his eyes again.[roman type] Then Machitikos is disempowered - for now. His inability to see will be your benefit. You just needs to wait until he... oh, go, go, go!";
+	now the description of the Flat Rock_Sitis is "Your journey through Sitis ends here. You've reached your goal - two new water containers lay in your spaceship. Above all you've met people, that tragically suffer from the reign of a bastard, but you experienced them as very optimistic, polite and helpful - whatever happens between them and Scorpius - you are kind of reassured.";
 	
-After scratching Machitikos the second time:
-	say "God damn it! Your claws are your secret weapon. You stroke the warrior that much he just yells as someone would have pulled his heart out of his chest. Assuming that he has one. Machitikos rears up, one last time, and then collapse.[paragraph break]";
-	say "Silence. The only thing you hear is your heart beating as fast ans loud as thinkable.[paragraph break]";
-	say "While standing there, total paralysed, Anaidis and the other people of Sicuum arrive. In their front Mitéra. The old wrinkled lady looks at you horrified.[paragraph break]";
+Clawing his eyes is an action applying to nothing.
+Understand "claw his eyes" and "claw eyes" and "claw machitikos again" and "claw his eyes again" as clawing his eyes.
+	
+After clawing his eyes:
+	say "God damn it! Your claws are your secret weapon. You stroke the warrior that hard, he screams as someone pulled his heart out of his chest. Assuming that he has one. Machitikos rears up, one last time, and then collapses.[paragraph break]";
+	say "Silence. The only thing you hear is your heart beating as fast and loud as possible.[paragraph break]";
+	say "While standing there, totally paralysed, Anaidis and the other people of Sicuum arrive. In their front Mitéra. The old wrinkled lady looks at you horrified.[paragraph break]";
 	say "[italic type]'Is... is he dead?'[roman type][paragraph break]";
 	say "[italic type]'No, no Mitéra. I've injured him. Bad, I think... but it was never my intension to be a murder in this fight. He, he wanted me dead. That's the only reason I've fought back this hard.'[roman type] [paragraph break]";
-	say "Sudden the crowd splits up and the great Scorpius leads his army through. He stops directly in front of you, in- and exhales deeply. An awkward silence arise.[paragraph break]";
+	say "Suddenly, the crowd splits up and the great Scorpius leads his army through. He stops directly in front of you, in- and exhales deeply. An awkward silence arises.[paragraph break]";
 	say "[italic type]'Give this piece of shit two water kegs.'[roman type][paragraph break]";
-	say "Scorpius turns around. Two warden run away immediately to fulfill their task. The dictator adresses his next words of anger to the Sitisianer.[paragraph break]";
-	say "[italic type]'Youuuuu. You all! You REALLY should not believe that this kind of triumph changes ANYTHING for you. Just because Machitikos is a bit restricted right now. The fights are going on!!!'[roman type][paragraph break]";
-	say "The great Scorpius leaves. His army follow. Just the two warden are coming back to hand over your water. The moment they are gone, you start being relaxed. Anaidis is the first one running to you.[paragraph break]";
-	say "[italic type]'Boy, oh booooy!!! What the hell happened here? Oh maaaan, I am so excited. No one has ever beaten Machitikos this strong way. Damn. You can be lucky that you are still alive. He is a monster and you are.. but it doesn't matter anyway because you have won. Whohooow!'[roman type][paragraph break]";
+	say "Scorpius turns around. Immediately, two warden run away to fulfill their task. The dictator adresses his next words of anger to the Sitisianer.[paragraph break]";
+	say "[italic type]'Youuuuu. You all! You REALLY should not believe that this kind of triumph changes ANYTHING for you. Just because Machitikos is a bit disabled right now. The fights are going on!!!'[roman type][paragraph break]";
+	say "The great Scorpius leaves. His army follows. Just the two wardens are coming back to hand over your water. The moment they are gone, you start being relaxed. Anaidis is the first one running to you.[paragraph break]";
+	say "[italic type]'Boy, oh booooy!!! What the hell happened here? Oh maaaan, I am so excited. No one has ever beaten Machitikos in this extent. You can be lucky that you are still alive. He is a monster and you are.. but it doesn't matter anyway because you have won. Whohooow!'[roman type][paragraph break]";
 	say "The other people start celebrating you as well. They encircle you, lift you up and carry you back to your spaceship.";
 	now Axesto is in the Flat Rock_Sitis;
 	now Anaidis is in the Flat Rock_Sitis;
 	now Mitéra is in the Flat Rock_Sitis;
-	say "Your journey through Sitis ends here. You've reached your aim - two new water container lay in your spaceship. But above you've met very polite, helpful people that tragically suffer from the reign of a bastard. On the other hand, you experienced them as very optimistic - whatever happens between them and Scorpius - so you are kind of reassured.[paragraph break]";
-	say "[italic type]'Thank you for your will to help me although you could not have done a lot concerning my problem. I needed to be my own... - how shell I say - hero. Nevertheless, this experience would not have been possible without the information you gave me and your kind of protection. So, thanks. Specially you both, Mitéra and Anaidis.'[roman type][paragraph break]";
+	say "[italic type]'Thank you for your will to help me although you could not have done a lot concerning my problem. I needed to be my own... - how shell I say - hero. Nevertheless, this experience would not have been possible without the information you gave me and your kind of protection. So, thanks. Especially you both, Mitéra and Anaidis.'[roman type][paragraph break]";
 	say "Mitéra smiles timidly. Anaidis looks sad.[paragraph break]";
 	say "[italic type]'Take care, stranger!'[roman type][paragraph break]";
 	say "[italic type]'Come back, funny-looking friend!'[roman type][paragraph break]";
+	say "You wave good-bye to them, turn to your spaceship and [bold type]enter[roman type]."
 	
 Entering spaceship is an action applying to nothing.
 Understand "enter spaceship" as entering spaceship.
 
 After entering spaceship:
 	say "You enter your spaceship. The engine starts. This journey goes on.[paragraph break]";
-	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But speaking of survival: you will need food to survive, and that's depleting quite fast. You will need to approach the nearest planet: a green ball, seeming like it could contain food. You start the landing but soon have problems with the engine. After some jolts and blows, you land. Hell that was harsh. Thanks God you landed safely on this clearing right next to the cliff. Only some meters besides and your Spaceship would have been shuttered into a thousand pieces. Hopeful all this effort isn’t for nothing at all and I will find some food here. You look around. South of you is the spaceship in front of the cliff. All the other directions you see a jungle.";
-	now the player is in the landingzone_gaisetto;
-	now the Counter is 2.
+	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But you survived. A propos: speaking of survival - you will need food to survive, and that's depleting quite fast.[paragraph break]";
+	remove the Spear from play;
+	[now the player is in the landingzone_gaisetto.]
 	
 	
 [Story endet hier, zumindest auf Sitis]
 
 [Übergang zu Tobi]
-
-
 
 ["Unwichtiges", nur der Vollständigkeit halber noch vorhanden]
 
@@ -496,16 +533,44 @@ The Holy Palace_Sitis is north of the Protection Bridge_Sitis.
 
 [Charaktere]
 Scorpius is a person in the Shelter_Sitis. The printed name of Scorpius is "the great Scorpius". 
-Machitikos is a person in the Shelter_Sitis. The printed name of Machitikos is "Machitikos". 
-
-
+Machitikos is a person in the Shelter_Sitis. The printed name of Machitikos is "Machitikos". The description of Machitikos is "Machitikos does not say a word. He just grunts aggressively and throws a long sharp spear in front of you. [italic type]'[bold type]Take it![roman type]'"
 
 
 
 Chapter 2 - Gaisetto
 
-Figure of landingzone_gaisetto is the file "gaisetto1.png".
-The room-illustration of landingzone_gaisetto is the Figure of landingzone_gaisetto.
+Include Basic Screen Effects by Emily Short.
+Include Simple Graphical Window by Emily Short.
+Include Locations Images by Emily Short.
+
+
+Figure of gaisetto is the file "gaisetto1.png".
+Figure of formizer is the file "formizer_Village.png".
+
+
+
+The room-illustration of landingzone_gaisetto is the Figure of gaisetto.
+The room-illustration of Jungle_1 is the Figure of gaisetto.
+The room-illustration of Jungle_2 is the Figure of gaisetto.
+The room-illustration of Jungle_3 is the Figure of gaisetto.
+The room-illustration of Jungle_4 is the Figure of gaisetto.
+The room-illustration of Jungle_5 is the Figure of gaisetto.
+The room-illustration of Jungle_6 is the Figure of gaisetto.
+The room-illustration of Jungle_7 is the Figure of gaisetto.
+The room-illustration of Jungle_8 is the Figure of gaisetto.
+The room-illustration of Catacombs is the Figure of gaisetto.
+The room-illustration of Tunnel is the Figure of gaisetto.
+The room-illustration of temple_gaisetto is the Figure of gaisetto.
+The room-illustration of chain_bridge is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_square is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_stable is the Figure of formizer.
+The room-illustration of village_hut2 is the Figure of formizer.
+The room-illustration of village_hut3 is the Figure of formizer.
+The room-illustration of totem is the Figure of formizer.
+
+
 
 [Dschungel]
 
