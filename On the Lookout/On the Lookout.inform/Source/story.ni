@@ -1,4 +1,4 @@
-Release along with a website, the "Quixe" interpreter, cover art, the source text and an introductory postcard.
+Release along with a website, an interpreter, cover art, a file of "README" called "README On the Lookout.txt", the introductory booklet, the source text.
 
 The story title is "On the Lookout".
 The story headline is "A Space Quest".
@@ -58,7 +58,7 @@ After going from the Landing Zone_Frizza:
 	now the Counter is 4;
 	produce a room description with going spacing conventions.
 	
-[After opening the water dagger hole:
+[After opening the daggerhole:
 	now the Counter is 4.]
 	
 After going from the Spaceship Bridge_Kaldríss:
@@ -95,7 +95,12 @@ save - produce a local save file on your computer[line break]
 restore - load a local save file[line break]
 quit - quit the game[line break][line break]";
 	if the Counter is 0:
-		say "[bold type]Sitis";
+		say "[bold type]Sitis
+		
+		[roman type]answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
+		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
+		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
 	if the Counter is 1:
 		say "[bold type]Sitis
 		
@@ -105,11 +110,15 @@ quit - quit the game[line break][line break]";
 		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
 		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
 		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
-
 	if the Counter is 2:
-		say "[bold type]Gaisetto";
+		say "[bold type]Gaisetto
+
+		[roman type]unlock (something) with (something)[line break]
+		play the flute - awaken some old fellow[line break]";
 	if the Counter is 3:
-		say "[bold type]Geysiria";
+		say "[bold type]Geysiria
+
+		[roman type]unlock (something) with (something)[line break]";
 	if the Counter is 4:
 		say "[bold type]Frizza
 
@@ -126,7 +135,7 @@ quit - quit the game[line break][line break]";
 		say "[bold type]Kaldríss
 
 		[roman type]open/close (something)[line break]
-		unlock/lock (something)[line break]
+		unlock (something) with (something)[line break]
 		put (something) on (e.g. clothing)[line break]
 		ask (someone) about (something)[line break]
 		answer (something) to (someone)[line break]";	
@@ -194,30 +203,41 @@ Chapter 1 - Sitis
 
 [Bilder]
 
-Figure of the Flat Rock_Sitis is the file "Sitis1.png".
-The room-illustration of Flat Rock_Sitis is the Figure of the Flat Rock_Sitis.
-The room-illustration of the Wide Desert_Sitis is the figure of the Flat Rock_Sitis.
-The room-illustration of the Rampart of Sicuum_Sitis is the figure of the Flat Rock_Sitis.
+Figure of Flat Rock is the file "Sitis1.png".
+	The room-illustration of Flat Rock_Sitis is the Figure of Flat Rock.
+	The room-illustration of Wide Desert of Sitis_Sitis is the Figure of Flat Rock.
+	The room-illustration of the Rampart around Sicuum_Sitis is the Figure of Flat Rock.
 
 Figure of the Rock Mine_Sitis is the file "rock_mine_sitis.png".
-The room-illustration of the Rock Mine_Sitis is the figure of the Rock Mine_Sitis.
-The room-illustration of the Tree Thicket_Sitis is the figure of the Rock Mine_Sitis.
+	The room-illustration of the Rock Mine_Sitis is the figure of the Rock Mine_Sitis.
+	The room-illustration of the Tree Thicket_Sitis is the figure of the Rock Mine_Sitis.
 
-Figure of the Agora_Sitis is the file "agora.png".
-The room-illustration of the Agora_Sitis is the figure of the Agora-Sitis.
-The room-illustation of the Domum Praesidium_Sitis is the figure of the Landing Zone_Sitis.
+Figure of Agora_Sitis is the file "Agora_Sitis.png".
+	The room-illustration of the Agora_Sitis is the Figure of Agora_Sitis.
+	The room-illustration of the Domum Praesidium_Sitis is the Figure of Flat Rock.
 
 
+
+
+[Figure of Frizza is the file "frizza_background_new.png".
+	Figure of Flux is the file "Flux.png".
+	
+	The room-illustration of Landing Zone_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Desert_Frizza is the Figure of Frizza.]
 
 [Beginn meiner Mapkonstruktion - Landing Zone, Wüste und Sicuum]
 
 Include Basic Screen Effects by Emily Short.
 The Start of the Adventure is a scene. The Start of the Adventure begins when play begins.
 Include Simple Graphical Window by Emily Short.
-Include Locations Images by Emily Short.
+Include Location Images by Emily Short.
 
 [Anfangsbeschreibung - Von wo kommt Axesto? Was ist sein Plan?]
-"Welcome to your journey, [bold type]Axesto[roman type]! You are going to leave your home planet Fidatis for the first time. Isn't it exciting? Finally, you can expercience everything by yourself. Although you love your home - the wide lush meadows, the different colourful flowers, the clear small seas and especially your family. But it's about time. You are full-aged now, so you are allowed to leave Fidatis for the first time. And not for anything in the world you would miss this chance. You already know what your first goal will be - the only planet you have been able to see since you are alive. You neither know its name nor anything else... but you know that you've always wanted to travel there. The engine starts, you focuse your view, the spaceship raises - your journey begins."
+
+When play begins:
+	say  "Welcome to your journey, [bold type]Axesto[roman type]! You are going to leave your home planet Fidatis for the first time. Isn't it exciting? Finally, you can expercience everything by yourself. Although you love your home - the wide lush meadows, the different colourful flowers, the clear small seas and especially your family. But it's about time. You are full-aged now, so you are allowed to leave Fidatis for the first time. And not for anything in the world you would miss this chance. You already know what your first goal will be - the only planet you have been able to see since you are alive. You neither know its name nor anything else... but you know that you've always wanted to travel there. The engine starts, you focuse your view, the spaceship raises - your journey begins.[paragraph break]	Remember that you can always type [bold type]'helper'[roman type] in order to get a list of helpful commands. Above the images you will see a map to help you orientate yourself, the star marks your position. For other information please take a look in the ReadMe file attached to this game.[paragraph break]
+
+	[Bold type]CHAPTER 1- SITIS[Roman type][paragraph break]".
 
 Axesto is a person. The Player is Axesto. 
 [End of Initialisation]
@@ -243,7 +263,7 @@ Instead of going nowhere from the Flat Rock_Sitis:
 	stop the action.
 	
 [Region 2 - The Desert of Sitis]
-The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
+The Desertlands_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desertlands_Sitis.
 
 [Räume]
 The Wide Desert of Sitis_Sitis is a room. The printed name of the Wide Desert of Sitis_Sitis is "The Wide Desert". The description of the Wide Desert of Sitis_Sitis is "You've reached the Desert of Sitis. It leaves you with two things: First of all, an impression of the landscape of Sitis - sandy, dry, with some deep stone canyons and huge rocks afar. And second of all, although this planet does not seem to be a place to live, the Desert still gives you the feeling of not being alone. There IS life! When you look [bold type]north[roman type], directly in front of you, there is a long corrugated iron bridge, guiding over one of those ravines. A majestic sandstone palace ascends at the end of that bridge. But the way is blocked by a barbed wired fence. In the bridge's center, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look [bold type]east[roman type] you see some kind of a rock mine. In the [bold type]south[roman type] you recognise a lot of small white houses surrounded by a rampart. It seems like [bold type]people are living here[roman type]."
@@ -502,9 +522,13 @@ Understand "enter spaceship" and "enter the spaceship" and "enter" as entering s
 
 After entering spaceship:
 	say "You enter your spaceship. The engine starts. This journey goes on.[paragraph break]";
-	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But you survived. A propos: speaking of survival - you will need food to survive, and that's depleting quite fast.[paragraph break]";
+	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But you survived. A propos: speaking of survival - you will need food to survive, and that's depleting quite fast.[paragraph break]
+
+[Bold type]CHAPTER 2 - GAISETTO[Roman type]
+[paragraph break]"[Übergangs Text Gaisetto];
 	remove the Spear from play;
-	[now the player is in the landingzone_gaisetto.]
+	now the Counter is 2;
+	now the player is in the landingzone_gaisetto.
 	
 	
 [Story endet hier, zumindest auf Sitis]
@@ -543,8 +567,38 @@ Understand "take the spear" and "take it" and "take spear" as taking the spear.
 
 Chapter 2 - Gaisetto
 
-Figure of landingzone_gaisetto is the file "gaisetto1.png".
-The room-illustration of landingzone_gaisetto is the Figure of landingzone_gaisetto.
+Include Basic Screen Effects by Emily Short.
+Include Simple Graphical Window by Emily Short.
+Include Location Images by Emily Short.
+
+
+Figure of gaisetto is the file "gaisetto1.png".
+Figure of formizer is the file "formizer_Village.png".
+
+
+
+The room-illustration of landingzone_gaisetto is the Figure of gaisetto.
+The room-illustration of Jungle_1 is the Figure of gaisetto.
+The room-illustration of Jungle_2 is the Figure of gaisetto.
+The room-illustration of Jungle_3 is the Figure of gaisetto.
+The room-illustration of Jungle_4 is the Figure of gaisetto.
+The room-illustration of Jungle_5 is the Figure of gaisetto.
+The room-illustration of Jungle_6 is the Figure of gaisetto.
+The room-illustration of Jungle_7 is the Figure of gaisetto.
+The room-illustration of Jungle_8 is the Figure of gaisetto.
+The room-illustration of Catacombs is the Figure of gaisetto.
+The room-illustration of Tunnel is the Figure of gaisetto.
+The room-illustration of temple_gaisetto is the Figure of gaisetto.
+The room-illustration of chain_bridge is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_square is the Figure of formizer.
+The room-illustration of village_path is the Figure of formizer.
+The room-illustration of village_stable is the Figure of formizer.
+The room-illustration of village_hut2 is the Figure of formizer.
+The room-illustration of village_hut3 is the Figure of formizer.
+The room-illustration of totem is the Figure of formizer.
+
+
 
 [Dschungel]
 
@@ -634,14 +688,14 @@ Jungle_8 is above Tunnel.
 Lager is a room.
 
 
-Instead of going nowhere from Landingzone_Gaisetto, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly".
-Instead of going nowhere from Jungle_2, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly".
-Instead of going nowhere from Jungle_3, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly".
-Instead of going nowhere from Jungle_4, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle".
-Instead of going nowhere from Jungle_5, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle".
-Instead of going nowhere from Jungle_6, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle".
-Instead of going nowhere from Jungle_7, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle".
-Instead of going nowhere from Jungle_8, say "The Jungle is to dense to move forward. The only way is back down from where you came from".
+Instead of going nowhere from Landingzone_Gaisetto, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly.".
+Instead of going nowhere from Jungle_2, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly.".
+Instead of going nowhere from Jungle_3, say "oh hell there is a cliff right in front of you. You are very lucky, that you landed safly.".
+Instead of going nowhere from Jungle_4, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle.".
+Instead of going nowhere from Jungle_5, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle.".
+Instead of going nowhere from Jungle_6, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle.".
+Instead of going nowhere from Jungle_7, say "You shouldn't remove yourself too far from the Spaceship, otherwise you'll get lost in the thicket of the jungle.".
+Instead of going nowhere from Jungle_8, say "The Jungle is to dense to move forward. The only way is back down from where you came from.".
 
 [Objecte im Dschungel]
 
@@ -904,9 +958,13 @@ After push the chungusimba :
 		say "you can't push".
 
 After taking food:
-	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky. The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
+	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky.[paragraph break]
+
+[Bold type]CHAPTER 3 - GEYSIRIA[Roman type]
+[paragraph break]The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
 	move player to Spaceship Bridge_Geysiria;
 	remove blade from play;
+	remove food from play;
 	now the Counter is 3.
 
 
@@ -1104,14 +1162,14 @@ The Magic Hole is south of the Geysir_Area.
 The waterdagger is an object.
 The waterdagger is in the Underwater_Cave.
 The waterdagger can be taken.
-The waterdagger unlocks the water dagger hole.
+The waterdagger unlocks the daggerhole.
 After examining the waterdagger:
 	say "Look on your map, that's the little thing called [Italic type]Haleakala[Roman type]. Weird, I know. We call this thing water dagger. But if I read it correctly, this must be the most important tool for you right now. Take it."
 	
-The water dagger hole is a container in the Underwater_CaveHeart.
+The daggerhole is a container in the Underwater_CaveHeart.
 It is fixed in place. 
-The water dagger hole is locked. 
-The water dagger hole is openable.
+The daggerhole is locked. 
+The daggerhole is openable.
 
 
 [Geysir Gate is an object. It is scenery. 
@@ -1139,7 +1197,7 @@ Head [Bold type]west[Roman type] - back onto the Kamehameha Route or remain on t
 
 The description of Underwater_CaveHeart is "This is your last step to finally stop all the ash clouds and the constant lava flow above ground. The underwater system map led you here - you should make use of your one and only tool that will fit into the little heart that is at the end of this tiny corridor. May Geysiria rest in peace.
 
-[Bold type]Examine the water dagger hole[Roman type] in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. 
+[Bold type]Examine the daggerhole[Roman type] in order to see if there are hidden dangers or something that will prevent you from putting the waterdagger into the probably fitting hole. 
 You also have the option to walk back [Bold type](west)[Roman type]."
 
 
@@ -1380,7 +1438,7 @@ Old Building is an object. It is scenery. Old Building is in the Volcano_Village
 After examining Old Building:
 	say "Look into old building and check your surroundings. Do you have the map that is supposed to be in the spaceship? Did you forget it? The old building has a few maps of Geysiria - I'm not too sure if there is one of the underwater system but since you only have a few buildings with easy access you should consider checking it out. So many folders in those massive shelves. Take the ladder to your right and search through every map folder here - maybe you're lucky and find a copy of that particular underwater system map. You already found the treasure box, so why shouldn't you be able to find the map you need.".
 
-After opening the water dagger hole:
+After opening the daggerhole:
 	say "Boooooooooom. Explosions everywhere. Luckily you are under the ground and everything you feel is just a little earthquake. The good thing is your spaceship is in the west of the  and the exploding volcanoes are here in the east. Lava, falling rocks and huge ash clouds turn Geysiria into hell. It takes a few hours to let the volcanoes disappear... I know, you are not very patient Axesto but it's better to wait until the last volcano is destroyed. [paragraph break][italic type] Sixteen hours later... [Roman type] Now it's time to head back to the spaceship on the western side of the planet and leave the planet as soon as possible. You are starting the engine and the spaceship is flying high above the wasteland that is Geysiria now. Wow, finally you can see this vast landscape from above. No ashclouds, nothing. A totally clear view of the planet that let you struggle so much. But in the end it was worth it. A quick look onto your planet map says the next stop will be Frizza. Hmmm, Frizza, it sounds a little freezing, doesn't it? You have a few hundred more hours to fly through the galaxy, so turn on the auto pilot and get some rest. The days on Geysiria were tough. Axesto is sleeping like a little child on the locker between some folders and some first aid kits. [paragraph break][Italic type] Three days later, Axesto finally sees the Flux which must be the Flux of Frizza. [Roman type]
 	[paragraph break]
 	
@@ -1388,7 +1446,9 @@ After opening the water dagger hole:
 	[paragraph break]Frizza looks like a monstrous black rock, nothing more. Is this really the planet you are supposed to land on? Yes, you have to land on Frizza because your little fusion reactor is working slower than before. It's an old one you got on Fidartis. This planet is not known to produce the best technology. So you better try to land safely on Frizza. This turns out to be an extreme adventure as you end up in a massive thunderstorm. But that's not a problemm for you - you are the most experienced spaceship commander in the whole galaxy. Without any noise you land smoothly on Frizza. Your first impression from many kilometers away are confirmed: it looks very unfriendly and actually uninhabited too. Maybe you should talk to your on-board computer first, there may be a few hints that will help you to explore Frizza. I heard it's supposed to be a planet with a lot of potential. Have fun.";
 	say "Your spaceship falls through thick layers of dark clouds. Red flashes illuminate your surroundings. The lights on your console warn you of the dangerously fast approaching energy level zero. As you finally break through the last cloud, you get a glimpse of what awaits you underneath. [line break]Black planes and sharp cliffs of a dark red shape the landscape. In the [bold type]east [roman type]you perceive a massive rock formation, in the [bold type]west [roman type]you see a thick blue stream cutting through the plane , illuminating big portions of it in the process. Somewhere to the [bold type]south [roman type]there seem to be some sort of industrial constructions, far in the [bold type]north [roman type]you believe to recognize cubic shapes that reveal a city. You don't have time to study the landscape much longer. All you concentration is desperately needed as you find a gap in the ghastly cliffs and bring down your ship. Heavy jolting, followed by a sudden blow signalize your landing. [line break]Your ship's on the ground, and you are too, barely. Welcome to Frizza.";
 	now the player is in the Landing Zone_Frizza;
-	now the Counter is 4.
+	now the Counter is 4;
+	remove the land mine from play;
+	remove the underwater system map from play.
 
 Figure of Underwater_CaveHeart is the file "exit_geysiria.png".
 	The room-illustration of Underwater_CaveHeart is the Figure of Underwater_CaveHeart.
@@ -2205,7 +2265,11 @@ Instead of taking the Power Unit:
 
 
 After inserting the Pure Flux Essence into the Power Unit:
-	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]Chapter 5 - Kaldriss[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+	say "You put the Essence into the generator of the ship and it instantly starts working - the lights go on, you hear the engine starting and the turbines spinning. Time to take off.[paragraph break]You lift your ship, up and up, until you are far above the surface of Frizza. You take a last glance at the blue Fluxes, the city structures and the rocky landscape, before breaching through the clouds and entering the stratosphere. You did it, you survived Frizza.[paragraph break]For a long time you sail through space, passing moons, asteroids, planets ... you think about your past actions, and of what will come. Before you can help it, you fall to sleep of exhaustion.[paragraph break]
+
+
+[Bold type]CHAPTER 5 - KALDRÍSS[Roman type]
+[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Pure Flux Essence from play;
 	now the Counter is 5;
 	now the player is in the Spaceship Bridge_Kaldríss.
