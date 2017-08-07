@@ -95,7 +95,12 @@ save - produce a local save file on your computer[line break]
 restore - load a local save file[line break]
 quit - quit the game[line break][line break]";
 	if the Counter is 0:
-		say "[bold type]Sitis";
+		say "[bold type]Sitis
+		
+		[roman type]answer (something) to (someone) - the typical way to respond to questions, the topics you can answer are printed [bold type]bold [roman type]in the text beforehand[line break]
+		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
+		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
+		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
 	if the Counter is 1:
 		say "[bold type]Sitis
 		
@@ -103,10 +108,11 @@ quit - quit the game[line break][line break]";
 		ask (someone/something) about (someone/something) - the typical way to begin a dialogue, the topics you can ask about are printed [bold type]bold [roman type]in the text beforehand[line break]
 		e(x)amine (someone/something) - during this level the first step you take, when you don't know what to do or how to go on; concentrate on the people/things that are mentioned (e.g. 'x stone')[line break]
 		sharp claws - a hint to think about a bit longer. What could you do with long sharp claws?[line break]";
-
 	if the Counter is 2:
 		say "[bold type]Gaisetto
-		[roman type]unlock (something) with (something)";
+
+		[roman type]unlock (something) with (something)[line break]
+		play the flute - awaken some old fellow[line break]";
 	if the Counter is 3:
 		say "[bold type]Geysiria";
 	if the Counter is 4:
@@ -193,30 +199,41 @@ Chapter 1 - Sitis
 
 [Bilder]
 
-Figure of the Flat Rock_Sitis is the file "Sitis1.png".
-The room-illustration of Flat Rock_Sitis is the Figure of the Flat Rock_Sitis.
-The room-illustration of the Wide Desert_Sitis is the figure of the Flat Rock_Sitis.
-The room-illustration of the Rampart of Sicuum_Sitis is the figure of the Flat Rock_Sitis.
+Figure of Flat Rock is the file "Sitis1.png".
+	The room-illustration of Flat Rock_Sitis is the Figure of Flat Rock.
+	The room-illustration of Wide Desert of Sitis_Sitis is the Figure of Flat Rock.
+	The room-illustration of the Rampart around Sicuum_Sitis is the Figure of Flat Rock.
 
 Figure of the Rock Mine_Sitis is the file "rock_mine_sitis.png".
-The room-illustration of the Rock Mine_Sitis is the figure of the Rock Mine_Sitis.
-The room-illustration of the Tree Thicket_Sitis is the figure of the Rock Mine_Sitis.
+	The room-illustration of the Rock Mine_Sitis is the figure of the Rock Mine_Sitis.
+	The room-illustration of the Tree Thicket_Sitis is the figure of the Rock Mine_Sitis.
 
-Figure of the Agora_Sitis is the file "agora.png".
-The room-illustration of the Agora_Sitis is the figure of the Agora-Sitis.
-The room-illustation of the Domum Praesidium_Sitis is the figure of the Landing Zone_Sitis.
+Figure of Agora_Sitis is the file "Agora_Sitis.png".
+	The room-illustration of the Agora_Sitis is the Figure of Agora_Sitis.
+	The room-illustration of the Domum Praesidium_Sitis is the Figure of Flat Rock.
 
 
+
+
+[Figure of Frizza is the file "frizza_background_new.png".
+	Figure of Flux is the file "Flux.png".
+	
+	The room-illustration of Landing Zone_Frizza is the Figure of Frizza.
+	The room-illustration of Upper Desert_Frizza is the Figure of Frizza.]
 
 [Beginn meiner Mapkonstruktion - Landing Zone, Wüste und Sicuum]
 
 Include Basic Screen Effects by Emily Short.
 The Start of the Adventure is a scene. The Start of the Adventure begins when play begins.
 Include Simple Graphical Window by Emily Short.
-Include Locations Images by Emily Short.
+Include Location Images by Emily Short.
 
 [Anfangsbeschreibung - Von wo kommt Axesto? Was ist sein Plan?]
-"Welcome to your journey, [bold type]Axesto[roman type]! You are going to leave your home planet Fidatis for the first time. Isn't it exciting? Finally, you can expercience everything by yourself. Although you love your home - the wide lush meadows, the different colourful flowers, the clear small seas and especially your family. But it's about time. You are full-aged now, so you are allowed to leave Fidatis for the first time. And not for anything in the world you would miss this chance. You already know what your first goal will be - the only planet you have been able to see since you are alive. You neither know its name nor anything else... but you know that you've always wanted to travel there. The engine starts, you focuse your view, the spaceship raises - your journey begins."
+
+When play begins:
+	say  "Welcome to your journey, [bold type]Axesto[roman type]! You are going to leave your home planet Fidatis for the first time. Isn't it exciting? Finally, you can expercience everything by yourself. Although you love your home - the wide lush meadows, the different colourful flowers, the clear small seas and especially your family. But it's about time. You are full-aged now, so you are allowed to leave Fidatis for the first time. And not for anything in the world you would miss this chance. You already know what your first goal will be - the only planet you have been able to see since you are alive. You neither know its name nor anything else... but you know that you've always wanted to travel there. The engine starts, you focuse your view, the spaceship raises - your journey begins.[paragraph break]	Remember that you can always type [bold type]'helper'[roman type] in order to get a list of helpful commands. Above the images you will see a map to help you orientate yourself, the star marks your position. For other information please take a look in the ReadMe file attached to this game.[paragraph break]
+
+	[Bold type]CHAPTER 1- SITIS[Roman type][paragraph break]".
 
 Axesto is a person. The Player is Axesto. 
 [End of Initialisation]
@@ -242,7 +259,7 @@ Instead of going nowhere from the Flat Rock_Sitis:
 	stop the action.
 	
 [Region 2 - The Desert of Sitis]
-The Desert_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desert_Sitis.
+The Desertlands_Sitis is a region. The Wide Desert of Sitis_Sitis, the Protection Bridge_Sitis, the Rock Mine_Sitis and the Rampart around Sicuum_Sitis are in the Desertlands_Sitis.
 
 [Räume]
 The Wide Desert of Sitis_Sitis is a room. The printed name of the Wide Desert of Sitis_Sitis is "The Wide Desert". The description of the Wide Desert of Sitis_Sitis is "You've reached the Desert of Sitis. It leaves you with two things: First of all, an impression of the landscape of Sitis - sandy, dry, with some deep stone canyons and huge rocks afar. And second of all, although this planet does not seem to be a place to live, the Desert still gives you the feeling of not being alone. There IS life! When you look [bold type]north[roman type], directly in front of you, there is a long corrugated iron bridge, guiding over one of those ravines. A majestic sandstone palace ascends at the end of that bridge. But the way is blocked by a barbed wired fence. In the bridge's center, a wooden ladder leads to an enormous square block in the east. Likewise it is built out of stone and gives a somber impression. If you look [bold type]east[roman type] you see some kind of a rock mine. In the [bold type]south[roman type] you recognise a lot of small white houses surrounded by a rampart. It seems like [bold type]people are living here[roman type]."
@@ -501,9 +518,13 @@ Understand "enter spaceship" as entering spaceship.
 
 After entering spaceship:
 	say "You enter your spaceship. The engine starts. This journey goes on.[paragraph break]";
-	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But you survived. A propos: speaking of survival - you will need food to survive, and that's depleting quite fast.[paragraph break]";
+	say "So, your first all-alone-on-a-foreign-planet-experience went well. Okay, admitted, it was not that easy and specially not harmless. But you survived. A propos: speaking of survival - you will need food to survive, and that's depleting quite fast.[paragraph break]
+
+[Bold type]CHAPTER 2 - GAISETTO[Roman type]
+[paragraph break]"[Übergangs Text Gaisetto];
 	remove the Spear from play;
-	[now the player is in the landingzone_gaisetto.]
+	now the Counter is 2;
+	now the player is in the landingzone_gaisetto.
 	
 	
 [Story endet hier, zumindest auf Sitis]
@@ -541,7 +562,7 @@ Chapter 2 - Gaisetto
 
 Include Basic Screen Effects by Emily Short.
 Include Simple Graphical Window by Emily Short.
-Include Locations Images by Emily Short.
+Include Location Images by Emily Short.
 
 
 Figure of gaisetto is the file "gaisetto1.png".
@@ -930,9 +951,13 @@ After push the chungusimba :
 		say "you can't push".
 
 After taking food:
-	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky. The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
+	say "You got the food and the formizer bring you to your spaceship. You continue your journey, but again you are not so lucky.[paragraph break]
+
+[Bold type]CHAPTER 3 - GEYSIRIA[Roman type]
+[paragraph break]The atmosphere of a nearby planet is too thick to steer through it. Mayday, Mayday - your sight is extremly limited to only a few meters, you have to land the space ship as soon as possible. Loss of signal to your surrounding satellites will mean plane crash. You make your way down through massive ash clouds with flying rocks everywhere. Luckily you are able to land safely on planet Geysiria. A planet where no life exists.  Volcanoes, lava rocks, big waves, geysirs and deserted landcsape is what you find here. In order to leave this planet you need to bring the volcanoes to a standstill or find another way to leave this unpleasant planet. Good luck.";
 	move player to Spaceship Bridge_Geysiria;
 	remove blade from play;
+	remove food from play;
 	now the Counter is 3.
 
 
@@ -2237,8 +2262,7 @@ After inserting the Pure Flux Essence into the Power Unit:
 
 
 [Bold type]CHAPTER 5 - KALDRÍSS[Roman type]
-
-You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
+[paragraph break]You are suddenly woke by heavy jolts and a bursting noise. You quickly orient yourself and grasp the situation. You got caught in a meteor shower and while trying your best to manouver your spaceship through it  your engine still took a hit. You then had to crash-land on Kaldríss - one of the most cold planets in this solar system.  Since only a few explorers made their to this planet there's not a whole lot of information available about this icy place. You are pretty much on your own now. The spaceship also won't take off before it hasn't been properly repaired. But first things first. Without any kind of heat you won't survive this bleakness for long. You tame a look at the command panel in hopes of finding something of use but it doesn't look very good. There's only a single green button on the command panel. What could this mean? I might also wanna  take a look at the spaceship exit that lies straight ahead since it seems to be busted, too.";
 	remove the Pure Flux Essence from play;
 	now the Counter is 5;
 	now the player is in the Spaceship Bridge_Kaldríss.
