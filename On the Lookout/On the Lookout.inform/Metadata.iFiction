@@ -15,10 +15,16 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
+        <resources>
+            <auxiliary>
+                <leafname>README On the Lookout.txt</leafname>
+                <description>README</description>
+            </auxiliary>
+        </resources>
         <cover>
             <format>png</format>
-            <height>242</height>
-            <width>212</width>
+            <height>500</height>
+            <width>500</width>
             <description>The cover art.</description>
         </cover>
         <releases>

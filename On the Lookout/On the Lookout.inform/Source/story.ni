@@ -1,4 +1,4 @@
-Release along with a website, the "Quixe" interpreter, cover art, the source text and an introductory postcard.
+Release along with a website, an interpreter, cover art, a file of "README" called "README On the Lookout.txt", the introductory booklet, the source text.
 
 The story title is "On the Lookout".
 The story headline is "A Space Quest".
@@ -114,7 +114,9 @@ quit - quit the game[line break][line break]";
 		[roman type]unlock (something) with (something)[line break]
 		play the flute - awaken some old fellow[line break]";
 	if the Counter is 3:
-		say "[bold type]Geysiria";
+		say "[bold type]Geysiria
+
+		[roman type]unlock (something) with (something)[line break]";
 	if the Counter is 4:
 		say "[bold type]Frizza
 
@@ -131,7 +133,7 @@ quit - quit the game[line break][line break]";
 		say "[bold type]Kaldríss
 
 		[roman type]open/close (something)[line break]
-		unlock/lock (something)[line break]
+		unlock (something) with (something)[line break]
 		put (something) on (e.g. clothing)[line break]
 		ask (someone) about (something)[line break]
 		answer (something) to (someone)[line break]";	

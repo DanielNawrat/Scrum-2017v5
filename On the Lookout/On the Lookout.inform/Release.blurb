@@ -67,8 +67,8 @@ placeholder [BLURB] = "Axesto, a bumbling little alien, is cast out from his hom
 ! Other material to release
 
 source public
-auxiliary "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\Postcard.pdf" "IF Postcard" "--"
-placeholder [OTHERCREDITS] = "The postcard was written by Andrew Plotkin and designed by Lea Albaugh."
+auxiliary "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Scrum-2017v5\On the Lookout\On the Lookout.materials\README On the Lookout.txt" "README" "--"
+auxiliary "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\Miscellany\IntroductionToIF.pdf" "Introduction to IF" "--"
 
 ! Website instructions
 
@@ -88,7 +88,6 @@ template path "C:\Users\Tim\Documents\Studium\(1) Mewip\SCRUM\Inform 7\Internal\
 css
 website "Standard"
 status instruction ||&nbsp;<a href="source:story.ni#line1"><img border=0 src=inform:/doc_images/Reveal.png></a>||
-status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
